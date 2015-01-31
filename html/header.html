@@ -1,0 +1,62 @@
+<body onLoad='reseteadoforms(this)'>
+<header>
+<h1 class='no-display'>Asoka Gestión</h1>
+<a href='panel.php'><img id='logo' src='/images/logo_gestion.png' title='Asoka el grande: Asociación para la defensa y protección de los animales' alt='Asoka el grande: Asociación para la defensa y protección de los animales'></a>
+<div id='user-panel'><h2 class='no-display'>Panel</h2><p>Hola <?php echo $usuario ?></p><a href='panel.php'>Panel de usuario</a>&nbsp&nbsp<a href='logout.php'>Cerrar sesión</a></div>
+
+<nav id='nav-princ'>
+	<ul>
+		<li>
+			<a <?php if($current_tab=="perros") echo "id='current-tab'"; ?> href='c-perros.php'>Perros</a>
+			<ul>
+				<li><a href='c-perros.php'>Consulta</a></li>
+				<li><a href='alta-perro.php'>Alta</a></li>
+			</ul>
+		</li>
+		<li>
+			<a <?php if($current_tab=="gatos") echo "id='current-tab'"; ?> href='c-gatos.php'>Gatos</a>
+			<ul>
+				<li><a href='c-gatos.php'>Consulta</a></li>
+				<li><a href='alta-gato.php'>Alta</a></li>
+			</ul>
+		</li>
+		<li>
+			<a <?php if($current_tab=="otros") echo "id='current-tab'"; ?> href='c-otros.php'>Otros</a>
+			<ul>
+				<li><a href='c-otros.php'>Consulta</a></li>
+				<li><a href='alta-otro.php'>Alta</a></li>
+			</ul>		
+		</li>
+		<li>
+			<a <?php if($current_tab=="veterinaria") echo "id='current-tab'"; ?> href=''>Veterinaria</a>
+			<ul>
+				<li><a href=''>Medicamentos</a></li>
+				<li><a href=''>Vacunas</a></li>
+				<li><a href='veterinarios.php'>Veterinarios</a></li>
+				<li><a href=''>Clínicas</a></li>
+			</ul>			
+		</li>
+		<li>
+			<a <?php if($current_tab=="adopciones") echo "id='current-tab'"; ?> href='' >Adopciones</a>
+			<ul>
+				<li><a href=''>Adoptantes</a>
+				<li><a href=''>Asociaciones</a>
+				<li><a href=''>Casas acogida</a>
+				<li><a href=''>Gestión seguimientos</a></li>
+				<li><a href=''>Mis seguimientos</a></li>
+			</ul>
+		</li>
+		<li>
+			<a <?php if($current_tab=="voluntariado") echo "id='current-tab'"; ?> href=''>Voluntariado</a>
+			<ul>
+				<li><a href=''>Voluntarios</a></li>
+				<li><a href=''>Paseadores</a></li>
+				<li><a href=''>Consulta correos</a></li>
+				<li><a href=''>Usuarios</a></li>
+			</ul>				
+		</li>
+	</ul>
+</nav>
+</header>
+
+<div id='cuerpo'>

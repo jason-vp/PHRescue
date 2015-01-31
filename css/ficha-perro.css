@@ -1,0 +1,115 @@
+
+#fotos {
+width:301px;
+height: 500px;
+font-size: 13px;
+float:left;
+margin-right: 7%;
+}
+
+#fotos img {
+max-width: 300px;
+max-height: 300px;
+margin: 0;
+}
+
+#fotos input {
+margin: 5px 0;
+}
+
+#flechas {
+float: right;
+margin-right: 8px;
+}
+
+#d-current-foto {
+margin: 2% 0 4% 0;
+max-height:300px;
+}
+
+#nav-acc-foto {
+position: relative;
+display: none;
+width: inherit;
+background: none repeat scroll 0% 0% rgba(0,0,0,0.5);
+height: 36px;
+margin: 0;
+bottom: 3px;
+padding-right: 5px;
+}
+
+#d-current-foto:hover  #nav-acc-foto {
+display:block;
+}
+
+#f-pdf {
+margin: 4% 0 2% 0;
+}
+
+#f-pdf legend {
+margin-bottom: 7px;
+}
+
+#f-pdf input {
+display: inline;
+}
+
+#datos {
+margin: auto;
+width: 620px;
+}
+
+#datos input, #estado input, #f-pdf input{
+margin: 0 10px 10px 7px;
+}
+
+#datos input[type=radio] {
+margin: 10px 2px;
+}
+
+#datos select, #estado select {
+margin: 5px 10px 5px 7px;
+}
+
+#form-datos label, #estado label {
+font-weight: bold;
+}
+
+#datos input[type=submit] {
+margin-top: 10px;
+margin-left:37%;
+}
+
+#nombre {
+width: 75px;
+}
+
+#localidad {
+width: 100px;
+}
+
+#edad {
+width: 50px;
+}
+
+#datos textarea {
+width: 615px;
+margin: 8px 0;
+display: block;
+}
+
+.w200px {
+width: 200px;
+}
+
+#castracion {
+clear: both;
+}
+
+#desc-video, #observaciones-trat {
+width: 100%;
+}
+
+#nueva-foto {
+display: inline;
+}

@@ -1,0 +1,412 @@
+
+<div id='estado' class='border-up'>
+	<form>
+	<fieldset>
+	<div><span class='div-ed-datos'><label for='hab-ed-estado'>Habilitar edición</label><input type='checkbox' id='hab-ed-estado' name='hab-ed-estado' onChange='toggleDisable(this, "form-estado-lugar")'></span><h3><legend> Estado </legend></h3></div>
+	<fieldset id='form-estado-lugar' disabled='true'>
+		<fieldset id='form-estado' >
+		<div class='center'>
+		<p>
+		<select id='estado' class='en-albergue' name='estado' onChange='cambioEstado(this)'>
+			<option value='1' class='en-albergue' selected>En Adopción</option>
+	<!--		<option value='2' class='reservado'>Reservado</option>
+			<option value='3' class='adoptado'>Adoptado</option>
+			<option value='4' class='difunto' >Difunto</option>              -->
+		</select>
+		<label for='fecha-estado'>Desde:</label>
+		<input type='date' class='i-date' name='fecha-estado' id='fecha-estado' value='2012-02-10'>
+		</p>
+		</div>
+		</fieldset>
+	
+	<fieldset id='sel-lugar'>
+	<h4><legend>Lugar:</legend></h4>
+		<div class='center'>
+			<p>Seleccionar lugar:
+			<input type='radio' name='sel-lugar' id='sel-lugar1' value='1' onFocus='mostrarlugar(this)' checked><label for='sel-lugar1' class='en-albergue' >Albergue</label>
+			<input type='radio' name='sel-lugar' id='sel-lugar2' value='2'><label for='sel-lugar2' class='en-acogida'>Acogida</label>
+	<!--		<input type='radio' name='sel-lugar' id='sel-lugar3' value='3'><label for='sel-lugar3' class='pre-adoptiva'>Acogida Preadoptiva</label>
+			<input type='radio' name='sel-lugar' id='sel-lugar4' value='4'><label for='sel-lugar4' class='adoptado'>Adoptado particular</label>
+			<input type='radio' name='sel-lugar' id='sel-lugar5' value='5'><label for='sel-lugar5' class='adoptado'>Adoptado asociación</label>    -->
+	</div>
+	</fieldset>
+	<fieldset id='form-lugar'>
+		<h4><legend>Datos lugar: </legend></h4>
+			<!--<fieldset id='form-asociacion'>
+			<h5><legend>Datos asociacion</legend></h5>
+			<div id='div-asociacion' class='center'>
+			<label for='nombre-asociacion'>Nombre asociación:</label>
+			<input type='text' id='nombre-asociacion' class='w200px'>
+			<fieldset id='datos-adoptante' disabled>
+				<label for='contacto-asociacion'>Nombre contacto:</label>
+				<input type='text' id='contacto-asociacion' class='w200px'>
+				<label for='fecha-adopcion'>Fecha adopción:</label>
+				<input type='date' id='fecha-adopcion'  class='i-date' name='fecha-adopcion'>
+				</br>
+				<label for='pais-asociacion'>País: </label>
+				<select id='pais-asociacion' name='pais-asociacion'>
+						<option value='1'>España</option>
+				</select>
+				<select id='provincia-asociacion' name='provincia-asociacion' disabled>
+						<option value='1'>Alicante</option>
+				</select>
+				<label for='localidad'>Localidad:</label> 
+				<select id='localidad-asociacion' name='localidad-asociacion'>
+						<option value='2'>Altea</option>
+						<option value='3'>San Vicente</option>
+						<option value='4'>Alicante</option>
+						<option value='5'>Orihuela</option>
+				</select>
+				</br>
+				<label for='direccion-asociacion' >Dirección:</label>
+				<input type='text' name='direccion-asociacion' id='direccion-asociacion' class='w200px'>
+				<label for='telefono-asociacion'>Teléfono:</label>
+				<input type='tel' id='telefono-asociacion' name='telefono-asociacion'>
+				</br>
+				<label for='email-asociacion' >E-mail:</label>
+				<input type='email' id='email-asociacion' name='email-asociacion' class='w200px'>
+			</fieldset>
+			</div>
+		</fieldset>
+			
+			<fieldset id='form-adoptante'>
+			<h5><legend>Datos adoptante</legend></h5>
+			<div id='div-adoptante' class='center'>
+			<label for='dni-adoptante'>DNI:</label>
+			<input type='text' id='dni-adoptante' name='dni-adoptante'>
+			<fieldset id='datos-adoptante' disabled='true'>
+				<label for='nombre-adoptante'>Nombre:</label>
+				<input type='text' id='nombre-adoptante' class='w200px'>
+				<label for='fecha-adopcion'>Fecha adopción:</label>
+				<input type='date' id='fecha-adopcion'  class='i-date' name='fecha-adopcion'>
+				</br>
+				<label for='pais-adoptante'>País: </label>
+				<select id='pais-adoptante' name='pais-adoptante'>
+						<option value='1'>España</option>
+				</select>
+				<label for='provincia-adoptante'>Provincia:</label>
+				<select id='provincia-adoptante' name='provincia-adoptante' disabled>
+						<option value='1'>Alicante</option>
+				</select>
+				<label for='localidad'>Localidad:</label> 
+				<select id='localidad-adoptante' name='localidad-adoptante' disabled>
+						<option value='2'>Altea</option>
+						<option value='3'>San Vicente</option>
+						<option value='4'>Alicante</option>
+						<option value='5'>Orihuela</option>
+				</select>
+				</br>
+				<label for='direccion-adoptante' >Dirección:</label>
+				<input type='text' name='direccion-adoptante' id='direccion-adoptante' class='w200px'>
+				<label for='telefono-adoptante'>Teléfono:</label>
+				<input type='tel' id='telefono-adoptante' name='telefono-adoptante'>
+				</br>
+				<label for='email-adoptante' >E-mail:</label>
+				<input type='email' id='email-adoptante' name='email-adoptante' class='w200px'>
+			</fieldset>
+			</div>
+			</fieldset>
+			
+		<fieldset id='form-acogida'>
+			<h5><legend>Datos casa acogida</legend></h5>
+			<div id='div-acogida' class='center'>
+			<label for='dni-acogida'>DNI:</label>
+			<input type='text' id='dni-acogida' name='dni-acogida'>
+			<fieldset id='datos-acogida' disabled>
+				<label for='nombre-acogida'>Nombre:</label>
+				<input type='text' id='nombre-acogida' class='w200px'>
+				<label for='fecha-adopcion'>Fecha adopción:</label>
+				<input type='date' id='fecha-adopcion'  class='i-date' name='fecha-adopcion'>
+				</br>
+				<label for='pais-acogida'>País: </label>
+				<select id='pais-acogida' name='pais-acogida'>
+						<option value='1'>España</option>
+				</select>
+				<label for='provincia-acogida'>Provincia:</label>
+				<select id='provincia-acogida' name='provincia-acogida'>
+						<option value='1'>Alicante</option>
+				</select>
+				<label for='localidad'>Localidad:</label> 
+				<select id='localidad-acogida' name='localidad-acogida'>
+						<option value='2'>Altea</option>
+						<option value='3'>San Vicente</option>
+						<option value='4'>Alicante</option>
+						<option value='5'>Orihuela</option>
+				</select>
+				</br>
+				<label for='direccion-acogida' >Dirección:</label>
+				<input type='text' name='direccion-acogida' id='direccion-acogida' class='w200px'>
+				<label for='telefono-acogida'>Teléfono:</label>
+				<input type='tel' id='telefono-acogida' name='telefono-acogida'>
+				</br>
+				<label for='email-acogida'>E-mail:</label>
+				<input type='email' id='email-acogida' name='email-acogida' class='w200px'>
+		</fieldset>
+		</div>
+		</fieldset>
+		-->
+		<fieldset id='form-albergue' >
+		<h5><legend>En albergue</legend></h5>
+		<div id='div-albergue' class='center'>
+			<label for='localidad-albergue'>Localidad albergue:</label>
+			<select id='localidad-albergue'>
+				<option value='1'>San Vicente</option>
+			</select>
+		</div>
+		</fieldset>
+	</fieldset>
+	<div class='center' > <input type='submit' name='bot-estado' id='bot-estado' class= 'boton' value='Enviar'></div>
+	</fieldset>
+	</fieldset>
+	</form>
+</div>
+
+<div id='castracion' class='border-up'>
+	<form>
+	<fieldset>
+		<div><span class='div-ed-datos'><label for='hab-ed-castracion'>Habilitar edición</label><input type='checkbox' id='hab-ed-castracion' name='hab-ed-castracion' onChange='toggleDisable(this, "form-castracion")'></span><h3><legend> Castración/Esterilización </legend></h3></div>
+		<fieldset id='form-castracion' disabled='true'>
+			<div class='center'>
+			<label for='fecha-cast' class='realizado'>Realizada el&nbsp</label><input type='date' id='fecha-cast' name='fecha-est' class='i-date' value='2012-01-01'>
+			<label for='veterinario' class='realizado'>por</label>
+			<select name='veterinario' id='veterinario'>
+				<option value='1' selected>Juan - Sol y Luz</option>
+				<option value='1'>Cristina - El Drac</option>
+			</select>
+			<button type='button' class='bot-eliminar'></br>
+			</div>
+			<input type='submit' class='boton' name='bot-cast' id='bot-cast' value='Modificar'>
+		</fieldset>
+	</fieldset>
+	</form>
+</div>
+<div id='videos' class='border-up'>
+	<form>
+	<fieldset>
+		<legend><h3>Videos</h3></legend>
+		<table id='tabla-desparasitacion'>
+			<thead>
+				<th>Acciones</th>
+				<th class='col-ampliada'>Título/Link</th>
+				<th>Descripción</th>
+				<th>Fecha</th>
+			</thead>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href='http://www.youtube.com/watch?v=vMe-qe_ej_8' target="_blank">Emiliano en Asoka</a></td>
+				<td>Video musical de presentación con fotos y clips de Emiliano paseando y jugando.</td>
+				<td>24-06-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-anyadir'></td>
+				<td>
+					<input type='text' id='tit-video' name='tit-video' placeholder='Título video'>
+					<input type='url' id='link-video' name='link-video' placeholder='Link video'>
+				</td>
+				<td><textarea name='desc-video' id='desc-video' maxlength='150' rows='2'></textarea></td>
+				<td><input type='date' name='fecha-video' id='fecha-video' class='i-date'></td>
+			</tr>
+		</table>
+			<input type='submit' id='bot-video' name='bot-video' class='boton' value='Enviar'>
+		</form>
+</div>
+
+<div id='desparasitacion' class='border-up'>
+	<form>
+	<fieldset>
+		<legend><h3>Desparasitación</h3></legend>
+		<table id='tabla-desparasitacion'>
+			<thead>
+				<th>Acciones</th>
+				<th class='col-ampliada'>Producto</th>
+				<th>Fecha</th>
+			</thead>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Zipyran Plus</a></td>
+				<td>01-01-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Frontline</a></td>
+				<td>01-02-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Fronline</a></td>
+				<td>01-02-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-anyadir'></td>
+				<td><select name='producto-desparasitacion' id='producto-desparasitacion'>
+						<option value='1'>Zipyran Plus</option>
+						<option value='2'>Fronline</option>
+				</td>
+				<td><input type='date' name='fecha-desparasitacion' id='fecha-desparasitacion' class='i-date'></td>
+		</table>
+			<input type='submit' id='bot-desparasitacion' name='bot-desparasitacion' class='boton' value='Enviar'>
+		</form>
+</div>
+
+<div id='analiticas' class='border-up'>
+	<form>
+	<fieldset>
+		<legend><h3>Analíticas</h3></legend>
+		<table id='tabla-analiticas'>
+			<thead>
+				<th>Acciones</th>
+				<th>Analítica</th>
+				<th>Resultado</th>
+				<th>PDF</th>
+				<th>Fecha</th>
+			</thead>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Leishmaniosis</a></td>
+				<td class='td-positivo'>Positivo</td>
+				<td><a href=''>analitica.pdf</a></td>
+				<td>01-01-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Leucemia</a></td>
+				<td class='td-negativo'>Negativo</td>
+				<td><a href=''>analitica2.pdf</a></td>
+				<td>01-01-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-anyadir'></td>
+				<td>
+					<select name='producto-desparasitacion' id='producto-desparasitacion'>
+						<option value='1'>Leishmaniosis</option>
+						<option value='2'>Leucemia</option>
+				</td>
+				<td>
+					<input type='radio' name='analitica' id='analitica+' value='1'><label for='analitica+'>+</label>
+					<input type='radio' name='analitica' id='analitica-' value='1'><label for='analitica-'>-</label>
+				</td>
+				<td><input type='file' name='pdf-analitica'></td>
+				<td><input type='date' name='fecha-analitica' id='fecha-analitica' class='i-date'></td>
+		</table>
+			<input type='submit' id='bot-analitica' name='bot-analitica' class='boton' value='Enviar'>
+		</form>
+</div>
+
+<div id='vacunas' class='border-up'>
+	<form>
+	<fieldset>
+		<legend><h3>Vacunas</h3></legend>
+		<table id='tabla-vacunas'>
+			<thead>
+				<th>Acciones</th>
+				<th class='col-ampliada'>Vacuna</th>
+				<th>Fecha</th>
+			</thead>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Rabia</a></td>
+				<td>01-01-2012</td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-anyadir'></td>
+				<td><select name='vacuna' id='vacuna'>
+						<option value='1'>Rabia</option>
+						<option value='2'>DHPPI</option>
+				</td>
+				<td><input type='date' name='fecha-vacuna' id='fecha-vacuna' class='i-date'></td>
+		</table>
+			<input type='submit' id='bot-vacuna' name='bot-vacuna' class='boton' value='Enviar'>
+		</form>
+</div>
+
+
+<div id='tratamientos' class='border-up'>
+	<form>
+	<fieldset>
+		<legend><h3>Tratamientos</h3></legend>
+		<table id='tabla-tratamientos'>
+			<thead>
+				<th>Acciones</th>
+				<th>Tratamiento</th>
+				<th>Veces día</th>
+				<th>Dosis</th>
+				<th>Observaciones</th>
+				<th>Fecha inicio</br>Fecha fin</th>
+				<th>Nº días</th>
+				<th>Veterinario</th>
+			</thead>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href=''>Maxitrol</a></td>
+				<td>3</td>
+				<td>2 gotas</td>
+				<td>Conjuntivitis, ojo derecho.</td>
+				<td>01-01-2012</br>08-01-2012</td>
+				<td>7</td>
+				<td><a href=''>Juan - Sol y Luz</a></td>
+			</tr>
+			<tr>
+				<td><button type='button' class='bot-anyadir'></td>
+				<td>
+					<select name='tratamiento' id='tratamiento'>
+						<option value='1'>Amoxicilina/Clavulánico</option>
+						<option value='2'>Maxitrol</option>
+				</td>
+				<td>
+					<input type='number' name='veces-dia' id='veces-dia' class='i-number' value='2' min='1' max='6' step='1'>
+				</td>
+				<td>
+					<input type='number' name='dosis' id='dosis' class='i-number' value='100' min='0' max='5000' step='1'>
+					<select name='unidad' id='unidad'>
+						<option value='1'>mg</option>
+						<option value='2'>ml</option>
+						<option value='3'>gotas</option>
+						<option value='4'>N/A</option>
+					</select>
+				</td>
+				<td><textarea name='observaciones-trat' id='observaciones-trat' maxlength='140' rows='2'></textarea></td>
+				<td>
+					<input type='date' id='inicio' name='inicio' class='i-date'> </br>
+					<input type='date' id='fin' name='fin' class='i-date' disabled>
+				</td>
+				<td><input type='number' class='i-number' id='n-dias' name='n-dias' min='1' max='365' step='1' value='7'></td>
+				<td>
+					<select name='veterinario' id='veterinario'>
+						<option value='1'>Juan - Sol y Luz</option>
+						<option value='1'>Cristina - El Drac</option>
+					</select>
+		</table>
+			<input type='submit' id='bot-tratamiento' name='bot-tratamiento' class='boton' value='Enviar'>
+		</form>
+</div>
+
+<div id='historico-adopciones' class='border-up'>
+	<form>
+	<fieldset>
+		<legend><h3>Adopciones previas</h3></legend>
+		<table id='tabla-desparasitacion'>
+			<thead>
+				<th>Acciones</th>
+				<th class='col-ampliada'>Adoptante</th>
+				<th>Motivo devolución</th>
+				<th>Fecha adopción</th>
+				<th>Fecha devolución</th>
+			</thead>
+			<tr>
+				<td><button type='button' class='bot-editar'><button type='button' class='bot-eliminar'></td>
+				<td><a href='' target="_blank">Jonh Smith</a></td>
+				<td>Mudanza fuera del país por cambio de identidad.</td>
+				<td>01-01-2012</td>
+				<td>01-01-2013</td>
+			</tr>
+			<tr>
+				<td>&nbsp </td>
+				<td>&nbsp </td>
+				<td><textarea name='observaciones-dev' id='observaciones-dev' maxlength='150' rows='2'></textarea></td>
+				<td><input type='date' name='fecha-adopcion-dev' id='fecha-adopcion-dev' class='i-date'></td>
+				<td><input type='date' name='fecha-dev' id='fecha-dev' class='i-date'></td>
+			</tr>
+		</table>
+			<input type='submit' id='bot-dev' name='bot-dev' class='boton' value='Enviar'>
+		</form>
+</div>

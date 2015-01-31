@@ -1,0 +1,87 @@
+	<div id='datos'>
+		<form>
+			<fieldset>
+				<div><span class='div-ed-datos'><label for='hab-ed-datos'>Habilitar edición</label><input type='checkbox' id='hab-ed-datos' name='hab-ed-datos' onChange='toggleDisable(this, "form-datos")'></span><h3><legend> Datos </legend></h3></div>
+				<fieldset id='form-datos' disabled='true'>
+				<label for='nombre'>Nombre:</label> <input type='text' name='nombre' id='nombre' value=<?php echo "'". $animal . "'" ?>>
+				<label for='raza'>Raza: </label> 
+				<select id='raza' name='raza'>
+						<option value='2' selected>Mestizo</option>
+						<option value='3'>Siames</option>
+						<option value='4'>Azul Ruso</option>
+						<option value='5'>Persa</option>
+				</select>
+				<strong>Sexo:</strong>
+				<input id='sexo1' type='radio' name='sexo' value='1' checked><label for='sexo1'>M</label>
+				<input id='sexo2' type='radio' name='sexo' value='2'><label for='sexo2'>H</label>&nbsp &nbsp
+				<label for='manto'>Manto: </label> 
+				<select id='manto' name='raza'>
+						<option value='2' selected>Tortuga</option>
+						<option value='3'>Tabby</option>
+						<option value='4'>Moteado</option>
+				</select>
+				</br>
+				<label for='fecha-nacimiento'>Fecha Nacimiento:</label><input type='date' name='fecha-nacimiento' id='fecha-nacimiento'  class='i-date' value='2010-03-04'>
+				<label for='edad'>Edad:</label><input id='edad' type='text' name='edad' value='2a 4m'>
+				<label for='color'>Color:</label> 
+				<select id='color' name='color'>
+						<option value='2'>Negro</option>
+						<option value='3'>Canela</option>
+						<option value='4' selected>Marrón</option>
+						<option value='5'>Blanco/Negro</option>
+				</select>
+				</br>
+				<label for='peso'>Peso:</label><input type='number' name='peso' id='peso'  class='i-number' min='1' max='80' step='0.1' value='15'>
+				<label for='tam'>Tamaño:</label>
+				<select id='tam' name='tam'>
+						<option value='2'>Pequeño</option>
+						<option value='3' selected>Mediano</option>
+						<option value='4'>Grande</option>
+						<option value='5'>Muy Grande</option>
+				</select>
+				<label for='fecha-entrada'>Fecha Entrada:</label><input type='date' name='fecha-entrada' id='fecha-entrada' class='i-date' value='2012-02-20'>
+				</br>
+				<p><strong>Medidas:</strong>
+				<label for='medida-suelo'>Cruz-Suelo:</label> <input type='number' id='medida-suelo' name='medida-suelo' class='i-number' min='5' max='150' step='1' value='30'>cm&nbsp
+				<label for='medida-cola'>Cruz-Cola:</label> <input type='number' id='medida-cola' name='medida-cola' class='i-number' min='5' max='150' step='1' value='30'>cm
+				</p>
+				<label for='chip'>Nº Microchip:</label><input type='text' name='chip' id='chip' value='111111111AAAA'>
+				<label for='fecha-chip'>Fecha Microchip:</label><input type='date' name='fecha-chip' id='fecha-chip' value='2010-01-01'>
+				</br>
+				<label for='pasaporte'>Nº Pasaporte</label><input type='text' name='pasaporte' id='pasaporte' value='AA1111111111'>
+				<strong>Web:</strong>
+				<input id='web-si' type='radio' name='web' value='1' checked><label for='web-si'>Si</label>
+				<input id='web-no' type='radio' name='web' value='2'><label for='web-no'>No</label>
+				</br>
+				</br>
+				<p>Encontrado en:</p>
+				<label for='localidad'>Localidad:</label> 
+				<select id='localidad' name='localidad'>
+						<option value='2'>Altea</option>
+						<option value='3' selected>San Vicente</option>
+						<option value='4'>Alicante</option>
+						<option value='5'>Orihuela</option>
+				</select>
+				<label for='condiciones'>Condiciones:</label><textarea id='condiciones' name='condiciones' maxlength='300' rows='4'>Llegado en un maletero desde Bacarot.</textarea>
+				</br>
+				<p>Carácter:</p>
+				<label for='caracter'>Tipo:</label>
+				<select id='caracter' name='caracter'>
+						<option value='2'>Tranquilo</option>
+						<option value='3' selected>Enérgico</option>
+						<option value='4'>Dominante</option>
+						<option value='5'>Miedoso</option>
+				</select>
+				<label for='text-caracter'>Observaciones carácter:</label>
+				<textarea id='text-caracter' name='text-caracter' maxlength='300' rows='4'>Es muy mimoso, listo, cariñoso y bonito. es una ricura con las personas, le encanta la compañía humana y la busca, te sigue a todas partes y parece un perrillo faldero. No se lleva bien con otros animales porque le gusta ser el rey de la casa. </textarea>
+				</br>
+				<label for='historia'>Historia y otras observaciones:</label></br>
+				<textarea id='historia' name='historia' maxlength='700' rows='9'>Actualmente lo tenemos en libertad en el albergue y siempre está buscando las caricias de los voluntarios. No es un gato para vivir encerrado, necesita libertad.    </textarea>
+				</br>
+				<input type='submit' id='bot-datos' name='bot-datos' class='boton' value='Modificar'>
+				
+			</fieldset>
+		</form>
+	</div>
+	
+</div>

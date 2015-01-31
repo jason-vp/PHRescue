@@ -1,0 +1,19 @@
+<?php
+$animal="Raúl";
+$foto_animal="/images/raul.jpg";
+$titulo= "Asoka Gestión - Ficha " . $animal;
+$stylesheets=["/css/reset.css", "/css/general.css", "/css/ficha-perro.css"];
+$scripts=["/javascript/habilitar-modificacion.js"];
+
+$usuario="Invitado";
+
+$current_tab="gatos";
+
+require_once("html/head.html");
+require_once("html/header.html");
+require_once("html/cuerpo-ficha-perro1.html");
+require_once("html/datos-gato.html");
+require_once("html/cuerpo-ficha-perro2.html");
+require_once("html/footer.html");
+
+?>

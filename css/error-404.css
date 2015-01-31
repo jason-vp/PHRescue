@@ -1,0 +1,16 @@
+#cuerpo p {
+margin: 3% 2%;
+}
+
+#cuerpo img {
+max-width: 400px;
+max-height: 400px;
+margin: auto 1%;
+}
+
+#imagenes {
+margin: 2% auto;
+display: block;
+max-width: 850px;
+max-height: 450px;
+}

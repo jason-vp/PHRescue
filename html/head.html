@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='UTF-8'>
+<title><?php echo $titulo ?></title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta name='robots' content='noindex'>
+<?php
+	foreach($stylesheets as $css) {
+		echo "<link rel='stylesheet' href='". $css . "'>";
+	}
+	
+	foreach($scripts as $script) {
+		echo "<script src='". $script . "'></script>";
+	}
+?>
+</head>

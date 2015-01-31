@@ -1,0 +1,118 @@
+<h2>Veterinarios</h2>
+
+<div id='alta' class='border-up'>
+<h3> Alta veterinario</h3>
+	<form class='center'>
+		<fieldset>
+			<p>
+				<label for='nombre-vet-a'>Nombre:</label> <input id='nombre-vet-a' type='text' name='nombre-vet-a' required />
+				<label for='telf-a'>Teléfono: </label> <input id='telf-a' type='tel' id='telf-a' name='telf-a'/>
+				<label for='clinica-a'>Clínica:</label>
+				<select id='clinica-a' name='clinica-a'>
+						<option value='1' > Sol y Luz </option>
+						<option value='2' >El Drac</option>
+				</select>
+				<input type='submit' class='boton' value='Enviar'>
+		</fieldset>
+	</form>
+</div>
+
+<div id='busqueda' class='border-up'>
+<h3> Buscar </h3>
+	<form class='center'>
+		<fieldset>
+			
+			<p>
+				<label for='nombre-vet'><strong>Nombre:</strong> </label> <input id='nombre-vet' type='text' name='nombre-vet'/> 
+				<label for='telf'>Teléfono: </label> <input id='telf' type='tel' id='telf' name='telf'/>
+				<label for='clinica'>Clínica:</label>
+				<select id='clinica' name='clinica-a'>
+						<option value='1' > Sol y Luz </option>
+						<option value='2' >El Drac</option>
+				</select>
+				<fieldset>
+				<legend><h4>Ordenar por:</h4></legend>
+				<p>
+					<input id='orden1' type='radio' name='orden' value='1'checked /><label for='orden1'>Nombre (A-Z)</label>
+					<input id='orden2' type='radio' name='orden' value='6'/><label for='orden2'>Clínica (A-Z)</label>					
+				</p>
+			</fieldset>
+			<input type='submit' class='boton' value='Buscar'/>
+		</fieldset>
+	</form>
+</div>
+<div id='resultados' class='border-up'>
+	<h3>Resultados</h3>
+	<p> Mostrando del 1 al 3 de 3 resultados.</p>
+	<table>
+		<thead>
+			<th>Nombre</th>
+			<th>Teléfono</th>
+			<th>Clínica</th>
+		</thead>
+		<tr>
+			<td>Luis Alfonso Vigueras</td>
+			<td>655 55 55 55</td>
+			<td>Sol y Luz</td>
+		</tr>
+		<tr>
+			<td>Luis Alfonso Vigueras</td>
+			<td>655 55 55 55</td>
+			<td>Sol y Luz</td>
+		</tr>
+		<tr>
+			<td>Luis Alfonso Vigueras</td>
+			<td>655 55 55 55</td>
+			<td>Sol y Luz</td>
+		</tr>
+	</table>
+	<!--
+	<div id='paginador'> 
+			<ul>
+				<li>
+					<a href=''> << </a> 
+				</li>
+				<li>
+				<a href=''> < </a>
+				</li>
+				<li>
+				<a href=''> 1 </a>
+				</li>
+				<li>
+				<a href=''> 2 </a> 
+				</li>
+				<li>
+				<a href=''> 3 </a>
+				</li>
+				<li>
+				<a href=''> 4 </a> 
+				</li>
+				<li>
+				<a href=''> 5 </a> 
+				</li>
+				<li>
+				<a href=''> 6 </a> 
+				</li>
+				<li>
+				<a href=''> 7 </a> 
+				</li>
+				<li>
+				<a href=''> 8 </a>
+				</li>
+				<li>
+				<a href=''> 9 </a>
+				</li>
+				<li>
+				<a  href=''> 10 </a> 
+				</li>
+				<li>
+				<a href=''> > </a> 
+				</li>
+				<li>
+				<a href=''> >> </a>
+				</li>
+			</ul>
+		</span>
+		<p>Pag. 1 de 12 </p>
+	</div>-->
+	</div>

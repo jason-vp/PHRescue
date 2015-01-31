@@ -1,0 +1,264 @@
+<h2>Consulta gatos</h2>
+
+<div id='busqueda' class='border-up'>
+
+	<form class='center'>
+		<fieldset>
+			<h3><legend> Buscar </legend></h3>
+			<p>
+				<label for='nombre-a'><strong>Nombre:</strong> </label> <input id='nombre-a' type='text' name='nombre-animal'/> 
+				<span><strong>Sexo:</strong>
+					<input id='sexo1' class='i-number' type='checkbox' name='sexo' value='1' checked /><label for='sexo1'>M</label>
+					<input id='sexo2' class='i-number' type='checkbox' name='sexo' value='2' checked /><label for='sexo2'>H</label>
+				</span>
+				<span><strong>Tamaño:</strong>
+					<input id='tam1' type='checkbox' name='tam' value='1' checked /><label for='tam1'>Pequeño</label>
+					<input id='tam2' type='checkbox' name='tam' value='2' checked /><label for='tam2'>Mediano</label>
+					<input id='tam3' type='checkbox' name='tam' value='3' checked /><label for='tam3'>Grande</label>
+					<input id='tam4' type='checkbox' name='tam' value='4' checked /><label for='tam4'>Muy Grande</label>
+				</span>
+			</p>
+			
+			<p>
+				<span><strong>Edad:</strong> 
+				Entre <input id='edadmin' class='i-number' type='number' min='0' max='17' step='1' value='0' name='edad1' /> y <input id='edadmax' class='i-number' type='number' min='1' max='18' step='1' value='18' name='edad2' /> años
+				</span>
+				<span><strong>Peso:</strong>
+				Entre <input id='pesomin' class='i-number' type='number' min='0' max='80' step='1' value='0' name='peso1'/> y <input id='pesomax' class='i-number' type='number' min='0' max='80' step='1' value='80' name='peso2'/> kg
+				</span>
+				
+				 <label for='raza'><strong>Raza:</strong></label> <select id='raza' name='raza'>
+						<option value='2' selected>Común</option>
+						<option value='3'>Siames</option>
+						<option value='4'>Azul Ruso</option>
+						<option value='5'>Persa</option>
+					</select>
+				
+				<label for='manto'><strong>Manto: </strong></label> 
+				<select id='manto' name='raza'>
+						<option value='1' selected>Cualquiera </option>
+						<option value='2'>Tortuga</option>
+						<option value='3'>Tabby</option>
+						<option value='4'>Moteado</option>
+				</select>
+				
+				<label for='color'><strong>Color:</strong></label> <select id='color' name='color'>
+						<option value='1'>Cualquiera</option>
+						<option value='2'>Negro</option>
+						<option value='3'>Canela</option>
+						<option value='4'>Marrón</option>
+						<option value='5'>Blanco/Negro</option>
+					</select>
+			</p>
+			
+			<fieldset>
+				<legend><h4>Estado:</h4></legend>
+				<p>
+					<input id='estado1' type='checkbox' name='lugar' value='En el albergue' checked /><label for='estado1'>En el albergue</label>
+					<input id='estado2' type='checkbox' name='lugar' value='En acogida'/><label for='estado2'>En acogida</label>
+					<input id='estado3' type='checkbox' name='lugar' value='Reservado'/><label for='estado3'>Reservado</label>
+					<input id='estado4' type='checkbox' name='lugar' value='Adoptados'/><label for='estado4'>Adoptado</label>
+					<input id='estado5' type='checkbox' name='lugar' value='Difunto'/><label for='estado5'>Difunto</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend><h4>Ordenar por:</h4></legend>
+				<p>
+					<input id='orden1' type='radio' name='orden' value='1'checked /><label for='orden1'>Fecha entrada (descendente)</label>
+					<input id='orden2' type='radio' name='orden' value='6'/><label for='orden2'>Fecha entrada (ascendente)</label>					
+					<input id='orden3' type='radio' name='orden' value='2' /><label for='orden3'>Nombre (A-Z)</label>
+					<input id='orden4' type='radio' name='orden' value='3'/><label for='orden4'>Nombre (Z-A)</label>
+					<input id='orden5' type='radio' name='orden' value='4'/><label for='orden5'>Edad (Ascendente)</label>
+					<input id='orden6' type='radio' name='orden' value='5'/><label for='orden6'>Edad (Descendente)</label>
+				</p>
+			</fieldset>
+			<input type='submit' class='boton' value='Buscar'/>
+		</fieldset>
+	</form>
+</div>
+<div id='resultados' class='border-up'>
+	<h3>Resultados</h3>
+	<p> Mostrando del 1 al 10 de 120 resultados.</p>
+	<table>
+		<thead>
+			<th>Foto</th>
+			<th>Nombre</th>
+			<th>Sexo</th>			
+			<th>Raza</th>
+			<th>Manto</th>
+			<th>Color</th>
+			<th>Edad</th>
+			<th>Peso</th>
+			<th>Estado</th>
+			<th>Entrada</th>
+		</thead>
+		<tr>
+			<td class='en-albergue'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>En Adopción (Albergue) </td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='en-acogida'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>En Adopción (Acogida)</td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='reservado'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>Reservado (Particular)</td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='reservado'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>Reservado (Asociación)</br>En Acogida</td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='pre-adoptiva'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>Acogida Preadoptiva</td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='adoptado'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>Adoptado</td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='difunto'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>Difunto</td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='en-albergue'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>En Adopción (Albergue) </td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='en-albergue'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>En Adopción (Albergue) </td>
+			<td>10-2-2012</td>
+		</tr>
+		<tr>
+			<td class='en-albergue'><a href='ficha-gato.php?id=1'><img src='images/raul.jpg'></a></td>
+			<td><a href='ficha-gato.php?id=1'>Raúl</a></td>
+			<td>M</td>
+			<td>Común</td>
+			<td>Tortuga</td>
+			<td>Blanco y marrón</td>
+			<td>6 años y 5 meses</td>
+			<td>3 Kg</td>
+			<td>En Adopción (Albergue) </td>
+			<td>10-2-2012</td>
+		</tr>
+	</table>
+	<div id='paginador'> 
+			<ul>
+				<li>
+					<a href=''> << </a> 
+				</li>
+				<li>
+				<a href=''> < </a>
+				</li>
+				<li>
+				<a href=''> 1 </a>
+				</li>
+				<li>
+				<a href=''> 2 </a> 
+				</li>
+				<li>
+				<a href=''> 3 </a>
+				</li>
+				<li>
+				<a href=''> 4 </a> 
+				</li>
+				<li>
+				<a href=''> 5 </a> 
+				</li>
+				<li>
+				<a href=''> 6 </a> 
+				</li>
+				<li>
+				<a href=''> 7 </a> 
+				</li>
+				<li>
+				<a href=''> 8 </a>
+				</li>
+				<li>
+				<a href=''> 9 </a>
+				</li>
+				<li>
+				<a  href=''> 10 </a> 
+				</li>
+				<li>
+				<a href=''> > </a> 
+				</li>
+				<li>
+				<a href=''> >> </a>
+				</li>
+			</ul>
+		</span>
+		<p>Pag. 1 de 12 </p>
+	</div>
+	</div>

@@ -1,0 +1,10 @@
+/*revisar si mover a css específico*/
+
+#cont {
+border-top: 1px solid grey;
+padding: 1% 2%;
+}
+
+#cont  >ul  li{
+margin: 6px;
+}
