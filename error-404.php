@@ -7,8 +7,8 @@ $usuario="Invitado";
 
 $current_tab="none";
 
-require_once("html/head.html");
-require_once("html/header.html");
+require_once("html/head.phtml");
+require_once("html/header.phtml");
 require_once("html/cuerpo-error-404.html");
 require_once("html/footer.html");
 
