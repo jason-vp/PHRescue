@@ -53,22 +53,23 @@ table {
   border-spacing: 0;
 }
 
+/*VARIABLES*/
+/*BODY BASE*/
 body {
   overflow: auto;
   background-image: -webkit-linear-gradient(left, #f0f0f0, black, #f0f0f0);
   background-image: linear-gradient(to right, #f0f0f0, black, #f0f0f0);
   background-image: -webkit-linear-gradient(right, #f0f0f0, black, #f0f0f0);
   font-family: "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #323232;
 }
 
-/*prueba*/
 html, body {
   height: 100%;
-  font-size: 16px;
 }
 
+/*GENERAL USE CLASSES*/
 .no-display {
   display: none;
 }
@@ -77,9 +78,10 @@ html, body {
   display: inline;
 }
 
-header {
+/*HEADER*/
+header#hPrinc {
   background-color: #D5E0F5;
-  min-width: 877px;
+  width: 100%;
 }
 
 #logo {
@@ -103,38 +105,46 @@ header {
 }
 
 /*NAV-PRINC*/
-#nav-princ {
-  background-color: #0072c6;
-  display: block;
+#nPrinc {
+  background-color: #0072C6;
+  display: table;
+  table-layout: fixed;
   border: solid white;
   border-width: 1px 0;
+  color: #DDD;
+  width: 100%;
 }
 
-header > nav > ul {
-  height: 30px;
-  max-width: 58%;
-  min-width: 1140px;
-  margin: auto;
+#nPrinc > ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 4px;
 }
 
-header > nav > ul > li {
-  float: left;
-  display: inline;
-  width: 150px;
-  height: 30px;
-  color: #DDDDDD;
+#nPrinc > ul > li {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-header > nav > ul > li:first-child {
+#nPrinc > ul > li:first-child {
   border-left: 1px solid #99D5FF;
 }
 
-header > nav > ul > li:last-child {
+#nPrinc > ul > li:last-child {
   border-right: 1px solid #555555;
 }
 
-header > nav > ul > li > a {
-  padding: 5px 0px 5px 0px;
+#nPrinc > ul > li > a {
+  padding: 5px 0px;
   border-left: 1px solid #555555;
   border-right: 1px solid #99D5FF;
   color: inherit;
@@ -144,9 +154,8 @@ header > nav > ul > li > a {
   font-weight: bold;
   display: block;
   text-transform: uppercase;
-  font-size: 17px;
-  line-height: 20px;
-  height: 20px;
+  font-size: larger;
+  line-height: 24px;
 }
 
 #current-tab {
@@ -154,25 +163,33 @@ header > nav > ul > li > a {
   color: white;
 }
 
-header > nav > ul > li > a:hover {
+#nPrinc > ul > li > a:hover {
   color: white;
 }
 
-header > nav > ul > li > ul {
-  position: absolute;
+#nPrinc ul ul {
   display: none;
+  position: absolute;
   color: white;
-  width: inherit;
   margin-top: 0px;
   background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.7);
-  border-radius: 3px;
+  border-radius: 0 0 3px 3px;
+  min-width: 150px;
 }
 
-header > nav > ul > li:hover ul {
-  display: block;
+#nPrinc > ul > li:hover ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header > nav > ul > li > ul > li {
+#nPrinc ul ul li {
   text-decoration: none;
   color: white;
   display: block;
@@ -180,73 +197,76 @@ header > nav > ul > li > ul > li {
   padding: 1px 0;
 }
 
-header > nav > ul > li > ul > li:last-child {
+#nPrinc ul ul > li:last-child {
   border-bottom: none;
 }
 
-header > nav > ul > li > ul a {
+#nPrinc ul ul a {
   text-decoration: none;
-  padding: 5px 0px 5px 20px;
+  padding: 8px 25px 8px 20px;
   display: block;
   color: white;
   border-radius: 4px;
-  font-size: smaller;
+  font-size: medium;
 }
 
-header > nav > ul > li > ul a:hover {
+#nPrinc ul ul a:hover {
   background: none repeat scroll 0% 0% rgba(0, 154, 240, 0.9);
 }
 
+/*CUERPO*/
 #cuerpo {
-  min-width: 1050px;
+  min-height: 75%;
   max-width: 85%;
-  min-height: 80%;
+  padding-bottom: 35px;
   margin: 0 auto;
-  background-color: #d2e6ff;
+  background-color: #F3F8FE;
   border: solid grey;
   border-width: 0 1px;
   padding: 5% 0;
 }
 
 #cuerpo h2 {
-  font-size: 20px;
+  font-size: larger;
+  text-transform: uppercase;
   font-weight: bold;
   margin-left: 1%;
   margin-bottom: 8px;
 }
 
 #cuerpo h3 {
-  font-size: 18px;
+  font-size: 125%;
   font-weight: bold;
   margin-bottom: 1%;
 }
 
 #cuerpo h4 {
-  font-size: 15px;
+  font-size: 110%;
   font-weight: bold;
   margin: 2% 3%;
 }
 
 #cuerpo h5 {
-  font-size: 14px;
+  font-size: medium;
   font-weight: bold;
   margin: 2% 6%;
 }
 
+/*FOOTER PRINCIPAL*/
 footer {
-  height: 20px;
+  height: 35px;
   background-color: #0072c6;
   border-top: 1px solid white;
   min-width: 877px;
+  padding: 10px;
 }
 
 footer a {
   color: white;
   text-decoration: none;
-  line-height: 20px;
   float: right;
   margin-right: 4%;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 input[type='file'] {
