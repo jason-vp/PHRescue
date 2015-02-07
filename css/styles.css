@@ -55,14 +55,28 @@ table {
 
 /*VARIABLES*/
 /*BODY BASE*/
+html {
+  font-size: 62.5%;
+}
+
 body {
   overflow: auto;
   background-image: -webkit-linear-gradient(left, #f0f0f0, black, #f0f0f0);
   background-image: linear-gradient(to right, #f0f0f0, black, #f0f0f0);
   background-image: -webkit-linear-gradient(right, #f0f0f0, black, #f0f0f0);
   font-family: "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #323232;
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
 
 html, body {
@@ -88,12 +102,15 @@ header#hPrinc {
   width: 200px;
   height: 50px;
   margin-left: 1%;
+  margin-top: 10px;
+  margin-right: -25px;
 }
 
 /*USER PANEL*/
 #user-panel {
   float: right;
-  margin: 8px 15px 8px;
+  margin-top: 2%;
+  height: 60px;
 }
 
 #user-panel p {
@@ -101,7 +118,15 @@ header#hPrinc {
 }
 
 #user-panel a {
-  font-size: 15px;
+  font-size: 100%;
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+@media (max-width: 480px) {
+  #user-panel a {
+    clear: both;
+  }
 }
 
 /*NAV-PRINC*/
@@ -115,6 +140,13 @@ header#hPrinc {
   width: 100%;
 }
 
+/*
+#dMenu {
+    display: none;
+    @media (max-width: 480px) {
+        display: block;
+    }
+}*/
 #nPrinc > ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -127,6 +159,15 @@ header#hPrinc {
           flex-direction: row;
   margin: 0 4px;
 }
+@media (max-width: 480px) {
+  #nPrinc > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 #nPrinc > ul > li {
   -webkit-box-flex: 1;
@@ -135,11 +176,11 @@ header#hPrinc {
           flex-grow: 1;
 }
 
-#nPrinc > ul > li:first-child {
+#nPrinc > ul {
   border-left: 1px solid #99D5FF;
 }
 
-#nPrinc > ul > li:last-child {
+#nPrinc > ul {
   border-right: 1px solid #555555;
 }
 
@@ -156,6 +197,13 @@ header#hPrinc {
   text-transform: uppercase;
   font-size: larger;
   line-height: 24px;
+}
+@media (max-width: 480px) {
+  #nPrinc > ul > li > a {
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #99D5FF;
+    line-height: 35px;
+  }
 }
 
 #current-tab {
@@ -188,6 +236,12 @@ header#hPrinc {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 480px) {
+  #nPrinc > ul > li:hover ul {
+    position: static;
+    text-align: center;
+  }
+}
 
 #nPrinc ul ul li {
   text-decoration: none;
@@ -218,7 +272,7 @@ header#hPrinc {
 #cuerpo {
   min-height: 75%;
   max-width: 85%;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   margin: 0 auto;
   background-color: #F3F8FE;
   border: solid grey;
@@ -254,11 +308,10 @@ header#hPrinc {
 
 /*FOOTER PRINCIPAL*/
 footer {
-  height: 35px;
+  height: 30px;
   background-color: #0072c6;
   border-top: 1px solid white;
-  min-width: 877px;
-  padding: 10px;
+  padding: 10px 5px 0;
 }
 
 footer a {
@@ -266,7 +319,7 @@ footer a {
   text-decoration: none;
   float: right;
   margin-right: 4%;
-  font-size: 14px;
+  font-size: 87%;
 }
 
 input[type='file'] {
