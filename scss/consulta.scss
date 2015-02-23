@@ -1,10 +1,5 @@
-
-#busqueda span {
-margin-right: 14px;
-}
-
-#busqueda p {
-margin: 10px 0px;
+label {
+  display: inline-block;
 }
 
 #nombre-a {
@@ -13,18 +8,6 @@ margin-right: 14px;
 
 #busqueda select {
 margin-right: 14px;
-}
-
-strong {
-font-weight: bold;
-}
-
-legend {
-font-weight: bold;
-}
-
-#resultados p {
-font-size: 14px;
 }
 
 table {
