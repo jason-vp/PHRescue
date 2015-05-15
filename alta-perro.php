@@ -9,7 +9,7 @@ $current_tab="perros";
 
 require_once("html/head.phtml");
 require_once("html/header.phtml");
-require_once("html/cuerpo-alta-perro.html");
+require_once("html/altaRapida.html");
 require_once("html/footer.html");
 
 ?>

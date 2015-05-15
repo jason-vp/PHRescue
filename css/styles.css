@@ -292,7 +292,6 @@ header#hPrinc {
   font-size: 130%;
   text-transform: uppercase;
   font-weight: bold;
-  margin-left: 1%;
   margin-bottom: 8px;
 }
 
@@ -305,13 +304,13 @@ header#hPrinc {
 #cuerpo h4 {
   font-size: 110%;
   font-weight: bold;
-  margin: 2% 3%;
+  margin: 2% 0;
 }
 
 #cuerpo h5 {
-  font-size: medium;
+  font-size: 100%;
   font-weight: bold;
-  margin: 2% 6%;
+  margin: 2% 0;
 }
 
 /*FOOTER PRINCIPAL*/
@@ -355,11 +354,11 @@ input[type=number] {
 }
 
 /*GENERAL USE CLASSES*/
-.no-display {
+.noDisplay {
   display: none;
 }
 
-.d-inline {
+.dInline {
   display: inline;
 }
 
@@ -376,7 +375,7 @@ input[type=number] {
   display: table;
 }
 
-.bot-fav, .bot-anyadir, .bot-editar, .bot-eliminar {
+.buFav, .buAdd, .buEdit, .buDelete {
   width: 32px;
   height: 32px;
   background: url("../images/icon-fav.png") no-repeat scroll 0 0 transparent;
@@ -387,41 +386,42 @@ input[type=number] {
   margin: 2px;
 }
 
-.bot-anyadir {
+.buAdd {
   background: url("../images/icon-anyadir.png") no-repeat scroll 0 0 transparent;
   background-color: #0072c6;
   background-position: center center;
   background-size: 25px 25px;
 }
 
-.bot-eliminar {
+.buDelete {
   background: url("../images/icon-eliminar.png") no-repeat scroll 0 0 transparent;
   background-color: #0072c6;
   background-size: cover;
 }
 
-.bot-editar {
+.buEdit {
   background: url("../images/icon-editar.png") no-repeat scroll 0 0 transparent;
   background-color: #0072c6;
   background-size: cover;
 }
 
-.bot-fav:hover, .bot-anyadir:hover, .bot-eliminar:hover, .bot-editar:hover, .boton:hover {
+.buFav:hover, .buAdd:hover, .buDelete:hover, .buEdit:hover, .boton:hover {
   background-color: #0092fa;
 }
 
-.bot-fav:disabled, .bot-anyadir:disabled, .bot-eliminar:disabled, .bot-editar:disabled, .boton:disabled {
+.buFav:disabled, .buAdd:disabled, .buDelete:disabled, .buEdit:disabled, .boton:disabled {
   background-color: #c8c8c8;
   color: grey;
 }
 
-.i-date {
+.inDate {
   width: 135px;
 }
 
-.border-up {
+.borderUp {
   padding: 1% 2%;
   border-top: 1px solid black;
+  overflow: auto;
 }
 
 .center {
@@ -454,12 +454,12 @@ td a {
   font-weight: bold;
 }
 
-.td-positivo {
+.tdPositivo {
   background-color: red;
   color: white;
 }
 
-.td-negativo {
+.tdNegativo {
   background-color: limegreen;
   color: yellow;
 }
@@ -469,7 +469,7 @@ td a {
   font-weight: bold;
 }
 
-.no-realizado {
+.noRealizado {
   color: red;
   font-weight: bold;
 }
@@ -479,35 +479,27 @@ td a {
   font-size: 85%;
 }
 
-.en-albergue {
-  background-color: dodgerblue;
-}
-
-.en-acogida {
-  background-color: violet;
+.enAdopcion {
+  background-color: #1e90ff;
 }
 
 .reservado {
-  background-color: greenyellow;
-}
-
-.pre-adoptiva {
-  background-color: goldenrod;
+  background-color: #adff2f;
 }
 
 .adoptado {
-  background-color: gold;
+  background-color: #ffba06;
 }
 
 .difunto {
-  background-color: tomato;
+  background-color: #ff6347;
 }
 
-#cab-cuerpo {
+#heFicha {
   height: 30px;
 }
 
-#estado-tit {
+#spEstadoHeader {
   float: right;
   font-weight: bold;
   font-size: 13px;
@@ -516,51 +508,8 @@ td a {
   margin-right: 2%;
 }
 
-#form-adoptante {
+#fsAdoptante {
   display: hidden;
-}
-
-#datos {
-  width: 615px;
-  margin: 2% auto;
-}
-
-#datos input, #estado input, #f-pdf input {
-  margin: 0 10px 10px 7px;
-}
-
-#datos input[type=radio] {
-  margin: 10px 2px;
-}
-
-#datos select, #estado select {
-  margin: 5px 10px 5px 7px;
-}
-
-#form-datos label, #estado label {
-  font-weight: bold;
-}
-
-#datos input[type=submit] {
-  margin-top: 10px;
-  margin-left: 37%;
-}
-
-#nombre {
-  width: 75px;
-}
-
-#localidad {
-  width: 100px;
-}
-
-#edad {
-  width: 50px;
-}
-
-#datos textarea {
-  width: 615px;
-  margin: 8px 0;
 }
 
 label {
@@ -725,7 +674,7 @@ table img {
   clear: both;
 }
 
-#datos input, #estado input, #f-pdf input {
+#datos input, #estado input, #f-pdf input, #estado input {
   margin: 0 10px 10px 7px;
 }
 
@@ -782,6 +731,27 @@ table img {
 
 #nueva-foto {
   display: inline;
+}
+
+#divEstado, #fsLugar {
+  width: 49%;
+  float: left;
+}
+@media screen and (max-width: 759px) {
+  #divEstado, #fsLugar {
+    width: 100%;
+    float: none;
+  }
+}
+
+#fsLugar {
+  padding-left: 15px;
+  border-left: #d3d3d3 1px solid;
+}
+@media screen and (max-width: 759px) {
+  #fsLugar {
+    border: none;
+  }
 }
 
 #login-screen {

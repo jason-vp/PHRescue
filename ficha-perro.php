@@ -11,9 +11,9 @@ $current_tab="perros";
 
 require_once("html/head.phtml");
 require_once("html/header.phtml");
-require_once("html/cuerpo-ficha-perro1.html");
-require_once("html/datos-perro.html");
-require_once("html/cuerpo-ficha-perro2.html");
+require_once("html/ficha1.html");
+require_once("html/ficha2.html");
+require_once("html/ficha3.html");
 require_once("html/footer.html");
 
 ?>

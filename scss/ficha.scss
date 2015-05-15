@@ -21,6 +21,7 @@
   }
 }
 
+
 #fotos input {
 margin: 5px 0;
 }
@@ -77,7 +78,7 @@ display: inline;
   clear: both;
 }
 
-#datos input, #estado input, #f-pdf input{
+#datos input, #estado input, #f-pdf input, #estado input {
 margin: 0 10px 10px 7px;
 }
 
@@ -134,4 +135,24 @@ width: 100%;
 
 #nueva-foto {
 display: inline;
+}
+
+#divEstado, #fsLugar {
+  width: 49%;
+  float: left;
+
+  @media screen and (max-width: 759px) {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+#fsLugar {
+  padding-left: 15px;
+  border-left: #d3d3d3 1px solid;
+
+  @media screen and (max-width: 759px) {
+    border: none;
+  }
 }

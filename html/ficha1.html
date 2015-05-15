@@ -1,13 +1,13 @@
-<div id='cab-cuerpo' class='en-albergue'> <span id='estado-tit'>EN ALBERGUE</span><h2> Ficha: <?php echo $animal ?></h2></div>
+<header id='heFicha' class='enAdopcion'> <span id='spEstadoHeader'>EN ALBERGUE</span><h2> Ficha: <?php echo $animal ?></h2></header>
 
-<div id='datos-fotos' class='border-up'>
+<div id='datos-fotos' class='borderUp'>
 	<div id='fotos'>
 		<h3> Fotos </h3>
 		<div id='nav-foto'><p>Foto 1 de 1 <span id='flechas'><img src='images/flecha_anterior.jpg'> | <img src='images/flecha_siguiente.jpg'></span></p></div>
 		<div id='d-current-foto'>
 			<img id='current-foto' src=<?php echo "'". $foto_animal . "'" ?>>
 			<div id='nav-acc-foto'> 
-				<button type='button' class='bot-fav'><button type='button' class='bot-eliminar'>
+				<button type='button' class='buFav'><button type='button' class='buDelete'>
 			</div>
 		</div> 
 		<form id='f-sf'>
