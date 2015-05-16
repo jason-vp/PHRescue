@@ -2,6 +2,11 @@ function toggleDisable(checkbox, id_fieldset) {
     var toggle = document.getElementById(id_fieldset);
     checkbox.checked ? toggle.disabled = false : toggle.disabled = true;
 }
+/*
+function toggleDiv(id) {
+    //document.getElementById(id).classList.toggle('noDisplay');
+}*/
+
 
 function cambioEstado(selOpts) {
     /*

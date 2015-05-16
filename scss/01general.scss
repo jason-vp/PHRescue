@@ -1,7 +1,7 @@
 /*VARIABLES*/
 
 $pWidth:1140px;
-$fPrincHeight: 30px;
+$fPrincHeight: 35px;
 $hPrincHeight: 80px;
 $pColor: #D5E0F5;
 $sColor: #0072C6;
@@ -261,18 +261,25 @@ header#hPrinc {
 
 /*FOOTER PRINCIPAL*/
 footer {
-    height: $fPrincHeight;
-    background-color: rgb(0, 114, 198);
-    border-top: 1px solid white;
-    padding: 10px 5px 0;
+  height: $fPrincHeight;
+  background-color: rgb(0, 114, 198);
+  border-top: 1px solid white;
+  padding: 0 5px 0;
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
-    float: right;
-    margin-right: 4%;
-    font-size: 87%;
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+  font-size: 87%;
+}
+
+footer img {
+  width: 35px;
+  height: 35px;
+  margin-top: -10px;
 }
 
 input[type='file'] {
@@ -362,6 +369,15 @@ background-color: rgb(0, 114, 198);
     color:grey;
 }
 
+.buToggle {
+  float:left;
+  width: 18px;
+  height: 18px;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 7px;
+}
+
 .inDate {
     width: 135px;
 }
@@ -375,6 +391,7 @@ background-color: rgb(0, 114, 198);
 .center {
     margin:10px auto;
     display:table;
+  clear:both;
 }
 
 strong {
