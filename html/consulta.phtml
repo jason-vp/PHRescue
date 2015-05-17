@@ -8,8 +8,8 @@
 			<p>
 				<label for='nombre-a'><strong>Nombre:</strong>  <input id='nombre-a' type='text' name='nombre-animal'/> </label>
 				<span><strong>Sexo:</strong>
-					<label for='sexo1'><input id='sexo1' class='i-number' type='checkbox' name='sexo' value='1' checked />M</label>
-					<label for='sexo2'><input id='sexo2' class='i-number' type='checkbox' name='sexo' value='2' checked />H</label>
+					<label for='sexo1'><input id='sexo1'  type='checkbox' name='sexo' value='1' checked />M</label>
+					<label for='sexo2'><input id='sexo2'  type='checkbox' name='sexo' value='2' checked />H</label>
 				</span>
 				<span><strong>Tamaño:</strong>
 					<label for='tam1'><input id='tam1' type='checkbox' name='tam' value='1' checked />Pequeño</label>
@@ -21,10 +21,10 @@
 			
 			<p>
 				<span><strong>Edad:</strong> 
-				Entre <input id='edadmin' class='i-number' type='number' min='0' max='17' step='1' value='0' name='edad1' /> y <input id='edadmax' class='i-number' type='number' min='1' max='18' step='1' value='18' name='edad2' /> años
+				Entre <input id='edadmin'  type='number' min='0' max='17' step='1' value='0' name='edad1' /> y <input id='edadmax'  type='number' min='1' max='18' step='1' value='18' name='edad2' /> años
 				</span>
 				<span><strong>Peso:</strong>
-				Entre <input id='pesomin' class='i-number' type='number' min='0' max='80' step='1' value='0' name='peso1'/> y <input id='pesomax' class='i-number' type='number' min='0' max='80' step='1' value='80' name='peso2'/> kg
+				Entre <input id='pesomin'  type='number' min='0' max='80' step='0.01' value='0' name='peso1'/> y <input id='pesomax'  type='number' min='0' max='80' step='1' value='80' name='peso2'/> kg
 				</span>
 				
 				 <label for='raza'><strong>Raza:</strong>
@@ -51,166 +51,61 @@
 			<fieldset>
 				<legend><h4>Estado:</h4></legend>
 				<p>
-                    <label for='estado1'><input id='estado1' type='checkbox' name='lugar' value='En el albergue' checked />En el albergue</label>
-                    <label for='estado2'><input id='estado2' type='checkbox' name='lugar' value='En acogida'/>En acogida</label>
-                    <label for='estado3'><input id='estado3' type='checkbox' name='lugar' value='Reservado'/>Reservado</label>
-                    <label for='estado4'><input id='estado4' type='checkbox' name='lugar' value='Adoptados'/>Adoptado</label>
-                    <label for='estado5'><input id='estado5' type='checkbox' name='lugar' value='Difunto'/>Difunto</label>
+                    <label for='estado1'><input id='estado1' type='checkbox' name='lugar' value='En adopcion' checked />En adopción</label>
+                    <label for='estado3'><input id='estado2' type='checkbox' name='lugar' value='Reservado'/>Reservado</label>
+                    <label for='estado4'><input id='estado3' type='checkbox' name='lugar' value='Adoptado'/>Adoptado</label>
+                    <label for='estado5'><input id='estado4' type='checkbox' name='lugar' value='Difunto'/>Difunto</label>
 				</p>
 			</fieldset>
 			<fieldset>
 				<legend><h4>Ordenar por:</h4></legend>
 				<p>
-                    <label for='orden1'><input id='orden1' type='radio' name='orden' value='1'checked />Fecha entrada (descendente)</label>
-                    <label for='orden2'><input id='orden2' type='radio' name='orden' value='6'/>Fecha entrada (ascendente)</label>
+                    <label for='orden1'><input id='orden1' type='radio' name='orden' value='1'checked />Fecha entrada</label>
                     <label for='orden3'><input id='orden3' type='radio' name='orden' value='2' />Nombre (A-Z)</label>
                     <label for='orden4'><input id='orden4' type='radio' name='orden' value='3'/>Nombre (Z-A)</label>
-                    <label for='orden5'><input id='orden5' type='radio' name='orden' value='4'/>Edad (Ascendente)</label>
-                    <label for='orden6'><input id='orden6' type='radio' name='orden' value='5'/>Edad (Descendente)</label>
+                    <label for='orden5'><input id='orden5' type='radio' name='orden' value='4'/>Edad (Asc.)</label>
+                    <label for='orden6'><input id='orden6' type='radio' name='orden' value='5'/>Edad (Desc.)</label>
 				</p>
 			</fieldset>
 			<input type='submit' class='boton' value='Buscar'/>
 		</fieldset>
 	</form>
 </div>
-<div id='resultados' class='borderUp'>
+<div id="dResultados" class='borderUp'>
 	<h3>Resultados</h3>
-	<p> Mostrando del 1 al 10 de 120 resultados.</p>
-	<table>
-		<thead>
-			<th>Foto</th>
-			<th>Nombre</th>
-			<th>Sexo</th>			
-			<th>Raza</th>
-			<th>Color</th>
-			<th>Peso</th>
-			<th>Edad</th>
-			<th>Tamaño</th>
-			<th>Estado</th>
-			<th>Entrada</th>
-		</thead>
-		<tr>
-			<td class='enAdopcion'><a href='ficha-perro.php?id=1'><img src='images/emiliano.jpg'></a></td>
-			<td><a href='ficha.php?t=perros&id=1'>Emiliano</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>En Adopción (Albergue) </td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='en-acogida'><a href='ficha-perro3.php?id=1'><img src='images/priscilla.jpg'></a></td>
-			<td><a href='ficha-perro3.php?id=1'>Priscilla</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>En Adopción (Acogida)</td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='reservado'><a href='ficha-perro4.php?id=1'><img src='images/perro4.jpg'></a></td>
-			<td><a href='ficha-perro4.php?id=1'>Gatoperro</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>Reservado (Particular)</td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='reservado'><a href='ficha-perro5.php?id=1'><img src='images/groucho.jpg'></a></td>
-			<td><a href='ficha-perro5.php?id=1'>Groucho</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>Reservado (Asociación)</br>En Acogida</td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='pre-adoptiva'><a href='ficha-perro6.php?id=1'><img src='images/alejandra.jpg'></a></td>
-			<td><a href='ficha-perro6.php?id=1'>Alejandra</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>Acogida Preadoptiva</td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='adoptado'><a href='ficha-perro7.php?id=1'><img src='images/fiona.jpg'></a></td>
-			<td><a href='ficha-perro7.php?id=1'>Fiona</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>Adoptado</td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='difunto'><a href='ficha-perro2.php?id=1'><img src='images/perro2.jpg'></a></td>
-			<td><a href='ficha-perro2.php?id=1'>Ficticio</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>Difunto</td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='enAdopcion'><a href='ficha-perro.php?id=1'><img src='images/emiliano.jpg'></a></td>
-			<td><a href='ficha-perro.php?id=1'>Emiliano</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>En Adopción (Albergue) </td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='enAdopcion'><a href='ficha-perro.php?id=1'><img src='images/emiliano.jpg'></a></td>
-			<td><a href='ficha-perro.php?id=1'>Emiliano</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>En Adopción (Albergue) </td>
-			<td>10-2-2012</td>
-		</tr>
-		<tr>
-			<td class='enAdopcion'><a href='ficha-perro.php?id=1'><img src='images/emiliano.jpg'></a></td>
-			<td><a href='ficha-perro.php?id=1'>Emiliano</a></td>
-			<td>M</td>
-			<td>Mestizo</td>
-			<td>Marron</td>
-			<td>10 Kg</td>
-			<td>2 años 4 meses</td>
-			<td>Mediano</td>
-			<td>En Adopción (Albergue) </td>
-			<td>10-2-2012</td>
-		</tr>
-	</table>
-	<div id='paginador'> 
+	<p> Mostrando del 1 al 12 de 120 resultados.</p>
+
+    <div id="dInnerResultados">
+    <?php for($i=0; $i<12; $i++): ?>
+
+        <div class="dAnimal enAdopcion">
+            <div class="dAniImg">
+                <a href="ficha.php?t=<?php echo $current_tab ?>&id=1">
+                    <img src="images/emiliano.jpg">
+                </a>
+            </div>
+            <div class="dAniDatos">
+                    <h4><a href="ficha.php?t=<?php echo $current_tab ?>&id=1">Emiliano</a></h4>
+                <p>
+                    M - 5a 4m - 4kg</br>
+                    <?php if($otros): ?>
+                        Ratón -
+                    <?php endif; ?>
+                    Mestizo
+                    <?php if($perros): ?>
+                        - Mediano
+                    <?php endif; ?></br>
+
+                    FE: 25-06-2009
+                </p>
+            </div>
+            <p>En adopción - Albergue</p>
+        </div>
+    <?php endfor; ?>
+    </div>
+
+	<div id='paginador'>
+        <p>Pag. 1 de 10 </p>
 			<ul>
 				<li>
 					<a href=''> << </a> 
@@ -218,36 +113,11 @@
 				<li>
 				<a href=''> < </a>
 				</li>
-				<li>
-				<a href=''> 1 </a>
-				</li>
-				<li>
-				<a href=''> 2 </a> 
-				</li>
-				<li>
-				<a href=''> 3 </a>
-				</li>
-				<li>
-				<a href=''> 4 </a> 
-				</li>
-				<li>
-				<a href=''> 5 </a> 
-				</li>
-				<li>
-				<a href=''> 6 </a> 
-				</li>
-				<li>
-				<a href=''> 7 </a> 
-				</li>
-				<li>
-				<a href=''> 8 </a>
-				</li>
-				<li>
-				<a href=''> 9 </a>
-				</li>
-				<li>
-				<a  href=''> 10 </a> 
-				</li>
+                <?php for($i=1; $i<=10; $i++): ?>
+                    <li>
+                    <a href=''> <?php echo $i ?> </a>
+                    </li>
+                <?php endfor; ?>
 				<li>
 				<a href=''> > </a> 
 				</li>
@@ -255,7 +125,5 @@
 				<a href=''> >> </a>
 				</li>
 			</ul>
-		</span>
-		<p>Pag. 1 de 12 </p>
 	</div>
 	</div>

@@ -304,7 +304,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance:textfield;
-  width: 30px;
+  width: 35px;
 }
 
 /*GENERAL USE CLASSES*/
@@ -444,19 +444,19 @@ td a {
     font-size: 85%;
 }
 
-.enAdopcion {
+#heFicha.enAdopcion,  option.enAdopcion, #sEstado.enAdopcion {
     background-color: $cEnAdopcion;
 }
 
-.reservado {
+#heFicha.reservado, option.reservado, #sEstado.reservado {
     background-color: $cReservado;
 }
 
-.adoptado {
+#heFicha.adoptado, option.adoptado, #sEstado.adoptado {
     background-color: $cAdoptado;
 }
 
-.difunto {
+#heFicha.difunto, option.difunto, #sEstado.difunto {
     background-color: $cDifunto;
 }
 

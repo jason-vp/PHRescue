@@ -1,36 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/html/ficha3.html" line="387" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/html/ficha3.html" line="386" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5fcc9c9-25f1-457b-ad01-0a100a394717" name="Default" comment="Archivos phpstorm">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\alta-gato.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\alta-otro.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\ficha-gato.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\ficha-otro.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\html\cuerpo-alta-gato.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\html\cuerpo-alta-otro.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\html\datos-gato.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\html\datos-otro.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\scss\error-404.scss" afterPath="" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\alta-perro.php" afterPath="$PROJECT_DIR$/alta.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\c-perros.php" afterPath="$PROJECT_DIR$/consulta.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\error-404.php" afterPath="$PROJECT_DIR$/404.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\ficha-perro.php" afterPath="$PROJECT_DIR$/ficha.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\html\altaRapida.html" afterPath="$PROJECT_DIR$/html/altaRapida.phtml" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\html\ficha1.html" afterPath="$PROJECT_DIR$/html/ficha1.phtml" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\html\ficha2.html" afterPath="$PROJECT_DIR$/html/ficha2.phtml" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\scss\error-404.scss" afterPath="$PROJECT_DIR$/scss/error404.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/01general.scss" afterPath="$PROJECT_DIR$/scss/01general.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/altaRapida.phtml" afterPath="$PROJECT_DIR$/html/altaRapida.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/consulta.phtml" afterPath="$PROJECT_DIR$/html/consulta.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/consulta.scss" afterPath="$PROJECT_DIR$/scss/consulta.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ficha.scss" afterPath="$PROJECT_DIR$/scss/ficha.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/ficha2.phtml" afterPath="$PROJECT_DIR$/html/ficha2.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/ficha3.html" afterPath="$PROJECT_DIR$/html/ficha3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/footer.html" afterPath="$PROJECT_DIR$/html/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/habilitar-modificacion.js" afterPath="$PROJECT_DIR$/javascript/habilitar-modificacion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/header.phtml" afterPath="$PROJECT_DIR$/html/header.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PHRescue.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ficha3.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ficha3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/ficha3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33410406" vertical-offset="0" max-vertical-offset="6834">
-              <caret line="17" column="111" selection-start-line="17" selection-start-column="111" selection-end-line="17" selection-end-column="111" />
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="442" max-vertical-offset="7361">
+              <caret line="42" column="204" selection-start-line="42" selection-start-column="204" selection-end-line="42" selection-end-column="204" />
               <folding />
             </state>
           </provider>
@@ -68,58 +50,8 @@
       <file leaf-file-name="habilitar-modificacion.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/habilitar-modificacion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2074">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consulta.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/consulta.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="4522">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="altaRapida.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/altaRapida.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="51" max-vertical-offset="1513">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cuerpo-c-otros.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/cuerpo-c-otros.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="4590">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="35" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/header.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="1207">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ficha2.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/ficha2.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.76923" vertical-offset="954" max-vertical-offset="1819">
-              <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="2159">
+              <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -128,8 +60,8 @@
       <file leaf-file-name="ficha.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/ficha.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7090907" vertical-offset="2194" max-vertical-offset="3128">
-              <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+            <state vertical-scroll-proportion="-8.327272" vertical-offset="2211" max-vertical-offset="3060">
+              <caret line="157" column="10" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -138,8 +70,18 @@
       <file leaf-file-name="01general.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/01general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.846153" vertical-offset="7333" max-vertical-offset="8211">
-              <caret line="477" column="1" selection-start-line="477" selection-start-column="1" selection-end-line="477" selection-end-column="1" />
+            <state vertical-scroll-proportion="-5.8727274" vertical-offset="1785" max-vertical-offset="8211">
+              <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulta.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/consulta.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07061503" vertical-offset="363" max-vertical-offset="1955">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -168,7 +110,6 @@
         <option value="$PROJECT_DIR$/html/head.phtml" />
         <option value="$PROJECT_DIR$/scss/00reset.scss" />
         <option value="$PROJECT_DIR$/scss/error-404.scss" />
-        <option value="$PROJECT_DIR$/scss/consulta.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/login.scss" />
         <option value="$PROJECT_DIR$/html/cuerpo-c-perros.phtml" />
@@ -180,20 +121,21 @@
         <option value="$PROJECT_DIR$/css/styles.css.map" />
         <option value="$PROJECT_DIR$/html/cuerpo-c-gatos.html" />
         <option value="$PROJECT_DIR$/html/cuerpo-alta-gato.html" />
-        <option value="$PROJECT_DIR$/javascript/habilitar-modificacion.js" />
         <option value="$PROJECT_DIR$/html/footer.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/ficha.php" />
         <option value="$PROJECT_DIR$/consulta.php" />
         <option value="$PROJECT_DIR$/alta.php" />
-        <option value="$PROJECT_DIR$/html/consulta.phtml" />
         <option value="$PROJECT_DIR$/html/altaRapida.html" />
-        <option value="$PROJECT_DIR$/scss/01general.scss" />
-        <option value="$PROJECT_DIR$/html/altaRapida.phtml" />
         <option value="$PROJECT_DIR$/html/header.phtml" />
+        <option value="$PROJECT_DIR$/html/altaRapida.phtml" />
         <option value="$PROJECT_DIR$/html/ficha2.phtml" />
+        <option value="$PROJECT_DIR$/scss/01general.scss" />
+        <option value="$PROJECT_DIR$/html/consulta.phtml" />
         <option value="$PROJECT_DIR$/scss/ficha.scss" />
         <option value="$PROJECT_DIR$/html/ficha3.html" />
+        <option value="$PROJECT_DIR$/javascript/habilitar-modificacion.js" />
+        <option value="$PROJECT_DIR$/scss/consulta.scss" />
       </list>
     </option>
   </component>
@@ -210,7 +152,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1525" />
+    <option name="width" value="1169" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -382,9 +324,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -392,6 +331,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="false" name="PHRescue" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -445,7 +387,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1525" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="1169" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -454,7 +396,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15705766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20555073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -462,13 +404,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931036" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -494,6 +436,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/html/altaRapida.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1513">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/cuerpo-c-otros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="4590">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="35" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1207">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/ficha2.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1819">
+          <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ficha.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2194" max-vertical-offset="3128">
+          <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/01general.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7333" max-vertical-offset="8211">
+          <caret line="477" column="1" selection-start-line="477" selection-start-column="1" selection-end-line="477" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="578">
@@ -669,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/consulta.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1207">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/head.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="391">
@@ -719,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="904">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="697">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54214126" vertical-offset="0" max-vertical-offset="878">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="765">
           <caret line="15" column="22" selection-start-line="9" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,21 +730,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/habilitar-modificacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2074">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/cuerpo-c-otros.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="4590">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="4590">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="35" selection-end-column="29" />
           <folding />
         </state>
@@ -773,56 +743,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="1207">
+        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1207">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/altaRapida.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="51" max-vertical-offset="1513">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/consulta.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="4522">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/ficha2.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.76923" vertical-offset="954" max-vertical-offset="1819">
-          <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+        <state vertical-scroll-proportion="-11.127273" vertical-offset="0" max-vertical-offset="1819">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/01general.scss">
+    <entry file="file://$PROJECT_DIR$/html/altaRapida.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.846153" vertical-offset="7333" max-vertical-offset="8211">
-          <caret line="477" column="1" selection-start-line="477" selection-start-column="1" selection-end-line="477" selection-end-column="1" />
+        <state vertical-scroll-proportion="-7.4727273" vertical-offset="677" max-vertical-offset="1513">
+          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/consulta.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6069364" vertical-offset="1413" max-vertical-offset="2278">
+          <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+          <folding>
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1431886609761" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/ficha3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="442" max-vertical-offset="7361">
+          <caret line="42" column="204" selection-start-line="42" selection-start-column="204" selection-end-line="42" selection-end-column="204" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/habilitar-modificacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="2159">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/ficha.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7090907" vertical-offset="2194" max-vertical-offset="3128">
-          <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+        <state vertical-scroll-proportion="-8.327272" vertical-offset="2211" max-vertical-offset="3060">
+          <caret line="157" column="10" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/ficha3.html">
+    <entry file="file://$PROJECT_DIR$/scss/01general.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33410406" vertical-offset="0" max-vertical-offset="6834">
-          <caret line="17" column="111" selection-start-line="17" selection-start-column="111" selection-end-line="17" selection-end-column="111" />
+        <state vertical-scroll-proportion="-5.8727274" vertical-offset="1785" max-vertical-offset="8211">
+          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/consulta.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07061503" vertical-offset="363" max-vertical-offset="1955">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
       </provider>

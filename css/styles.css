@@ -357,7 +357,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
-  width: 30px;
+  width: 35px;
 }
 
 /*GENERAL USE CLASSES*/
@@ -496,19 +496,19 @@ td a {
   font-size: 85%;
 }
 
-.enAdopcion {
+#heFicha.enAdopcion, option.enAdopcion, #sEstado.enAdopcion {
   background-color: #1e90ff;
 }
 
-.reservado {
+#heFicha.reservado, option.reservado, #sEstado.reservado {
   background-color: #adff2f;
 }
 
-.adoptado {
+#heFicha.adoptado, option.adoptado, #sEstado.adoptado {
   background-color: #ffba06;
 }
 
-.difunto {
+#heFicha.difunto, option.difunto, #sEstado.difunto {
   background-color: #ff6347;
 }
 
@@ -541,42 +541,93 @@ label {
   margin-right: 14px;
 }
 
-table {
-  border: 1px solid black;
+#dInnerResultados {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flexdirection: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
-th {
-  padding: 5px 10px;
-  border: 1px solid black;
+.dAnimal {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 32%;
+  margin: 10px 1% 10px 0;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  box-shadow: 2px 2px 1px rgba(220, 220, 220, 0.75);
+}
+@media screen and (max-width: 759px) {
+  .dAnimal {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .dAnimal {
+    width: 100%;
+  }
 }
 
-td {
-  border: 1px solid black;
-  padding: 5px 10px;
-  text-align: center;
-}
-
-td a {
+.dAnimal a {
+  margin-top: 5px;
+  font-size: 150%;
   text-decoration: none;
   font-weight: bold;
 }
 
-table img {
-  width: 60px;
-  height: 60px;
+.dAniDatos {
+  padding-top: 4px;
+}
+
+.dAniDatos > p {
+  margin: 0 !important;
+  line-height: 2.5rem !important;
+}
+
+.dAnimal > p {
+  clear: both;
+}
+
+.dAniImg {
+  float: left;
+  width: 40%;
+  margin: 0 7% 5px 0;
+}
+
+.dAnimal.enAdopcion img {
+  border: 4px solid #1e90ff;
+  border-radius: 3px;
+}
+
+.dAniImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dAniDatos {
+  float: left;
 }
 
 #paginador {
-  margin: 0 auto;
-  max-width: 850px;
+  margin: 20px auto;
+  width: 100%;
+  line-height: 3rem;
 }
 
 #paginador li {
-  display: inline;
+  display: inline-block;
 }
 
 #paginador p {
   float: right;
+  margin: 0 10px 0 0;
 }
 
 #paginador a {
@@ -590,6 +641,7 @@ table img {
   margin: 10px 3px;
   text-align: center;
   border-radius: 2px;
+  font-size: 2rem;
 }
 
 #paginador a:hover {
@@ -779,13 +831,8 @@ table img {
 
 #botonera a {
   text-decoration: none;
-  float: left;
-  margin: 7px 7px;
-}
-
-#buResetDatos {
-  float: right;
-  margin-top: none;
+  display: inline-block;
+  margin: 7px 3px;
 }
 
 #login-screen {

@@ -16,11 +16,14 @@ function cambioEstado(selOpts) {
      4:Difunto
      */
     document.getElementById('fsLugar').classList.add('noDisplay');
+    document.getElementById('fsRadioLugar').classList.remove('noDisplay');
     document.getElementById("sEstado").className=selOpts[0].className;
     var valor= parseInt(selOpts[0].value);
     document.getElementById('fsRadioLugar').classList.remove('noDisplay');
     var radios = document.getElementsByClassName('lRadioLugar');
-    document.querySelector('input[name=inRadioLugar]:checked').checked=false;
+    var check=document.querySelector('input[name=inRadioLugar]:checked');
+    if(check!=null)
+        document.querySelector('input[name=inRadioLugar]:checked').checked=false;
 
     for(i=0; i<radios.length; i++)
     {
@@ -39,8 +42,14 @@ function cambioEstado(selOpts) {
             break;
 
         case 3:
-            radios[3].classList.remove('noDisplay');
-            radios[4].classList.remove('noDisplay');
+            var sel = document.getElementsByClassName("datosLugarSel");
+            for (i = 0; i < sel.length; i++) {
+                sel[i].classList.add('noDisplay');
+                sel[i].classList.remove('datosLugarSel');
+            }
+            document.getElementById('fsLugar').classList.remove('noDisplay');
+            document.getElementById('fsRadioLugar').classList.add('noDisplay');
+            document.getElementById('fsAdoptante').classList.remove('noDisplay');
             break;
 
         case 4:
@@ -59,7 +68,6 @@ function mostrarLugar(valor) {
      1:Albergue
      2:Acogida
      3:Preadoptiva
-     4:Adoptado
      */
 
     valor = parseInt(valor);
@@ -93,9 +101,6 @@ function mostrarLugar(valor) {
             x=document.getElementById('fsAdoptante');
             break;
 
-        case 4:
-            x=document.getElementById('fsAdoptante');
-            break;
 
         default:
 

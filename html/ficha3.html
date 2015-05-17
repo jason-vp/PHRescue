@@ -1,6 +1,5 @@
 <div id="botonera" class="borderUp">
     <h3>Acceso rápido</h3>
-    <a href="#estado"><button type="button" id="buMVEstado" class="boton">Estado</button></a>
     <a href="#castracion"><button type="button" id="buMVCastracion" class="boton">Cast/Ester</button></a>
     <a href="#videos"><button type="button" id="buMVVideos" class="boton">Videos</button></a>
     <a href="#dDesparasitacion"><button type="button" id="buMVDesparasitacion" class="boton">Desparasitación</button></a>
@@ -8,6 +7,7 @@
     <a href="#vacunas"><button type="button" id="buMVVacunas" class="boton">Vacunas</button></a>
     <a href="#tratamientos"><button type="button" id="buMVTratamientos" class="boton">Tratamientos</button></a>
     <a href="#dHistorico"><button type="button" id="buMVHistorico" class="boton">Histórico</button></a>
+    <a href="#dDocumentacion"><button type="button" id="buMVDocumentacion" class="boton">Documentos</button></a>
 </div>
 
 
@@ -41,7 +41,6 @@
                 <label for='inRadiolugar1' class='lRadioLugar'><input type='radio' name="inRadioLugar" id="inRadioLugar1" value='1' onclick='mostrarLugar(this.value)' checked>Albergue</label>
                 <label for='inRadioLugar2' class='lRadioLugar'><input type='radio' name='inRadioLugar' id="inRadioLugar2" value='2' onclick='mostrarLugar(this.value)'>Acogida</label>
                 <label for='inRadioLugar3' class='lRadioLugar noDisplay'><input type='radio' name='inRadioLugar' id="inRadioLugar3" value='3' onclick='mostrarLugar(this.value)'>Acogida Preadoptiva</label>
-                <label for='inRadioLugar4' class='lRadioLugar noDisplay'><input type='radio' name='inRadioLugar' id="inRadioLugar4" value='4' onclick='mostrarLugar(this.value)'>Adoptado</label>
             </div>
         </fieldset>
     </div>
@@ -394,4 +393,36 @@
 		</table>
 	</fieldset>
 	</form>
+</div>
+
+<div id='dDocumentacion' class='borderUp'>
+    <form>
+        <fieldset>
+            <legend><h3>Documentación</h3></legend>
+            <table id='tbDocumentacion'>
+                <thead>
+                <th>Documento</th>
+                <th>Descripción</th>
+                <th>PDF</th>
+                <th>Acciones</th>
+                </thead>
+                <tr>
+                    <td>Pasaporte</td>
+                    <td>Pasaporte. Fecha caducidad: 15-05-2020</td>
+                    <td><a href=''>pasaporte.pdf</a></td>
+                    <td><button type='submit' title='Editar' class='buEdit'></button><button type='submit' title='Eliminar' class='buDelete'></button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="inDocumento" name="inDocumento">
+                    </td>
+                    <td>
+                        <textarea name='taDescDocumentacion' id='taDescDocumentacion' maxlength='150' rows='2'></textarea>
+                    </td>
+                    <td><input type='file' name='inPDFDocumentacion'></td>
+                    <td><button type='submit' title='Añadir' class='buAdd'></button></td>
+            </table>
+        </fieldset>
+    </form>
+
 </div>
