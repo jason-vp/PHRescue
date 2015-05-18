@@ -1,6 +1,5 @@
 <?php
-$titulo= "Asoka Gestión - Panel de usuario";
-$stylesheets=["/css/reset.css", "/css/general.css", "/css/panel.css"];
+$titulo= "PHRescue - Panel de usuario";
 $scripts=[];
 
 $usuario="Invitado";

@@ -1,35 +1,22 @@
 <?php
-$titulo= "Asoka Gestión - Consulta perros";
-$stylesheets=["/css/reset.css", "/css/general.css", "/css/consulta.css"];
+require_once("classes/page.php");
+$titulo= "PHRescue - Consulta perros";
 $scripts=[];
 
 $usuario="Invitado";
+$current_tab="";
 
-$current_tab=$_GET["t"];
+if(isset($_GET["t"])) {
+    $current_tab = $_GET["t"];
+}
 
 $perros=false;
 $gatos=false;
 $otros=false;
 
-switch($current_tab) {
-    case 'perros':
-        $perros=true;
-        break;
-    case 'gatos':
-        $gatos=true;
-        break;
-    case 'otros':
-        $otros=true;
-        break;
-    default:
-        header("HTTP/1.0 404 Not Found - Archive Empty");
-        header('Location: /404.php');
-        exit;
-
-}
-
 require_once("html/head.phtml");
 require_once("html/header.phtml");
+checkTipo($current_tab, $perros, $gatos, $otros);
 require_once("html/consulta.phtml");
 require_once("html/footer.html");
 

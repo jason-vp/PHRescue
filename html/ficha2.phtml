@@ -48,7 +48,8 @@
                     </label>
 
 				<label for='peso'>Peso:<input type='number' name='peso' id='peso'  min='0' max='80' step='0.01' value='15'></label>
-				<label for='tam'>Tamaño:
+				<?php if(!$gatos): ?>
+                <label for='tam'>Tamaño:
                     <select id='tam' name='tam'>
                             <option value='2'>Pequeño</option>
                             <option value='3' selected>Mediano</option>
@@ -56,6 +57,7 @@
                             <option value='5'>Muy Grande</option>
                     </select>
                 </label>
+                <?php endif; ?>
 				<label for='fecha-entrada'>Fecha Entrada:<input type='date' name='fecha-entrada' id='fecha-entrada' class='inDate' value='2012-02-20'></label>
 
 				<p><strong>Medidas:</strong>
@@ -93,8 +95,10 @@
 
 				<label for='historia'>Historia y otras observaciones:</br> </label>
 				<textarea id='historia' name='historia' maxlength='700' rows='9'>Emiliano llegó a nuestro albergue hace ya un año, ha estado reservado durante mucho tiempo y sin embargo, finalmente, su adopción se ha anulado. Es un perro cariñoso, con gran vitalidad, muy divertido, que no se merece seguir esperando más tiempo su oportunidad de conocer un verdadero hogar… ¿Quieres ofrecérselo tú? ¡Ven a conocerlo!  </textarea>
+
                 <button type='reset' id='buResetDatos' name='buResetDatos' class='boton'>Reset</button>
 				<button type='submit' id='buDatos' name='buDatos' class='boton'>Modificar</button>
+
 			</fieldset>
 		</form>
 	</div>

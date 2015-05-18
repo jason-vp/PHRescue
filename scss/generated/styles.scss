@@ -250,7 +250,7 @@ header#hPrinc {
 /*CUERPO*/
 
 #cuerpo {
-  min-height: 75%;
+  min-height: 72%;
   max-width: $pWidth;
   width: 85%;
   padding-bottom: $fPrincHeight;
@@ -312,7 +312,7 @@ footer {
   height: $fPrincHeight;
   background-color: rgb(0, 114, 198);
   border-top: 1px solid white;
-  padding: 0 5px 0;
+  padding: 0 5px;
 }
 
 footer a {
@@ -374,7 +374,7 @@ background-color: rgb(0, 114, 198);
     max-width: 120px;
     height:30px;
     box-shadow: 0 0 1px black;
-    margin: 10px auto;
+    margin: 0px auto 10px;
     display: table;
 }
 
@@ -446,10 +446,17 @@ strong {
     font-weight: bold;
 }
 
+
+label {
+  display: inline-block;
+  margin: 0px 7px 10px 0px;
+}
+
 table {
     margin: 2% auto;
     border: 1px solid black;
 }
+
 
 th {
     padding: 5px 10px;
@@ -524,18 +531,6 @@ td a {
 #fsAdoptante {
     display: hidden;
 }
-label {
-  display: inline-block;
-}
-
-#nombre-a {
-margin-right: 14px;
-}
-
-#busqueda select {
-margin-right: 14px;
-}
-
 #dInnerResultados {
   width: 100%;
   display: flex;
@@ -652,7 +647,6 @@ max-height: 450px;
 /*BLOQUE FOTOS */
 #fotos {
   width:30%;
-  //min-width: 300px;
   float:left;
   margin-right: 2%;
   overflow: hidden;
@@ -661,16 +655,10 @@ max-height: 450px;
   }
 }
 
-#fotos img {
-  max-width: 250px;
-  max-height: 300px;
-  margin: 0;
-  @media screen and (max-width: 759px) {
-    max-width: 85%;
-    max-height: none;
-  }
+#diNavFoto {
+  margin-top: 7px;
+  line-height: 180%;
 }
-
 
 #fotos input {
 margin: 5px 0;
@@ -681,24 +669,38 @@ float: right;
 margin-right: 8px;
 }
 
-#d-current-foto {
+#diCurrentFoto {
   margin: 2% 0 4% 0;
-  max-height:300px;
+  /*max-height:400px;*/
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+#diCurrentFoto img {
+  max-width: 100%;
+  /*max-height: 400px;*/
+  margin: auto;
+  display: block;
+  @media screen and (max-width: 759px) {
+    max-width: 85%;
+    max-height: none;
+  }
 }
 
 #nav-acc-foto {
-position: relative;
-display: none;
-width: inherit;
-background: none repeat scroll 0% 0% rgba(0,0,0,0.5);
-height: 36px;
-margin: 0;
-bottom: 3px;
-padding-right: 5px;
+  position: relative;
+  visibility: hidden;
+  width: inherit;
+  background: none repeat scroll 0% 0% rgba(0,0,0,0.5);
+  height: 36px;
+  margin: 0;
+  bottom: 36px;
+  padding-right: 5px;
 }
 
-#d-current-foto:hover  #nav-acc-foto {
-display:block;
+#diCurrentFoto:hover  #nav-acc-foto {
+  visibility: visible;
 }
 
 #f-pdf {
@@ -736,15 +738,15 @@ display: inline;
 }
 
 #datos input, #estado input, #f-pdf input, #estado input {
-margin: 0 10px 10px 7px;
+  margin: 0 0px 0px 7px;
 }
 
 #datos input[type=radio] {
-margin: 10px 2px;
+  margin: 0px 2px;
 }
 
 #datos select, #estado select {
-margin: 5px 10px 5px 7px;
+  margin: 0px 0px 0px 7px;
 }
 
 #form-datos {
@@ -756,8 +758,8 @@ font-weight: bold;
 }
 
 #datos input[type=submit] {
-margin-top: 10px;
-margin-left:37%;
+  margin-top: 10px;
+  margin-left:37%;
 }
 
 #nombre {
@@ -774,7 +776,7 @@ width: 50px;
 
 #datos textarea {
 width: 100%;
-margin: 8px 0;
+margin: 8px 0 15px;
 display: block;
 }
 
@@ -818,6 +820,10 @@ display: inline;
   text-decoration: none;
   display: inline-block;
   margin: 7px 3px;
+}
+
+#buResetDatos {
+  float: right;
 }
 
 

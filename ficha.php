@@ -1,37 +1,24 @@
 <?php
+require_once("classes/page.php");
 $animal="Emiliano";
 $foto_animal="/images/emiliano.jpg";
-$titulo= "Asoka Gestión - Ficha " . $animal;
-$stylesheet="/css/ficha-perro.css";
-$scripts=["/javascript/habilitar-modificacion.js"];
+$titulo= "PHRescue - Ficha " . $animal;
+$scripts=["/javascript/jsFunctions.js"];
 
 $usuario="Invitado";
+$current_tab="";
 
-$current_tab=$_GET["t"];
+if(isset($_GET["t"])) {
+    $current_tab = $_GET["t"];
+}
 
 $perros=false;
 $gatos=false;
 $otros=false;
 
-switch($current_tab) {
-    case 'perros':
-        $perros=true;
-        break;
-    case 'gatos':
-        $gatos=true;
-        break;
-    case 'otros':
-        $otros=true;
-        break;
-    default:
-        header("HTTP/1.0 404 Not Found - Archive Empty");
-        header('Location: /404.php');
-        exit;
-
-}
-
 require_once("html/head.phtml");
 require_once("html/header.phtml");
+checkTipo($current_tab, $perros, $gatos, $otros);
 require_once("html/ficha1.phtml");
 require_once("html/ficha2.phtml");
 require_once("html/ficha3.html");

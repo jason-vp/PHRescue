@@ -11,15 +11,15 @@
 					<label for='sexo1'><input id='sexo1'  type='checkbox' name='sexo' value='1' checked />M</label>
 					<label for='sexo2'><input id='sexo2'  type='checkbox' name='sexo' value='2' checked />H</label>
 				</span>
+                <?php if(!$gatos): ?>
 				<span><strong>Tamaño:</strong>
 					<label for='tam1'><input id='tam1' type='checkbox' name='tam' value='1' checked />Pequeño</label>
 					<label for='tam2'><input id='tam2' type='checkbox' name='tam' value='2' checked />Mediano</label>
 					<label for='tam3'><input id='tam3' type='checkbox' name='tam' value='3' checked />Grande</label>
 					<label for='tam4'><input id='tam4' type='checkbox' name='tam' value='4' checked />Muy Grande</label>
 				</span>
-			</p>
-			
-			<p>
+                <?php endif; ?>
+
 				<span><strong>Edad:</strong> 
 				Entre <input id='edadmin'  type='number' min='0' max='17' step='1' value='0' name='edad1' /> y <input id='edadmax'  type='number' min='1' max='18' step='1' value='18' name='edad2' /> años
 				</span>
