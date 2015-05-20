@@ -202,7 +202,7 @@ header#hPrinc {
 /*CUERPO*/
 
 #cuerpo {
-  min-height: 72%;
+  min-height: 74%;
   max-width: $pWidth;
   width: 85%;
   padding-bottom: $fPrincHeight;
@@ -451,6 +451,29 @@ td a {
     font-size: 85%;
 }
 
+#diAlta {
+  min-width: 15%;
+  border-left: 1px solid black;
+  padding: 1%;
+  @media (max-width: 520px) {
+    border-left: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+}
+
+#diBusqueda {
+  width: 84%;
+}
+
+#diAltaBusqueda {
+  display: flex;
+  flex-direction: row-reverse;
+  @media (max-width: 520px) {
+    flex-direction: column;
+  }
+}
+
 #heFicha.enAdopcion,  option.enAdopcion, #sEstado.enAdopcion {
     background-color: $cEnAdopcion;
 }
@@ -482,4 +505,66 @@ td a {
 
 #fsAdoptante {
     display: hidden;
+}
+
+/*OVERLAY**/
+
+#buOpenOverlay {
+  margin-top: 50px;
+  @media screen and (max-width: 520px) {
+    margin-top: 10px;
+  }
+}
+
+#buCloseOverlay {
+  float: right;
+  background-color: #dddddd;
+  color: #777;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+#buCloseOverlay:hover {
+  background-color: #999999;
+  color: white;
+}
+
+#boxOverlay {
+  position: fixed;
+  z-index: 99;
+  border: 1px solid grey;
+  border-radius: 7px;
+  background-color: $bColor;
+  margin: auto;
+  width: 86%;
+  min-height: 50%;
+  top: 25%;
+  left: 7%;
+  padding: 1%;
+  display: none;
+  @media screen and (max-width:759px) {
+    left:1%;
+    width: 91%;
+  }
+}
+
+#innerBoxOverlay {
+  margin: 100px auto;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #070707;
+  opacity: 0.5;
+  cursor: pointer;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
 }

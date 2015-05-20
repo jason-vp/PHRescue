@@ -14,6 +14,9 @@ $perros=false;
 $gatos=false;
 $otros=false;
 
+$paginador=paginador();
+$headerPaginador=headerPaginador();
+
 require_once("html/head.phtml");
 require_once("html/header.phtml");
 checkTipo($current_tab, $perros, $gatos, $otros);

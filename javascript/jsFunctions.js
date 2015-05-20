@@ -117,6 +117,12 @@ function mostrarLugar(valor) {
     document.getElementById('fsLugar').classList.remove('noDisplay');
 }
 
+function closeOverlay() {
+    document.getElementById("overlay").style.display="none";
+    document.getElementById("boxOverlay").style.display="none";
+}
 
-function reseteadoforms(cuerpo) {
+function openOverlay() {
+    document.getElementById("overlay").style.display="block";
+    document.getElementById("boxOverlay").style.display="block";
 }
