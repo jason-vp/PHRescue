@@ -63,36 +63,3 @@
 .dAniDatos {
   float: left;
 }
-
-#paginador {
-  margin: 20px auto;
-  width: 100%;
-  line-height: 3rem;
-}
-
-#paginador li {
-  display: inline-block;
-}
-
-#paginador p {
-  float: right;
-  margin: 0 10px 0 0;
-}
-
-#paginador a {
-  background-color: rgb(0, 114, 198);
-  color:white;
-  font-weight:bold;
-  text-decoration: none;
-  border:0px;
-  padding: 2px 6px;
-  box-shadow: 0 0 1px black;
-  margin: 10px 3px;
-  text-align: center;
-  border-radius: 2px;
-  font-size: 2rem;
-}
-
-#paginador a:hover {
-  background-color:rgb(0,146,250)
-}

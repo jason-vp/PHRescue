@@ -258,12 +258,11 @@ header#hPrinc {
   min-height: 74%;
   max-width: 1140px;
   width: 85%;
-  padding-bottom: 35px;
+  padding: 5% 0 45px;
   margin: 0 auto;
   background-color: #F3F8FE;
   border: solid grey;
   border-width: 0 1px;
-  padding: 5% 0;
 }
 @media screen and (max-width: 959px) {
   #cuerpo {
@@ -624,6 +623,10 @@ td a {
   margin: 100px auto;
 }
 
+#innerBoxOverlay h3 {
+  margin-bottom: 22px;
+}
+
 #overlay {
   width: 100%;
   height: 100%;
@@ -635,6 +638,40 @@ td a {
   z-index: 90;
   top: 0;
   left: 0;
+}
+
+/*PAGINADOR */
+#paginador {
+  margin: 45px auto 0;
+  width: 100%;
+  line-height: 3rem;
+}
+
+#paginador li {
+  display: inline-block;
+}
+
+#paginador p {
+  float: right;
+  margin: 0 10px 0 0;
+}
+
+#paginador a {
+  background-color: #0072c6;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px;
+  padding: 2px 6px;
+  box-shadow: 0 0 1px black;
+  margin: 10px 3px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 2rem;
+}
+
+#paginador a:hover {
+  background-color: #0092fa;
 }
 
 #dInnerResultados {
@@ -709,39 +746,6 @@ td a {
 
 .dAniDatos {
   float: left;
-}
-
-#paginador {
-  margin: 20px auto;
-  width: 100%;
-  line-height: 3rem;
-}
-
-#paginador li {
-  display: inline-block;
-}
-
-#paginador p {
-  float: right;
-  margin: 0 10px 0 0;
-}
-
-#paginador a {
-  background-color: #0072c6;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border: 0px;
-  padding: 2px 6px;
-  box-shadow: 0 0 1px black;
-  margin: 10px 3px;
-  text-align: center;
-  border-radius: 2px;
-  font-size: 2rem;
-}
-
-#paginador a:hover {
-  background-color: #0092fa;
 }
 
 #imagenes img {
@@ -1034,4 +1038,18 @@ td a {
 
 #cont > ul li {
   margin: 6px;
+}
+
+#innerBoxOverlay p {
+  margin-left: 35px;
+}
+
+#innerBoxOverlay ul {
+  margin: 0 0 15px 70px;
+  list-style: disc;
+}
+
+#innerBoxOverlay textarea {
+  width: 100%;
+  margin-bottom: 20px;
 }

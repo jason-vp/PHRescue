@@ -1,4 +1,5 @@
 <body >
+<div id="overlay" onClick="closeOverlay();"></div>
 <header id="hPrinc">
 <h1 class='noDisplay'>Asoka Gestión</h1>
 <a href='panel.php'><img id='logo' src='/images/logo_gestion.png' title='Asoka el grande: Asociación para la defensa y protección de los animales' alt='Asoka el grande: Asociación para la defensa y protección de los animales'></a>
@@ -25,38 +26,37 @@
 			</ul>
 		</li>
 		<li>
-			<a <?php if($current_tab=="otros") echo "id='current-tab'"; ?> href='#!'>Otros</a>
+			<a <?php if($current_tab=="exoticos") echo "id='current-tab'"; ?> href='#!'>Exóticos</a>
 			<ul>
-				<li><a href='consulta.php?t=otros'>Consulta</a></li>
-				<li><a href='alta.php?t=otros'>Alta rápida</a></li>
+				<li><a href='consulta.php?t=exoticos'>Consulta</a></li>
+				<li><a href='alta.php?t=exoticos'>Alta rápida</a></li>
 			</ul>		
 		</li>
 		<li>
 			<a <?php if($current_tab=="veterinaria") echo "id='current-tab'"; ?> href='#!'>Veterinaria</a>
 			<ul>
-				<li><a href=''>Medicamentos</a></li>
-				<li><a href=''>Vacunas</a></li>
+				<li><a href='medicacion.php'>Medicación</a></li>
 				<li><a href='veterinarios.php'>Veterinarios</a></li>
-				<li><a href=''>Clínicas</a></li>
+				<li><a href='clinicas.php'>Clínicas</a></li>
 			</ul>			
 		</li>
 		<li>
 			<a <?php if($current_tab=="adopciones") echo "id='current-tab'"; ?> href='#!' >Adopciones</a>
 			<ul>
-				<li><a href=''>Adoptantes</a>
-				<li><a href=''>Asociaciones</a>
-				<li><a href=''>Casas acogida</a>
-				<li><a href=''>Gestión seguimientos</a></li>
-				<li><a href=''>Mis seguimientos</a></li>
+				<li><a href='adoptantes.php'>Adoptantes</a>
+				<li><a href='asociaciones.php'>Asociaciones</a>
+				<li><a href='acogidas.php'>Casas acogida</a>
+				<li><a href='seguimientos.php'>Gestión seguimientos</a></li>
+				<li><a href='misSeguimientos.php'>Mis seguimientos</a></li>
 			</ul>
 		</li>
 		<li>
 			<a <?php if($current_tab=="voluntariado") echo "id='current-tab'"; ?> href='#'>Voluntariado</a>
 			<ul>
-				<li><a href=''>Voluntarios</a></li>
-				<li><a href=''>Paseadores</a></li>
-				<li><a href=''>Consulta correos</a></li>
-				<li><a href=''>Usuarios</a></li>
+				<li><a href='voluntarios.php'>Voluntarios</a></li>
+				<li><a href='paseadores.php'>Paseadores</a></li>
+				<li><a href='correos.php'>Consulta correos</a></li>
+				<li><a href='usuarios.php'>Usuarios</a></li>
 			</ul>				
 		</li>
 	</ul>

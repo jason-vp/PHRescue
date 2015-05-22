@@ -14,11 +14,11 @@ if(isset($_GET["t"])) {
 
 $perros=false;
 $gatos=false;
-$otros=false;
+$exoticos=false;
 
 require_once("html/head.phtml");
 require_once("html/header.phtml");
-checkTipo($current_tab, $perros, $gatos, $otros);
+checkTipo($current_tab, $perros, $gatos, $exoticos);
 require_once("html/ficha1.phtml");
 require_once("html/ficha2.phtml");
 require_once("html/ficha3.html");

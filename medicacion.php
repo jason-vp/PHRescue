@@ -1,6 +1,6 @@
 <?php
 require_once("classes/page.php");
-$titulo= "PHRescue - Veterinarios";
+$titulo= "PHRescue - Medicación";
 $scripts= ["javascript/jsFunctions.js"];
 
 $usuario="Invitado";
@@ -13,7 +13,7 @@ $headerPaginador=headerPaginador();
 
 require_once("html/head.phtml");
 require_once("html/header.phtml");
-require_once("html/veterinarios.phtml");
+require_once("html/medicacion.phtml");
 if(isset($_GET["id"])) {
     echo "<script type='text/javascript'> openOverlay(".$_GET['id'].");</script>";
 }

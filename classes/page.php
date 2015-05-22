@@ -1,5 +1,5 @@
 <?php
-function checkTipo($current_tab, &$perros, &$gatos, &$otros) {
+function checkTipo($current_tab, &$perros, &$gatos, &$exoticos) {
 
     switch($current_tab) {
         case 'perros':
@@ -8,8 +8,8 @@ function checkTipo($current_tab, &$perros, &$gatos, &$otros) {
         case 'gatos':
             $gatos=true;
             break;
-        case 'otros':
-            $otros=true;
+        case 'exoticos':
+            $exoticos=true;
             break;
         default:
             http_response_code(404);

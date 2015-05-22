@@ -122,7 +122,13 @@ function closeOverlay() {
     document.getElementById("boxOverlay").style.display="none";
 }
 
-function openOverlay() {
+function openOverlay(id) {
     document.getElementById("overlay").style.display="block";
     document.getElementById("boxOverlay").style.display="block";
+    if(id!=-1) {
+        document.querySelector("#boxOverlay h3").innerHTML="Detalles";
+    }
+    else {
+        document.querySelector("#boxOverlay h3").innerHTML="Alta";
+    }
 }
