@@ -1,14 +1,18 @@
 
 
 #imagenes img {
-max-width: 400px;
-max-height: 400px;
-margin: auto 1%;
+  display: inline-block;
+  max-width: 48%;
+  max-height: 400px;
+  margin: auto 1%;
+  @media screen and (max-width: 759px) {
+    max-width: 98%;
+    max-height: 100%;
+  }
 }
 
 #imagenes {
-margin: 2% auto;
-display: block;
-max-width: 850px;
-max-height: 450px;
+  margin: 2% auto;
+  display: block;
+  width: 100%;
 }

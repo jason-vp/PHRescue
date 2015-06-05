@@ -4,11 +4,18 @@
     <button type="button" id="buCloseOverlay" onclick="closeOverlay()">X</button>
     <div id="innerBoxOverlay">
         <h3> Alta</h3>
-        <form class='center'>
+        <form>
             <fieldset>
+                <label for="'inDNIVet">DNI: <input id="inDNIVet" type="text" name="DNIVet"/></label>
                 <label for='inNombreVet'>Nombre: <input id="inNombreVet" type='text' name='inNombreVet' /></label>
                 <label for='inTelfVet'>Teléfono:  <input id="inTelfVet" type='tel' name='inTelfVet'/></label>
                 <label for="inMailVet">Email: <input id="inMailVet" type="email" name="inMailVet"/></label>
+                <label for="slEspecialidadVet">Especialidad:<select id='slEspecialidadVet' name='slEspecialidadVet'>
+                    <option value="0">N/A</option>
+                    <option value='1' > Perros </option>
+                    <option value='2' >Gatos</option>
+                    <option value="3">Exóticos</option>
+                </select></label>
                 <label for='slClinicaVet'>Clínica:
                 <select id="slClinicaVet" name='slAClinicaVet'>
                     <option></option>
@@ -24,19 +31,25 @@
 <div id='diAltaBusqueda' class='borderUp'>
     <div id="diAlta">
         <h3> Alta </h3>
-        <button type="button" id="buOpenOverlay" class="boton" onclick="openOverlay(-1)" >Alta</button>
+        <button type="button" class="boton buOpenOverlay" onclick="openOverlay(-1)" >Alta</button>
     </div>
     <div id="diBusqueda">
         <h3> Buscar </h3>
         <form class='center'>
             <fieldset>
                     <label for='inBNombreVet'>Nombre: <input id="inBNombreVet" type='text' name='inBNombreVet'/> </label>
-                    <label for='clinica'>Clínica:</label>
+                <label for="slEspecialidadVet">Especialidad:<select id='slEspecialidadVet' name='slEspecialidadVet'>
+                        <option value="0">Todas</option>
+                        <option value='1' > Perros </option>
+                        <option value='2' >Gatos</option>
+                        <option value="3">Exóticos</option>
+                    </select></label>
+                <label for='clinica'>Clínica:
                     <select id='clinica' name='clinica-a'>
                         <option value="0">Todas</option>
                             <option value='1' > Sol y Luz </option>
                             <option value='2' >El Drac</option>
-                    </select>
+                    </select></label>
                     <fieldset>
                     <legend><h4>Ordenar por:</h4></legend>
                     <p>
@@ -55,16 +68,18 @@
 
 	<table>
 		<thead>
+        <tr>
 			<th>Nombre</th>
-			<th>Teléfono</th>
+			<th>Especialidad</th>
 			<th>Clínica</th>
             <th>Acciones</th>
+        </tr>
 		</thead>
 
         <?php for($i=0; $i<10; $i++): ?>
             <tr>
                 <td>Alfonso Pérez García</td>
-                <td>655 55 55 55</td>
+                <td>Perros</td>
                 <td><a href="clinicas.php?id=1">Sol y Luz</a></td>
                 <td><button type='submit' title='Ver Detalles' class='buEdit' onclick="openOverlay(1)"></button><button type='submit' title='Eliminar' class='buDelete'></button></td>
             </tr>

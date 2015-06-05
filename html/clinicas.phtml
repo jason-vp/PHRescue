@@ -4,11 +4,12 @@
     <button type="button" id="buCloseOverlay" onclick="closeOverlay()">X</button>
     <div id="innerBoxOverlay">
         <h3> Alta</h3>
-        <form class='center'>
+        <form>
             <fieldset>
                 <label for='inNombreClin'>Nombre: <input id="inNombreClin" type='text' name='inNombreClin' /></label>
                 <label for='inTelfClin'>Teléfono:  <input id="inTelClin" type='tel' name='inTelfClin'/></label>
                 <label for='inTelfClinUrg'>Teléfono urgencias: <input id="inTelfClinUrg" type="tel" name="inTelfClinUrg"/></label>
+                <label for="inMailClin">Email: <input id="inMailClin" type="email" name="inMailClin"/></label>
                 <label for="inEspClin">Especialidad:
                     <select id="inEspClin" />
                         <option></option>
@@ -17,16 +18,19 @@
                         <option value="3">Exóticos</option>
                     </select>
                 </label>
-                <label for="inMailClin">Email: <input id="inMailClin" type="email" name="inMailClin"/></label></br>
-                <p>
-                Veterinarios:</p>
-                    <ul>
-                        <?php for($i=0; $i<4; $i++): ?>
-                            <li><a href="veterinarios?id=1">Pedro Pérez García</a></li>
-                        <?php endfor; ?>
-                    </ul>
-
+                <div id="innerList">
+                    <div>
+                    <p>
+                    Veterinarios:</p>
+                        <ul>
+                            <?php for($i=0; $i<4; $i++): ?>
+                                <li><a href="veterinarios?id=1">Pedro Pérez García</a></li>
+                            <?php endfor; ?>
+                        </ul>
+                    </div>
+                </div>
                 <button type='submit' class='boton'>Enviar</button>
+
             </fieldset>
         </form>
     </div>
@@ -35,14 +39,14 @@
 <div id='diAltaBusqueda' class='borderUp'>
     <div id="diAlta">
         <h3> Alta </h3>
-        <button type="button" id="buOpenOverlay" class="boton" onclick="openOverlay(-1)" >Alta</button>
+        <button type="button" class="boton buOpenOverlay" onclick="openOverlay(-1)" >Alta</button>
     </div>
     <div id="diBusqueda">
         <h3> Buscar </h3>
         <form class='center'>
             <fieldset>
                     <label for='inBNombreClin'>Nombre: <input id="inBNombreClin" type='text' name='inBNombreClin'/> </label>
-                    <label for='slEspecialidadClin'>Clínica:</label>
+                    <label for='slEspecialidadClin'>Especialidad:</label>
                     <select id='slEspecialidadClin' name='slEspecialidadClin'>
                         <option value="0">Todas</option>
                         <option value='1' > Perros </option>
@@ -67,10 +71,12 @@
 
     <table>
         <thead>
+        <tr>
         <th>Nombre</th>
         <th>Teléfono</th>
         <th>Especialidad</th>
         <th>Acciones</th>
+        </tr>
         </thead>
 
         <?php for($i=0; $i<10; $i++): ?>

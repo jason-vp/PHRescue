@@ -2,6 +2,11 @@ function toggleDisable(checkbox, id_fieldset) {
     var toggle = document.getElementById(id_fieldset);
     checkbox.checked ? toggle.disabled = false : toggle.disabled = true;
 }
+
+function toggleDisable(checkbox, id_fieldset, initial_state) {
+    var toggle = document.getElementById(id_fieldset);
+    checkbox.checked ? toggle.disabled = initial_state : toggle.disabled = !initial_state;
+}
 /*
 function toggleDiv(id) {
     //document.getElementById(id).classList.toggle('noDisplay');
@@ -25,7 +30,7 @@ function cambioEstado(selOpts) {
     if(check!=null)
         document.querySelector('input[name=inRadioLugar]:checked').checked=false;
 
-    for(i=0; i<radios.length; i++)
+    for(var i=0; i<radios.length; i++)
     {
         radios[i].classList.add('noDisplay');
     }
@@ -74,7 +79,7 @@ function mostrarLugar(valor) {
     var sel = document.getElementsByClassName("datosLugarSel");
     //document.getElementById('fsLugar').classList.remove('noDisplay');
 
-    for (i = 0; i < sel.length; i++) {
+    for (var i = 0; i < sel.length; i++) {
         sel[i].classList.add('noDisplay');
         sel[i].classList.remove('datosLugarSel');
     }
@@ -125,10 +130,34 @@ function closeOverlay() {
 function openOverlay(id) {
     document.getElementById("overlay").style.display="block";
     document.getElementById("boxOverlay").style.display="block";
+    var list = document.querySelectorAll(".innerDetails");
     if(id!=-1) {
         document.querySelector("#boxOverlay h3").innerHTML="Detalles";
+        if(list!=null) {
+            for(var i=0; i<list.length; i++) {
+                list[i].style.display = "flex";
+            }
+        }
     }
     else {
         document.querySelector("#boxOverlay h3").innerHTML="Alta";
+        for(var i=0; i<list.length; i++) {
+            list[i].style.display = "none";
+        }
     }
+}
+
+function openMultiOverlay(id, form) {
+
+    var forms=document.querySelectorAll('#innerBoxOverlay > form');
+
+    for(var i=0; i<forms.length; i++) {
+        forms[i].style.display="none";
+    }
+    document.getElementById(form).style.display="table";
+
+    openOverlay(id);
+
+    document.querySelector("#boxOverlay h3").innerHTML+=" " + form;
+
 }

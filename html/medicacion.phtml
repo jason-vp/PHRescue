@@ -4,7 +4,7 @@
     <button type="button" id="buCloseOverlay" onclick="closeOverlay()">X</button>
     <div id="innerBoxOverlay">
         <h3> Alta</h3>
-        <form class='center'>
+        <form>
             <fieldset>
                 <label for='inNombreMed'>Nombre: <input id="inNombreMed" type='text' name='inNombreMed' /></label>
                 <label for='slTipoMed'>Tipo:
@@ -45,7 +45,7 @@
 <div id='diAltaBusqueda' class='borderUp'>
     <div id="diAlta">
         <h3> Alta </h3>
-        <button type="button" id="buOpenOverlay" class="boton" onclick="openOverlay(-1)" >Alta</button>
+        <button type="button" class="boton buOpenOverlay" onclick="openOverlay(-1)" >Alta</button>
     </div>
     <div id="diBusqueda">
         <h3> Buscar </h3>
@@ -70,7 +70,7 @@
                     <legend><h4>Ordenar por:</h4></legend>
                     <p>
                         <input id='orden1' type='radio' name='orden' value='1'checked /><label for='orden1'>Nombre (A-Z)</label>
-                        <input id='orden2' type='radio' name='orden' value='2'/><label for='orden2'>Especialidad (A-Z)</label>
+                        <input id='orden2' type='radio' name='orden' value='2'/><label for='orden2'>Tipo (A-Z)</label>
                     </p>
                 </fieldset>
                 <input type='submit' class='boton' value='Buscar'/>
@@ -84,10 +84,12 @@
 
     <table>
         <thead>
+        <tr>
         <th>Nombre</th>
         <th>Tipo</th>
         <th>Administración</th>
         <th>Acciones</th>
+        </tr>
         </thead>
 
         <?php for($i=0; $i<10; $i++): ?>

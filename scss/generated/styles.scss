@@ -49,7 +49,7 @@ table {
 /*VARIABLES*/
 
 $pWidth:1140px;
-$fPrincHeight: 35px;
+$fPrincHeight: 40px;
 $hPrincHeight: 80px;
 $pColor: #D5E0F5;
 $sColor: #0072C6;
@@ -71,19 +71,29 @@ background-image: linear-gradient(to right, rgb(240,240,240), black, rgb(240,240
 background-image: -webkit-linear-gradient(right, rgb(240,240,240), black, rgb(240,240,240));
 font-family: "Lucida Grande","Lucida Sans Unicode","DejaVu Sans",Lucida,Arial,Helvetica,sans-serif;
 font-size: 1.6rem;
+  line-height: 140%;
+  padding-bottom: -150px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+
 color: rgb(50,50,50);
-    @media screen and (max-width: 520px) {
-        font-size: 1.3rem;
-    }
     @media screen and (max-width: 959px) {
         font-size: 1.4rem;
+
       background-image: none;
     }
-}
+  @media screen and (max-width: 520px) {
+    font-size: 1.3rem;
 
+  }
+
+}
+/*
 html, body {
     height: 100%;
-}
+}*/
 
 /*HEADER*/
 
@@ -253,11 +263,13 @@ header#hPrinc {
   min-height: 74%;
   max-width: $pWidth;
   width: 85%;
-  padding: 5% 0 10+$fPrincHeight;
+  padding: 6vh 0 1vh;
+  min-padding-top: 20px;
   margin: 0 auto;
   background-color: $bColor;
   border: solid grey;
   border-width: 0 1px;
+  flex: 1;
 
   @media screen and (max-width: 959px) {
     width: 100%;
@@ -311,27 +323,26 @@ footer {
   height: $fPrincHeight;
   background-color: rgb(0, 114, 198);
   border-top: 1px solid white;
-  padding: 0 5px;
 }
 
 footer a {
   color: white;
   text-decoration: none;
   float: right;
-  margin-top: 10px;
-  margin-right: 4%;
+  margin: auto 4% auto 0;
   font-size: 87%;
+
 }
 
 footer img {
   width: 35px;
-  height: 35px;
-  margin-top: -10px;
+  height: 34px;
 }
 
-input[type='file'] {
-    width: 299px;
+footer nav {
+  height: 35px;
 }
+
 
 /*DEFAULT OR RESET MODS*/
 
@@ -341,6 +352,7 @@ strong {
 
 legend {
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -352,6 +364,10 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
   width: 35px;
+}
+
+input[type='file'] {
+  width: 299px;
 }
 
 /*GENERAL USE CLASSES*/
@@ -371,7 +387,7 @@ background-color: rgb(0, 114, 198);
     border:0px;
     min-width:80px;
     max-width: 120px;
-    height:30px;
+    min-height:30px;
     box-shadow: 0 0 1px black;
     margin: 0px auto 10px;
     display: table;
@@ -541,22 +557,39 @@ td a {
     height:30px;
 }
 
+#heSeguimiento {
+  @extend #heFicha;
+  min-height: 60px;
+  #spEstadoHeader {
+    height: 60px;
+  }
+}
+
+#spAsignacionHeader {
+  font-weight: bold;
+  margin-left: 5px;
+  a {
+    text-decoration: none;
+  }
+
+}
+
+form#Seguimiento {
+  width: 100%;
+}
+
 #spEstadoHeader {
     float: right;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: white;
-    margin-top:15px;
     margin-right: 2%;
 }
 
-#fsAdoptante {
-    display: hidden;
-}
 
 /*OVERLAY**/
 
-#buOpenOverlay {
+.buOpenOverlay {
   margin-top: 50px;
   @media screen and (max-width: 520px) {
     margin-top: 10px;
@@ -589,22 +622,32 @@ td a {
   margin: auto;
   width: 86%;
   min-height: 50%;
-  top: 25%;
-  left: 7%;
+  max-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding: 1%;
   display: none;
+  overflow: auto;
   @media screen and (max-width:759px) {
-    left:1%;
     width: 91%;
   }
 }
 
 #innerBoxOverlay {
-  margin: 100px auto;
+  margin: 75px auto;
 }
 
 #innerBoxOverlay h3 {
   margin-bottom: 22px;
+}
+
+#innerBoxOverlay form {
+  @extend .center;
+}
+
+#innerBoxOverlay fieldset {
+  margin: 0 3%;
 }
 
 #overlay {
@@ -619,6 +662,36 @@ td a {
   top: 0;
   left: 0;
 }
+
+#innerBoxOverlay fieldset {
+  clear: both;
+}
+
+.innerDetails.blackList {
+  float: right;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.innerDetails {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 759px) {
+    flex-direction: column;
+  }
+}
+
+#fsPermisos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#disclaimer {
+  font-size: 0.8rem;
+}
+
 
 /*PAGINADOR */
 #paginador {
@@ -653,10 +726,17 @@ td a {
 #paginador a:hover {
   background-color:rgb(0,146,250)
 }
+
+.blackList img, img.blackList {
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+  margin-bottom: -4px;
+}
 #dInnerResultados {
   width: 100%;
   display: flex;
-  flexdirection: row;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -677,7 +757,7 @@ td a {
   }
 }
 
-.dAnimal a {
+.dAnimal h4 a {
   margin-top: 5px;
   font-size: 150%;
   text-decoration: none;
@@ -709,6 +789,21 @@ td a {
   border-radius: 3px;
 }
 
+.dAnimal.adoptado img{
+  border: 4px solid $cAdoptado;
+  border-radius: 3px;
+}
+
+.dAnimal.reservado img{
+  border: 4px solid $cReservado;
+  border-radius: 3px;
+}
+
+.dAnimal.difunto img{
+  border: 4px solid $cDifunto;
+  border-radius: 3px;
+}
+
 .dAniImg img {
   max-width: 100%;
   max-height: 100%;
@@ -719,19 +814,34 @@ td a {
   float: left;
 }
 
+.dAnimal button {
+  float: right;
+  margin: 0px 20px 10px 5px;
+}
+
+#resultados textarea {
+  width: 99%;
+  min-height: 500px;
+  margin: 10px auto;
+}
+
 
 
 #imagenes img {
-max-width: 400px;
-max-height: 400px;
-margin: auto 1%;
+  display: inline-block;
+  max-width: 48%;
+  max-height: 400px;
+  margin: auto 1%;
+  @media screen and (max-width: 759px) {
+    max-width: 98%;
+    max-height: 100%;
+  }
 }
 
 #imagenes {
-margin: 2% auto;
-display: block;
-max-width: 850px;
-max-height: 450px;
+  margin: 2% auto;
+  display: block;
+  width: 100%;
 }
 
 /*BLOQUE FOTOS */
@@ -886,6 +996,11 @@ width: 100%;
 display: inline;
 }
 
+#fsEstadoLugar {
+  width: 100%;
+}
+
+
 #divEstado, #fsLugar {
   width: 49%;
   float: left;
@@ -897,7 +1012,7 @@ display: inline;
 }
 
 #fsLugar {
-  padding-left: 15px;
+  padding-left: 1%;
   border-left: #d3d3d3 1px solid;
 
   @media screen and (max-width: 759px) {
@@ -923,6 +1038,7 @@ display: inline;
     background-color: /*#bbbbff;*/ rgb(0, 114, 198);
   background-image: none;
     /*background-color: #D5E0F5;*/
+  display: block;
 
 
   h1, h2 {
@@ -1016,13 +1132,14 @@ display: inline;
 
 /*revisar si mover a css específico*/
 
-#cont {
-border-top: 1px solid grey;
-padding: 1% 2%;
+#panel {
+  border-top: 1px solid grey;
+  padding: 1% 2%;
 }
 
-#cont  >ul  li{
-margin: 6px;
+#panel  >ul  li{
+  margin: 6px 0 6px 25px;
+  list-style: disc;
 }
 #innerBoxOverlay p {
   margin-left: 35px;

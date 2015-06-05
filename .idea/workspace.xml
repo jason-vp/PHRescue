@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/html/ficha3.html" line="386" mnemonic="7" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="b5fcc9c9-25f1-457b-ad01-0a100a394717" name="Default" comment="Archivos phpstorm">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clinicas.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/clinicas.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/medicacion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/medicacion.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/veterinaria.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acogidas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/acogidas.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/adoptantes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/adoptantes.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/correos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/correos.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonGratae.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/nonGratae.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paseadores.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/paseadores.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seguimiento.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/seguimiento.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seguimientos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/seguimientos.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/usuarios.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/usuarios.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/voluntarios.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/voluntarios.phtml" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\a_back_to_top2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\alejandra.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\ask_logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\ask_logo_gestion.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\fiona.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\groucho.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\logo_gestion.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\perro2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\perro4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\priscilla.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\pumba.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\raul.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\rox.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PHRescue\images\worker-dog.jpg" afterPath="" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\PHRescue\html\panel.html" afterPath="$PROJECT_DIR$/html/panel.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/favicon.ico" afterPath="$PROJECT_DIR$/images/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/01general.scss" afterPath="$PROJECT_DIR$/scss/01general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alta.php" afterPath="$PROJECT_DIR$/alta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/altaRapida.phtml" afterPath="$PROJECT_DIR$/html/altaRapida.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consulta.php" afterPath="$PROJECT_DIR$/consulta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/404.html" afterPath="$PROJECT_DIR$/html/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/clinicas.phtml" afterPath="$PROJECT_DIR$/html/clinicas.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/consulta.phtml" afterPath="$PROJECT_DIR$/html/consulta.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/consulta.scss" afterPath="$PROJECT_DIR$/scss/consulta.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficha.php" afterPath="$PROJECT_DIR$/ficha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/ficha2.phtml" afterPath="$PROJECT_DIR$/html/ficha2.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/error404.scss" afterPath="$PROJECT_DIR$/scss/error404.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ficha.scss" afterPath="$PROJECT_DIR$/scss/ficha.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/ficha1.phtml" afterPath="$PROJECT_DIR$/html/ficha1.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/ficha3.html" afterPath="$PROJECT_DIR$/html/ficha3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/footer.html" afterPath="$PROJECT_DIR$/html/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/header.phtml" afterPath="$PROJECT_DIR$/html/header.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/jsFunctions.js" afterPath="$PROJECT_DIR$/javascript/jsFunctions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/page.php" afterPath="$PROJECT_DIR$/classes/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/veterinarios.php" afterPath="$PROJECT_DIR$/veterinarios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/login.scss" afterPath="$PROJECT_DIR$/scss/login.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/medicacion.phtml" afterPath="$PROJECT_DIR$/html/medicacion.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/panel.php" afterPath="$PROJECT_DIR$/panel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/panel.scss" afterPath="$PROJECT_DIR$/scss/panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css.map" afterPath="$PROJECT_DIR$/css/styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/generated/styles.scss" afterPath="$PROJECT_DIR$/scss/generated/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/veterinarios.phtml" afterPath="$PROJECT_DIR$/html/veterinarios.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -50,11 +82,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="veterinaria.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/veterinaria.scss">
+      <file leaf-file-name="01general.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/01general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="306">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.327272" vertical-offset="8586" max-vertical-offset="11764">
+              <caret line="532" column="17" selection-start-line="532" selection-start-column="17" selection-end-line="532" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consulta.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/consulta.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1649">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuarios.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usuarios.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -63,58 +115,58 @@
       <file leaf-file-name="header.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="1207">
-              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state vertical-scroll-proportion="-11.5" vertical-offset="364" max-vertical-offset="1207">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="veterinarios.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/veterinarios.php">
+      <file leaf-file-name="seguimiento.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/seguimiento.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.37485173" vertical-offset="483" max-vertical-offset="1394">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01general.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/01general.scss">
+      <file leaf-file-name="ficha3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/ficha3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7454545" vertical-offset="3385" max-vertical-offset="10404">
-              <caret line="208" column="17" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+            <state vertical-scroll-proportion="-22.615385" vertical-offset="5226" max-vertical-offset="6069">
+              <caret line="342" column="189" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="189" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="medicacion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicacion.php">
+      <file leaf-file-name="seguimientos.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/seguimientos.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="3604">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="medicacion.phtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/medicacion.phtml">
+      <file leaf-file-name="ficha.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/ficha.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28232503" vertical-offset="0" max-vertical-offset="1887">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+            <state vertical-scroll-proportion="-5.8727274" vertical-offset="0" max-vertical-offset="3315">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ficha2.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/ficha2.phtml">
+      <file leaf-file-name="seguimiento.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seguimiento.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.653847" vertical-offset="1044" max-vertical-offset="1887">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="174" />
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="527">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -128,57 +180,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ficha-perro.php" />
-        <option value="$PROJECT_DIR$/css/general.css" />
-        <option value="$PROJECT_DIR$/scss/general.css" />
-        <option value="$PROJECT_DIR$/scss/style.css" />
-        <option value="$PROJECT_DIR$/scss/style.scss" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/scss/general.scss" />
-        <option value="$PROJECT_DIR$/html/head.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/grunt/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/html/head.phtml" />
-        <option value="$PROJECT_DIR$/scss/00reset.scss" />
-        <option value="$PROJECT_DIR$/scss/error-404.scss" />
-        <option value="$PROJECT_DIR$/scss/login.scss" />
-        <option value="$PROJECT_DIR$/html/cuerpo-c-perros.phtml" />
-        <option value="$PROJECT_DIR$/html/datos-perro.html" />
-        <option value="$PROJECT_DIR$/scss/ficha-perro.scss" />
-        <option value="$PROJECT_DIR$/html/cuerpo-ficha-perro2.html" />
-        <option value="$PROJECT_DIR$/html/ficha1.html" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/css/styles.css.map" />
-        <option value="$PROJECT_DIR$/html/cuerpo-c-gatos.html" />
-        <option value="$PROJECT_DIR$/html/cuerpo-alta-gato.html" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/html/altaRapida.html" />
-        <option value="$PROJECT_DIR$/javascript/habilitar-modificacion.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/panel.php" />
-        <option value="$PROJECT_DIR$/html/ficha1.phtml" />
         <option value="$PROJECT_DIR$/html/veterinarios.html" />
-        <option value="$PROJECT_DIR$/scss/ficha.scss" />
-        <option value="$PROJECT_DIR$/html/footer.html" />
-        <option value="$PROJECT_DIR$/javascript/jsFunctions.js" />
-        <option value="$PROJECT_DIR$/html/ficha3.html" />
         <option value="$PROJECT_DIR$/veterinarios.php" />
         <option value="$PROJECT_DIR$/clinicas.php" />
-        <option value="$PROJECT_DIR$/html/header.phtml" />
         <option value="$PROJECT_DIR$/alta.php" />
         <option value="$PROJECT_DIR$/ficha.php" />
         <option value="$PROJECT_DIR$/consulta.php" />
         <option value="$PROJECT_DIR$/classes/page.php" />
         <option value="$PROJECT_DIR$/html/ficha2.phtml" />
-        <option value="$PROJECT_DIR$/html/consulta.phtml" />
         <option value="$PROJECT_DIR$/html/altaRapida.phtml" />
-        <option value="$PROJECT_DIR$/scss/consulta.scss" />
-        <option value="$PROJECT_DIR$/scss/01general.scss" />
         <option value="$PROJECT_DIR$/medicacion.php" />
-        <option value="$PROJECT_DIR$/html/clinicas.phtml" />
-        <option value="$PROJECT_DIR$/html/veterinarios.phtml" />
         <option value="$PROJECT_DIR$/scss/veterinaria.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/html/head.phtml" />
+        <option value="$PROJECT_DIR$/html/consulta.phtml" />
+        <option value="$PROJECT_DIR$/adoptantes.php" />
+        <option value="$PROJECT_DIR$/nonGratae.php" />
+        <option value="$PROJECT_DIR$/acogidas.php" />
+        <option value="$PROJECT_DIR$/html/ficha3.html" />
+        <option value="$PROJECT_DIR$/scss/ficha.scss" />
+        <option value="$PROJECT_DIR$/html/ficha1.phtml" />
+        <option value="$PROJECT_DIR$/voluntarios.php" />
+        <option value="$PROJECT_DIR$/javascript/jsFunctions.js" />
+        <option value="$PROJECT_DIR$/html/veterinarios.phtml" />
+        <option value="$PROJECT_DIR$/html/clinicas.phtml" />
         <option value="$PROJECT_DIR$/html/medicacion.phtml" />
+        <option value="$PROJECT_DIR$/html/acogidas.phtml" />
+        <option value="$PROJECT_DIR$/html/nonGratae.phtml" />
+        <option value="$PROJECT_DIR$/html/adoptantes.phtml" />
+        <option value="$PROJECT_DIR$/html/404.html" />
+        <option value="$PROJECT_DIR$/scss/error404.scss" />
+        <option value="$PROJECT_DIR$/html/footer.html" />
+        <option value="$PROJECT_DIR$/scss/login.scss" />
+        <option value="$PROJECT_DIR$/correos.php" />
+        <option value="$PROJECT_DIR$/html/correos.phtml" />
+        <option value="$PROJECT_DIR$/paseadores.php" />
+        <option value="$PROJECT_DIR$/html/paseadores.phtml" />
+        <option value="$PROJECT_DIR$/html/voluntarios.phtml" />
+        <option value="$PROJECT_DIR$/usuarios.php" />
+        <option value="$PROJECT_DIR$/html/usuarios.phtml" />
+        <option value="$PROJECT_DIR$/scss/panel.scss" />
+        <option value="$PROJECT_DIR$/gestionSeguimientos.php" />
+        <option value="$PROJECT_DIR$/scss/consulta.scss" />
+        <option value="$PROJECT_DIR$/html/gestionSeguimientos.phtml" />
+        <option value="$PROJECT_DIR$/seguimientos.php" />
+        <option value="$PROJECT_DIR$/html/seguimientos.phtml" />
+        <option value="$PROJECT_DIR$/html/header.phtml" />
+        <option value="$PROJECT_DIR$/html/panel.phtml" />
+        <option value="$PROJECT_DIR$/seguimiento.php" />
+        <option value="$PROJECT_DIR$/scss/01general.scss" />
+        <option value="$PROJECT_DIR$/html/seguimiento.phtml" />
       </list>
     </option>
   </component>
@@ -195,7 +247,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1186" />
+    <option name="width" value="1099" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -240,34 +292,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="PHRescue">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="PHRescue">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="html">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -354,6 +378,34 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PHRescue">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PHRescue">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="html">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -468,7 +520,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1186" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="1099" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -477,9 +529,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21669628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25024062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931036" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -540,248 +592,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grunt/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1037">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="340">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/head.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="442">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/01general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="6324">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1819">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="340">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="340">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/npm/grunt.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02972028" vertical-offset="0" max-vertical-offset="572">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grunt/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/00reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="901">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/panel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="904">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="891">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/error404.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25170842" vertical-offset="0" max-vertical-offset="878">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1717">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="861">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14501">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="904">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="323">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="595">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/domReady.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/head.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/ficha.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13901868" vertical-offset="136" max-vertical-offset="3230">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/jsFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1328" max-vertical-offset="2363">
-          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21845794" vertical-offset="0" max-vertical-offset="856">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/ficha3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="1632" max-vertical-offset="7361">
-          <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clinicas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="459">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,14 +603,191 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48997495" vertical-offset="0" max-vertical-offset="798">
           <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ficha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23433584" vertical-offset="0" max-vertical-offset="798">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/altaRapida.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15159236" vertical-offset="0" max-vertical-offset="1547">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/ficha2.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="1887">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/veterinaria.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="306">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicacion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="595">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/veterinarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/provincias_ajax/js/AjaxCode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5589569" vertical-offset="1173" max-vertical-offset="2737">
+          <caret line="98" column="40" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/provincias_ajax/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37733644" vertical-offset="51" max-vertical-offset="918">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/provincias_ajax/xml_data_provider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4906542" vertical-offset="11157" max-vertical-offset="18037">
+          <caret line="681" column="16" selection-start-line="681" selection-start-column="16" selection-end-line="681" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nonGratae.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17873831" vertical-offset="0" max-vertical-offset="856">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acogidas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35747662" vertical-offset="0" max-vertical-offset="856">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adoptantes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/veterinarios.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42348754" vertical-offset="204" max-vertical-offset="1649">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/medicacion.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3143535" vertical-offset="568" max-vertical-offset="1921">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/clinicas.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34282324" vertical-offset="0" max-vertical-offset="1700">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/acogidas.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43534994" vertical-offset="670" max-vertical-offset="2771">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/nonGratae.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="408" max-vertical-offset="2873">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/adoptantes.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="1071" max-vertical-offset="2754">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/head.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23831776" vertical-offset="0" max-vertical-offset="856">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/jsFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1974" max-vertical-offset="2856">
+          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37733644" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/error404.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33761683" vertical-offset="0" max-vertical-offset="856">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30490655" vertical-offset="283" max-vertical-offset="1139">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state vertical-scroll-proportion="-25.076923" vertical-offset="283" max-vertical-offset="1139">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="31" />
           <folding>
             <marker date="1432335466192" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1432335466192" expanded="true" signature="-1:-1" placeholder="..." />
@@ -809,122 +800,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ficha.php">
+    <entry file="file://$PROJECT_DIR$/correos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23433584" vertical-offset="0" max-vertical-offset="798">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/ficha1.phtml">
+    <entry file="file://$PROJECT_DIR$/html/correos.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34282324" vertical-offset="0" max-vertical-offset="843">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state vertical-scroll-proportion="-18.692308" vertical-offset="874" max-vertical-offset="1717">
+          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/altaRapida.phtml">
+    <entry file="file://$PROJECT_DIR$/html/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15159236" vertical-offset="0" max-vertical-offset="1547">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.18149467" vertical-offset="0" max-vertical-offset="843">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/consulta.phtml">
+    <entry file="file://$PROJECT_DIR$/html/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5235669" vertical-offset="983" max-vertical-offset="1921">
-          <caret line="82" column="51" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.17873831" vertical-offset="0" max-vertical-offset="856">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/paseadores.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paseadores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="843">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voluntarios.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="459">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/voluntarios.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-57.923077" vertical-offset="3152" max-vertical-offset="5066">
+          <caret line="274" column="13" selection-start-line="274" selection-start-column="13" selection-end-line="274" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consulta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039719626" vertical-offset="0" max-vertical-offset="856">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.43691587" vertical-offset="0" max-vertical-offset="856">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/consulta.scss">
+    <entry file="file://$PROJECT_DIR$/html/consulta.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8766626" vertical-offset="380" max-vertical-offset="1207">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2057">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="80" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/clinicas.phtml">
+    <entry file="file://$PROJECT_DIR$/html/usuarios.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7259787" vertical-offset="102" max-vertical-offset="1598">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        <state vertical-scroll-proportion="41.846153" vertical-offset="1479" max-vertical-offset="3179">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/header.phtml">
+    <entry file="file://$PROJECT_DIR$/scss/panel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="1207">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.19859813" vertical-offset="0" max-vertical-offset="856">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/veterinarios.php">
+    <entry file="file://$PROJECT_DIR$/seguimiento.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="2" />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="527">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/veterinarios.phtml">
+    <entry file="file://$PROJECT_DIR$/seguimientos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55634636" vertical-offset="551" max-vertical-offset="1394">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/panel.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57651246" vertical-offset="364" max-vertical-offset="1207">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/ficha1.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21352313" vertical-offset="2285" max-vertical-offset="3128">
+          <caret line="145" column="39" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ficha.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8727274" vertical-offset="0" max-vertical-offset="3315">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/seguimientos.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="3604">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/01general.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7454545" vertical-offset="3385" max-vertical-offset="10404">
-          <caret line="208" column="17" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+        <state vertical-scroll-proportion="-8.327272" vertical-offset="8586" max-vertical-offset="11764">
+          <caret line="532" column="17" selection-start-line="532" selection-start-column="17" selection-end-line="532" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/ficha2.phtml">
+    <entry file="file://$PROJECT_DIR$/scss/consulta.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.653847" vertical-offset="1044" max-vertical-offset="1887">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="174" />
+        <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1649">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/veterinaria.scss">
+    <entry file="file://$PROJECT_DIR$/usuarios.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="306">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="459">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicacion.php">
+    <entry file="file://$PROJECT_DIR$/html/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state vertical-scroll-proportion="-11.5" vertical-offset="364" max-vertical-offset="1207">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/medicacion.phtml">
+    <entry file="file://$PROJECT_DIR$/html/ficha3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28232503" vertical-offset="0" max-vertical-offset="1887">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        <state vertical-scroll-proportion="-22.615385" vertical-offset="5226" max-vertical-offset="6069">
+          <caret line="342" column="189" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="189" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/seguimiento.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37485173" vertical-offset="483" max-vertical-offset="1394">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding />
         </state>
       </provider>

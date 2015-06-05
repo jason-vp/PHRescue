@@ -1,10 +1,11 @@
 /*revisar si mover a css específico*/
 
-#cont {
-border-top: 1px solid grey;
-padding: 1% 2%;
+#panel {
+  border-top: 1px solid grey;
+  padding: 1% 2%;
 }
 
-#cont  >ul  li{
-margin: 6px;
+#panel  >ul  li{
+  margin: 6px 0 6px 25px;
+  list-style: disc;
 }

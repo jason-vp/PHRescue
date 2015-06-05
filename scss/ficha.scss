@@ -151,6 +151,11 @@ width: 100%;
 display: inline;
 }
 
+#fsEstadoLugar {
+  width: 100%;
+}
+
+
 #divEstado, #fsLugar {
   width: 49%;
   float: left;
@@ -162,7 +167,7 @@ display: inline;
 }
 
 #fsLugar {
-  padding-left: 15px;
+  padding-left: 1%;
   border-left: #d3d3d3 1px solid;
 
   @media screen and (max-width: 759px) {
