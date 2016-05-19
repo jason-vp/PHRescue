@@ -1,0 +1,22 @@
+/*VARIABLES*/
+
+$pWidth:1140px;
+$fPrincHeight: 40px;
+$hPrincHeight: 80px;
+$pColor: #D5E0F5;
+$sColor: #0072C6;
+$bColor: #F3F8FE;
+$cEnAdopcion: #1e90ff;
+$cAdoptado: #ffba06;
+$cReservado: #adff2f;
+$cDifunto: #ff6347;
+
+@import 'reset';
+@import 'general';
+@import 'consulta';
+@import 'ficha';
+@import 'login';
+@import 'error404';
+@import 'panel';
+@import 'veterinaria';
+
