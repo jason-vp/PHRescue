@@ -287,6 +287,8 @@ Route::get('/voluntarios/{type?}/{id?}', function ($type = null, $id = null) {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
 });
