@@ -1,66 +1,38 @@
-@extends('layouts.app')
-
+@extends('master.authLayout')
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                        {!! csrf_field() !!}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-sign-in"></i>Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <header> <img src='/images/logo.png' alt='Asoka el grande: Asociación para la defensa y protección de los animales'> </header>
+        <div class='error-log'>
+            @if ($errors->has('email'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
+            @if ($errors->has('password'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+            @endif
         </div>
+        <form method="POST" action="{{ url('/login') }}">
+            <fieldset>
+                {!! csrf_field() !!}
+                <input id='login'
+                       class="{{ $errors->has('email') ? ' has-error' : '' }}"
+                       placeholder='Usuario o email'
+                        name = "email">
+                <input id='pass'
+                       class = "{{ $errors->has('password') ? ' has-error' : '' }}"
+                       type='password'
+                       placeholder='Contraseña'
+                        name = "password">
+                <input id='recordar' type='checkbox' name='remember'>
+                <label for='recordar'>Recuérdame</label>
+                <input type='submit' class='boton' value='Entrar'>
+                </fieldset>
+        </form>
     </div>
-</div>
-@endsection
+    <footer>
+        <a  href="{{ url('/password/reset') }}"> Recuperar contraseña </a>
+        <a id='sol-user' href="{{ url('/register') }}"> Solicitar usuario </a>
+    </footer>
+@stop
