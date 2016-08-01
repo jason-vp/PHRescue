@@ -184,29 +184,9 @@ Route::group(['middleware' => 'web'], function () {
         return view('nonGratae', compact('titulo', 'usuario', 'current_tab', 'paginador', 'headerPaginador', 'nonGrata', 'type'));
     });
 
-    Route::get('/panel', function () {
+    Route::get('/panel', 'HomeController@index');
 
-        $titulo= "PHRescue - Panel de usuario";
-        $scripts=[];
-
-        $usuario="Invitado";
-
-        $current_tab='none';
-
-        return view('panel', compact('titulo', 'usuario', 'current_tab'));
-    });
-
-    Route::get('/', function () {
-
-        $titulo= "PHRescue - Panel de usuario";
-        $scripts=[];
-
-        $usuario="Invitado";
-
-        $current_tab='none';
-
-        return view('panel', compact('titulo', 'usuario', 'current_tab'));
-    });
+    Route::get('/', 'HomeController@index');
 
     Route::get('/paseadores/{id?}', function ($id = null) {
 
