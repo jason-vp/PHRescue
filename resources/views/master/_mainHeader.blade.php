@@ -4,7 +4,7 @@
 <header id="hPrinc">
 <h1 class='noDisplay'>Asoka Gestión</h1>
 <a href='panel.php'><img id='logo' src='/images/logo.png' title='Asoka el grande: Asociación para la defensa y protección de los animales' alt='Asoka el grande: Asociación para la defensa y protección de los animales'></a>
-<div id='user-panel'><h2 class='noDisplay'>Panel</h2><p>Hola <?php echo $usuario ?></p><a href='/panel'>Panel de usuario</a>&nbsp&nbsp<a href='/'>Cerrar sesión</a></div>
+<div id='user-panel'><h2 class='noDisplay'>Panel</h2><p>Hola <?php echo $user->name ?></p><a href='/panel'>Panel de usuario</a>&nbsp&nbsp<a href='/logout'>Cerrar sesión</a></div>
 
 <nav id='nPrinc'>
 
