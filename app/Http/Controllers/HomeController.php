@@ -25,11 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $titulo = "PHRescue - Panel de usuario";
+        $title = "PHRescue - Panel de usuario";
         $scripts = [];
 
         $current_tab = 'none';
 
-        return view('panel', compact('titulo', 'current_tab'));
+        return view('panel', compact('title', 'current_tab'));
     }
 }
