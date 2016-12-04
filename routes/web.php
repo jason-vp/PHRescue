@@ -2,25 +2,12 @@
 use App\Classes\Common;
 /*
 |--------------------------------------------------------------------------
-| Routes File
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
 |
 */
 
@@ -56,8 +43,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/seguimientos/{management?}', 'FollowUpReportController@search');
 
     Route::get('/usuarios/{id?}', 'UserController@index');
-    
+
     Route::get('/veterinarios/{id?}', 'VeterinarianController@index');
 
     Route::get('/voluntarios/{type?}/{id?}', 'VolunteerController@searchIndex');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
