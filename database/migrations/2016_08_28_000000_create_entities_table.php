@@ -18,7 +18,7 @@ class CreateEntitiesTable extends Migration
             $table->string('name');
             $table->string('phone')->nullable();
             $table->string('email')->unique();
-            $table->boolean('non_grata');
+            $table->boolean('non_grata')->default(false);
             $table->text('non_grata_reason')->nullable();
             $table->timestamps();
             $table->integer('entitable_id');

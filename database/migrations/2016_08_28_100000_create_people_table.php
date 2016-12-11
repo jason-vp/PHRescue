@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePersonsTable extends Migration
+class CreatePeopleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePersonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('persons', function (Blueprint $table) {
+        Schema::create('people', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('nif')->unique();
                 $table->timestamps();
@@ -27,6 +27,6 @@ class CreatePersonsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('persons');
+        Schema::drop('people');
     }
 }

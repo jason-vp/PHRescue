@@ -17,9 +17,9 @@
             <fieldset>
                 {!! csrf_field() !!}
                 <input id='login'
-                       class="{{ $errors->has('email') ? ' has-error' : '' }}"
+                       class="{{ $errors->has('user_name') ? ' has-error' : '' }}"
                        placeholder='Usuario o email'
-                        name = "email">
+                        name = "user_name">
                 <input id='pass'
                        class = "{{ $errors->has('password') ? ' has-error' : '' }}"
                        type='password'
