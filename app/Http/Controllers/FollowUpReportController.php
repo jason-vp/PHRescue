@@ -19,7 +19,7 @@ class FollowUpReportController extends Controller
     }
 
     public function edit($id = null, $management = null) {
-        $title = "PHRescue - Seguimiento ";
+        $title = "PHRescue - Seguimiento";
 
         $current_tab = 'adopciones';
 
