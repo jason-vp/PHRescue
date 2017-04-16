@@ -82,5 +82,6 @@
         <li><a href="/seguimiento/1">Emiliano - Alicante</a></li>
         <li><a href="/seguimientos">Más...</a></li>
     </ul>
+    <vue-test></vue-test>
 </div>
 @stop
