@@ -33,11 +33,26 @@ Vue.component(
 Vue.component(
     'vue-test',
     require('./components/vueTest.vue')
-)
+);
+
+Vue.component(
+    'user-me-update-info',
+    require('./components/userMeUpdateInfo.vue')
+);
+
+Vue.component(
+    'user-me-update-password',
+    require('./components/userMeUpdatePassword.vue')
+);
 
 const app = new Vue({
-    el: '#panel'
+    el: '#panel',
+    created: function () {
+        // `this` points to the vm instance
+        console.log(this.user)
+    }
 });
+
 
 
 window._ = require('lodash');

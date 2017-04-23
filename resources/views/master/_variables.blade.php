@@ -1,0 +1,1 @@
+<!-- Variables from php to javascript are appended here -->

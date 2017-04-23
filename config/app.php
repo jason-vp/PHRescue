@@ -169,6 +169,7 @@ return [
          */
 
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
 
         /*
          * Application Service Providers...

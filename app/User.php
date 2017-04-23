@@ -31,4 +31,8 @@ class User extends Authenticatable
     public function person() {
         return $this->belongsTo('App\Person');
     }
+
+    public function entity() {
+        return $this->hasManyThrough('App\Entity', 'App\Person');
+    }
 }

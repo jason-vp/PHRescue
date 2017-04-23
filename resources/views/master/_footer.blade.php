@@ -6,6 +6,7 @@
     </nav>
 </footer>
 @yield('autoScripts')
+@include ('master._variables')
 <script>
     window.Laravel = <?php echo json_encode([
         'csrfToken' => csrf_token(),
@@ -15,5 +16,4 @@
 <script src="/js/app.js" ></script>
 
 </body>
-
 </html>
