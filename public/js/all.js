@@ -37,7 +37,7 @@ Vue.component(
 
 Vue.component(
     'user-me-update-info',
-    require('./components/userMeUpdateInfo.vue')
+    require('./components/UserMeUpdateInfo.vue')
 );
 
 Vue.component(

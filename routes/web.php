@@ -44,7 +44,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/seguimientos/{management?}', 'FollowUpReportController@search');
 
-    Route::get('/usuarios/{id?}', 'UserController@index');
+    Route::get('/usuarios/{id?}', 'UsersPageController@index');
 
     Route::get('/veterinarios/{id?}', 'VeterinarianController@index');
 

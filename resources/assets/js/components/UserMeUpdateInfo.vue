@@ -7,7 +7,7 @@
                        id="inNombreUsuario"
                        name="nombreUsuario"
                        class='w200px'
-                       :value="user.person.entity.name">
+                       v-model="user.person.entity.name">
             </label>
             <label for='slPaisUsuario'>País:
                 <select id='slPaisUsuario' name='paisUsuario'>
@@ -34,7 +34,7 @@
                 <input type='tel'
                        id="inTelefonoUsuario"
                        name='telefonoUsuario'
-                       :value="user.person.entity.phone">
+                       v-model="user.person.entity.phone">
             </label>
 
             <label for='inMailUsuario' >E-mail:
@@ -42,13 +42,14 @@
                        id="inMailUsuario"
                        name='mailUsuario'
                        class='w200px'
-                       :value="user.person.entity.email">
+                       v-model="user.person.entity.email">
             </label>
             <label>Contraseña:
-                <input type="password" name="passwordUsuario">
+                <input type="password" name="passwordUsuario" v-model="user.password">
             </label>
 
-            <button type='submit' class='boton'>Enviar</button>
+            <button type='submit' class='boton' v-on:click.prevent="updateUserInfo">Enviar</button>
+            <span v-show="requestStatus == 'loading'">Loading...</span>
         </fieldset>
     </form>
 </template>
@@ -59,8 +60,18 @@
         },
         data: function () {
             return {
-                user: variables.user
+                user: variables.user,
+                requestStatus: ""
             };
+        },
+        methods: {
+            updateUserInfo: function () {
+                this.$http.put('/api/users/' + this.user.id,
+                    this.user)
+                    .then(response => {
+                        console.log(response);
+                    });
+            }
         }
     }
 </script>
