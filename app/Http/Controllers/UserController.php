@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateUserMeInfo;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -74,12 +75,13 @@ class UserController extends Controller
      * Update the specified resource in storage.
      * The user can only update himself for now
      *
+     * @param UpdateUserMeInfo $request
      * @param User $user
      * @return \Illuminate\Http\Response
      * @internal param Request $request
      * @internal param int $id
      */
-    public function update(Request $request, User $user)
+    public function update(UpdateUserMeInfo $request, User $user)
     {
         $loggedUser = Auth::guard('api')->user();
         if ($user->id != $loggedUser->id) {

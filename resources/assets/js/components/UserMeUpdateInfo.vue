@@ -2,25 +2,30 @@
    <form>
         <fieldset>
             <legend>Mis datos</legend>
-            <label for='inNombreUsuario'>Nombre:
+            <label>Usuario:
                 <input type='text'
-                       id="inNombreUsuario"
-                       name="nombreUsuario"
+                       name="user_name"
+                       class='w200px'
+                       v-model="user.user_name">
+            </label>
+            <label>Nombre:
+                <input type='text'
+                       name="name"
                        class='w200px'
                        v-model="user.person.entity.name">
             </label>
-            <label for='slPaisUsuario'>País:
-                <select id='slPaisUsuario' name='paisUsuario'>
+            <label>País:
+                <select name='paisUsuario'>
                     <option value='1'>España</option>
                 </select>
             </label>
-            <label for='slProvinciaUsuario'>Provincia:
-                <select id="slProvinciaUsuario" name='provinciaUsuario' disabled>
+            <label>Provincia:
+                <select name='provinciaUsuario' disabled>
                     <option value='1'>Alicante</option>
                 </select>
             </label>
-            <label for='slLocalidadUsuario'>Localidad:
-                <select id="slLocalidadUsuario" name='slLocalidadUsuario' disabled>
+            <label>Localidad:
+                <select name='slLocalidadUsuario' disabled>
                     <option value='2'>Altea</option>
                     <option value='3'>San Vicente</option>
                     <option value='4'>Alicante</option>
@@ -28,28 +33,25 @@
                 </select>
             </label>
 
-            <label for='inDireccionUsuario' >Dirección:
-                <input type='text' name='direccionUsuario' id="inDireccionUsuario" class='w200px'></label>
-            <label for='inTelefonoUsuario'>Teléfono:
+            <label >Dirección:
+                <input type='text' name='adress' class='w200px'></label>
+            <label>Teléfono:
                 <input type='tel'
-                       id="inTelefonoUsuario"
-                       name='telefonoUsuario'
+                       name='phone'
                        v-model="user.person.entity.phone">
             </label>
 
-            <label for='inMailUsuario' >E-mail:
+            <label >E-mail:
                 <input type='email'
-                       id="inMailUsuario"
-                       name='mailUsuario'
+                       name='email'
                        class='w200px'
                        v-model="user.person.entity.email">
             </label>
             <label>Contraseña:
-                <input type="password" name="passwordUsuario" v-model="user.password">
+                <input type="password" name="password" v-model="user.password">
             </label>
 
-            <button type='submit' class='boton' v-on:click.prevent="updateUserInfo">Enviar</button>
-            <span v-show="requestStatus == 'loading'">Loading...</span>
+            <form-button :submit="updateUserInfo" :request-status="requestStatus"></form-button>
         </fieldset>
     </form>
 </template>
@@ -66,10 +68,15 @@
         },
         methods: {
             updateUserInfo: function () {
+                this.requestStatus = "loading";
                 this.$http.put('/api/users/' + this.user.id,
                     this.user)
                     .then(response => {
+                        this.requestStatus = "ok"
                         console.log(response);
+                    }, error => {
+                        this.requestStatus = "error";
+                        console.log(error);
                     });
             }
         }

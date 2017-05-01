@@ -25,15 +25,24 @@ class AppServiceProvider extends ServiceProvider
             /*
              * param[0]: main table
              * param[1]: secondary tables
-             * param[3]: whereRaw
+             * param[2]: whereRaw
+             * param[3]: ignore id
              */
-            $result = DB::table($parameters[0])
+            // Get only the actual attribute
+            $explodeArray = explode('.', $attribute);
+            $attribute = end($explodeArray);
+            $query = DB::table($parameters[0])
                 ->where($attribute, '=', $value)
                 ->whereExists(function ($query) use($parameters) {
                     $query->select(DB::raw(1))
                         ->from($parameters[1])
                         ->whereRaw($parameters[2]);
-                })->get();
+                });
+
+            if (isset($parameters[3])) {
+                $query->where('id', '!=', $parameters[3]);
+            }
+            $result = $query->get();
 
             return $result->isEmpty();
         });

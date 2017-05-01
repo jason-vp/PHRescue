@@ -45,6 +45,11 @@ Vue.component(
     require('./components/userMeUpdatePassword.vue')
 );
 
+Vue.component(
+    'form-button',
+    require('./components/FormButton.vue')
+);
+
 const app = new Vue({
     el: '#panel',
     created: function () {
