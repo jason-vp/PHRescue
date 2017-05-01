@@ -72,7 +72,8 @@
                 this.$http.put('/api/users/' + this.user.id,
                     this.user)
                     .then(response => {
-                        this.requestStatus = "ok"
+                        this.requestStatus = "ok";
+                        this.user = response.body;
                         console.log(response);
                     }, error => {
                         this.requestStatus = "error";
