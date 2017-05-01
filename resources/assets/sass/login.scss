@@ -1,4 +1,4 @@
-#login-screen {
+#landing-screen {
 
   background-color: /*#bbbbff;*/ rgb(0, 114, 198);
   background-image: none;
@@ -20,7 +20,7 @@
     max-height: 102px;
   }
 
-  #cont {
+  .content-wrapper {
     display: block;
     width: 92%;
     max-width: 400px;
@@ -48,12 +48,6 @@
     width: 150px;
     display: block;
     margin: auto;
-  }
-
-  input {
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
   }
 
   #recordar {
@@ -96,5 +90,29 @@
 
   .register-and-recovery {
 
+  }
+}
+
+.login-screen {
+  input {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.register-screen {
+  .panel-heading {
+    padding: 15px;
+    font-weight: bold;
+  }
+  .panel-body {
+    padding: 10px;
+  }
+  input {
+    margin-left: 15px;
+  }
+  .form-group {
+    margin-bottom: 10px;
   }
 }

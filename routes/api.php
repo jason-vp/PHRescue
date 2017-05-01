@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
+/*Route::get('/user', function (Request $request) {
+    return Auth::guard('api')->user();
+})->middleware('auth:api');*/
+
+Route::model('users', 'User');
+Route::resource('users', 'UserController', ['only' => ['update']]);
+
+Route::get('/ping',function(){
+    return "pong";
+});

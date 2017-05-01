@@ -8,10 +8,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel='stylesheet' href='{{ asset('css/main.css') }}'>
 </head>
-<body  id="login-screen">
+<body  id="landing-screen">
     <h1>PHRescue</h1>
-    <div id='cont'>
-        <h2>Login</h2>
         @yield('content')
 </body>
 </html>

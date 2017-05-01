@@ -13,6 +13,7 @@ use App\Classes\Common;
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
+
     Route::get('/logout', 'Auth\LoginController@logout');
 
     Route::get('/acogidas/{id?}/', 'ShelterHouseController@index');
@@ -43,7 +44,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/seguimientos/{management?}', 'FollowUpReportController@search');
 
-    Route::get('/usuarios/{id?}', 'UserController@index');
+    Route::get('/usuarios/{id?}', 'UsersPageController@index');
 
     Route::get('/veterinarios/{id?}', 'VeterinarianController@index');
 

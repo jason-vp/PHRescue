@@ -403,6 +403,29 @@ input[type='file'] {
   display: table;
 }
 
+.form-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.form-button-wrapper button {
+  background-color: #0072c6;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  min-width: 80px;
+  max-width: 120px;
+  min-height: 30px;
+  box-shadow: 0 0 1px black;
+  margin: 0px auto 10px;
+}
+
+.form-button-wrapper .request-status {
+  position: absolute;
+  float: right;
+  padding: 8px;
+}
+
 .buFav, .buAdd, .buEdit, .buDelete {
   width: 32px;
   height: 32px;
@@ -1057,29 +1080,29 @@ form#Seguimiento {
   float: right;
 }
 
-#login-screen {
+#landing-screen {
   background-color: #0072c6;
   background-image: none;
   /*background-color: #D5E0F5;*/
   display: block;
 }
 
-#login-screen h1, #login-screen h2 {
+#landing-screen h1, #landing-screen h2 {
   display: none;
 }
 
-#login-screen header {
+#landing-screen header {
   background-color: inherit;
   min-width: 0;
 }
 
-#login-screen img {
+#landing-screen img {
   width: 100%;
   max-width: 400px;
   max-height: 102px;
 }
 
-#login-screen #cont {
+#landing-screen .content-wrapper {
   display: block;
   width: 92%;
   max-width: 400px;
@@ -1093,35 +1116,29 @@ form#Seguimiento {
   border-radius: 8px;
 }
 
-#login-screen .error-log {
+#landing-screen .error-log {
   text-align: center;
   color: red;
 }
 
-#login-screen form {
+#landing-screen form {
   margin: 2%;
   margin-top: 4%;
 }
 
-#login-screen fieldset {
+#landing-screen fieldset {
   width: 150px;
   display: block;
   margin: auto;
 }
 
-#login-screen input {
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-#login-screen #recordar {
+#landing-screen #recordar {
   display: inline;
   margin-bottom: 20px;
   margin-left: 5px;
 }
 
-#login-screen .boton {
+#landing-screen .boton {
   background-color: #0072c6;
   color: white;
   font-weight: bold;
@@ -1134,7 +1151,7 @@ form#Seguimiento {
   display: table;
 }
 
-#login-screen footer {
+#landing-screen footer {
   width: 92%;
   max-width: 400px;
   margin: auto;
@@ -1144,13 +1161,36 @@ form#Seguimiento {
   min-width: 0px;
 }
 
-#login-screen a {
+#landing-screen a {
   text-decoration: none;
   color: white;
 }
 
-#login-screen #sol-user {
+#landing-screen #sol-user {
   float: right;
+}
+
+.login-screen input {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.register-screen .panel-heading {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.register-screen .panel-body {
+  padding: 10px;
+}
+
+.register-screen input {
+  margin-left: 15px;
+}
+
+.register-screen .form-group {
+  margin-bottom: 10px;
 }
 
 #imagenes img {

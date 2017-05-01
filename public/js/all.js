@@ -15,9 +15,49 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 
+Vue.component(
+    'passport-clients',
+    require('./components/passport/Clients.vue')
+);
+
+Vue.component(
+    'passport-authorized-clients',
+    require('./components/passport/AuthorizedClients.vue')
+);
+
+Vue.component(
+    'passport-personal-access-tokens',
+    require('./components/passport/PersonalAccessTokens.vue')
+);
+
+Vue.component(
+    'vue-test',
+    require('./components/vueTest.vue')
+);
+
+Vue.component(
+    'user-me-update-info',
+    require('./components/UserMeUpdateInfo.vue')
+);
+
+Vue.component(
+    'user-me-update-password',
+    require('./components/userMeUpdatePassword.vue')
+);
+
+Vue.component(
+    'form-button',
+    require('./components/FormButton.vue')
+);
+
 const app = new Vue({
-    el: '#app'
+    el: '#panel',
+    created: function () {
+        // `this` points to the vm instance
+        console.log(this.user)
+    }
 });
+
 
 
 window._ = require('lodash');

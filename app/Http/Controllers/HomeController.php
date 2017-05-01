@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use JavaScript;
 
 class HomeController extends Controller
 {
@@ -29,6 +30,10 @@ class HomeController extends Controller
         $scripts = [];
 
         $current_tab = 'none';
+
+        JavaScript::put([
+            'user' => Auth::user()->load('person.entity')
+        ]);
 
         return view('panel', compact('title', 'current_tab'));
     }

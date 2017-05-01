@@ -8,6 +8,9 @@ use App\Person;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Validation\Rule;
+use DB;
+use Log;
 
 class RegisterController extends Controller
 {
@@ -49,12 +52,21 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'nif' => 'required|max:10',
+        return  Validator::make($data, [
+            'nif' => [
+                'required',
+                'max:10',
+                'uniqueIfExternalCondition:people,users,people.id = users.person_id'
+            ],
             'name' => 'required|max:255',
             'user_name' => 'required|max:255|unique:users',
-            'email' => 'required|email|max:255|unique:entities',
-            'password' => 'required|min:6|confirmed',
+            'email' => [
+                'required',
+                'email',
+                'max:255',
+                'uniqueIfExternalCondition:entities,users,entities.entitable_type like "%Person%" and entities.entitable_id = users.person_id'
+            ],
+            'password' => 'required|min:6|confirmed'
         ]);
     }
 
@@ -71,16 +83,25 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ));
 
-        $person = new Person(array(
-            'nif' => $data['nif']
-        ));
+        $person = Person::where('nif', $data['nif'])->first();
 
-        $entity = new Entity(array(
-            'name' => $data['name'],
-            'email' => $data['email']
-        ));
-        $person->save();
-        $person->entity()->save($entity);
+        if (!$person) {
+            $person = new Person(array(
+                'nif' => $data['nif']
+            ));
+            $person->save();
+
+            $entity = Entity::where('email', $data['email']->first());
+            if (!$entity) {
+                $entity = new Entity(array(
+                    'name' => $data['name'],
+                    'email' => $data['email']
+                ));
+            }
+
+            $person->entity()->save($entity);
+        }
+
         $person->user()->save($user);
 
         return $user;

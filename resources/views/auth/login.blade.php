@@ -1,5 +1,7 @@
 @extends('master.authLayout')
 @section('content')
+    <div class='content-wrapper login-screen'>
+        <h2>Login</h2>
         <header> <img src='/images/logo.png' alt='Asoka el grande: Asociación para la defensa y protección de los animales'> </header>
         <div class='error-log'>
             @if ($errors->has('email'))
