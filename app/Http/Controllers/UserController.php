@@ -83,17 +83,13 @@ class UserController extends Controller
      */
     public function update(UpdateUserMeInfo $request, User $user)
     {
-        $loggedUser = Auth::guard('api')->user();
-        if ($user->id != $loggedUser->id) {
-            abort(403, "Forbidden");
-        }
-
-        if (!Hash::check($request->password, $user->password)) {
-            abort(401, "Unauthorized");
-        }
-
-        // TODO: Update and save user
-        return [$request->all(), $user, $loggedUser];
+        $user->user_name = $request->user_name;
+        $user->person->entity->name = $request->input('person.entity.name');
+        $user->person->entity->phone = $request->input('person.entity.phone');
+        $user->person->entity->email = $request->input('person.entity.email');
+        $user->person->entity->save();
+        $user->save();
+        return response($user, 200);
     }
 
     /**
