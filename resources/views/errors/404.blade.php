@@ -1,8 +1,8 @@
 <?php
 // TODO: Fix this mess properly
-$titulo= "Asoka Gestión - Error 404 Página no encontrada";
-$usuario="Invitado";
-$current_tab="none";
+
+$title = "PHRescue - Error 404 Página no encontrada";
+$current_tab = 'none';
 ?>
 @extends('master.mainLayout')
 

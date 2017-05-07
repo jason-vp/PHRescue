@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UpdateUserMeInfo;
+use App\Http\Requests\UpdateUserMePassword;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -101,5 +102,11 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function changePassword(UpdateUserMePassword $request, User $user) {
+
+
+        return response($user, 200);
     }
 }
