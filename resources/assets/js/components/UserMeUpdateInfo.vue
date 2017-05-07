@@ -51,6 +51,7 @@
                 <input type="password" name="password" v-model="user.password">
             </label>
 
+            <form-errors :errors="errors"></form-errors>
             <form-button :submit="updateUserInfo" :request-status="requestStatus"></form-button>
         </fieldset>
     </form>
@@ -63,7 +64,8 @@
         data: function () {
             return {
                 user: variables.user,
-                requestStatus: ""
+                requestStatus: "",
+                errors: []
             };
         },
         methods: {
@@ -77,6 +79,7 @@
                         console.log(response);
                     }, error => {
                         this.requestStatus = "error";
+                        this.errors = error.body;
                         console.log(error);
                     });
             }

@@ -12,7 +12,8 @@
                 <input type="password" name="new_password_confirmation" v-model="user.new_password_confirmation">
             </label>
 
-            <form-button :submit="updateUserInfo" :request-status="requestStatus"></form-button>
+            <form-errors :errors="errors"></form-errors>
+            <form-button :submit="updateUserPassword" :request-status="requestStatus"></form-button>
         </fieldset>
     </form>
 </template>
@@ -29,11 +30,12 @@
                     new_password: '',
                     new_password_confirmation: ''
                 },
-                requestStatus: ""
+                requestStatus: "",
+                errors: {}
             };
         },
         methods: {
-            updateUserInfo: function () {
+            updateUserPassword: function () {
                 this.requestStatus = "loading";
                 this.$http.put('/api/users/' + this.user.id + '/change-password',
                     this.user)
@@ -42,6 +44,7 @@
                         console.log(response);
                     }, error => {
                         this.requestStatus = "error";
+                        this.errors = error.body;
                         console.log(error);
                     });
             }
