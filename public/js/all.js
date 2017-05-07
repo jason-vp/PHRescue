@@ -50,6 +50,11 @@ Vue.component(
     require('./components/FormButton.vue')
 );
 
+Vue.component(
+    'form-errors',
+    require('./components/FormErrors.vue')
+);
+
 const app = new Vue({
     el: '#panel',
     created: function () {
