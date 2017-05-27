@@ -91,7 +91,7 @@ class RegisterController extends Controller
             ));
             $person->save();
 
-            $entity = Entity::where('email', $data['email']->first());
+            $entity = Entity::where('email', $data['email'])->first();
             if (!$entity) {
                 $entity = new Entity(array(
                     'name' => $data['name'],
