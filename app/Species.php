@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Locality extends Model
+class Species extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -15,7 +15,7 @@ class Locality extends Model
         'name',
     ];
 
-    public function region() {
-        return $this->belongsTo('App\Region');
+    public function breeds() {
+        return $this->hasMany('App\Breed');
     }
 }

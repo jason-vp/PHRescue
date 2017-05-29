@@ -31,14 +31,18 @@ class Animal extends Model
     ];
 
     public function localityFound() {
-        return $this->hasMany('App\Locality');
+        return $this->hasMany('App\City');
     }
 
     public function photos() {
-        return $this->hasMany('App\AnimalPhotos');
+        return $this->hasMany('App\AnimalPhoto');
     }
 
     public function animalable() {
         return $this->morphTo();
+    }
+
+    public function breed() {
+        return $this->hasOne('App\Breed');
     }
 }

@@ -85,14 +85,14 @@ class RegisterController extends Controller
 
         $person = Person::where('nif', $data['nif'])->first();
 
-        if (!$person) {
+        if ($person === null) {
             $person = new Person(array(
                 'nif' => $data['nif']
             ));
             $person->save();
 
             $entity = Entity::where('email', $data['email'])->first();
-            if (!$entity) {
+            if ($entity === null) {
                 $entity = new Entity(array(
                     'name' => $data['name'],
                     'email' => $data['email']

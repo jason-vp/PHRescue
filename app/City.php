@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Region extends Model
+class City extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -15,11 +15,7 @@ class Region extends Model
         'name',
     ];
 
-    public function country() {
-        return $this->belongsTo('App\Country');
-    }
-
-    public function localities() {
-        return $this->hasMany('App\City');
+    public function region() {
+        return $this->belongsTo('App\Region');
     }
 }

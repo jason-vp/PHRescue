@@ -27,19 +27,22 @@ class CreateAnimalsTables extends Migration
             $table->date('microchip_date')->nullable();
             $table->string('passport_number')->nullable();;
             $table->boolean('public_advertisement');
-            $table->integer('found_at_locality')->unsigned();
+            $table->integer('found_at_city')->unsigned();
             $table->text('found_observations')->nullable();
             $table->string('character_type')->nullable();
             $table->text('character_observations')->nullable();
             $table->text('general_observations')->nullable();
             $table->integer('animalable_id');
             $table->string('animalable_type');
-            $table->integer('species_id')->unsigned();
+            $table->integer('breed_id')->unsigned();
             $table->string('status');
             $table->timestamps();
         });
         Schema::table('animals', function (Blueprint $table) {
-            $table->foreign('found_at_locality')->references('id')->on('localities');
+            $table->foreign('found_at_city')->references('id')->on('cities');
+        });
+        Schema::table('animals', function (Blueprint $table) {
+            $table->foreign('breed_id')->references('id')->on('breeds');
         });
 
         Schema::create('animal_photos', function (Blueprint $table) {
@@ -61,7 +64,7 @@ class CreateAnimalsTables extends Migration
 
         Schema::create('cats', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('coat')->nullable();
+            $table->string('coat')->nullable();
             $table->timestamps();
         });
 
@@ -84,7 +87,10 @@ class CreateAnimalsTables extends Migration
         Schema::drop('animal_photos');
 
         Schema::table('animals', function(Blueprint $table) {
-            $table->dropForeign(['found_at_locality']);
+            $table->dropForeign(['found_at_city']);
+        });
+        Schema::table('animals', function(Blueprint $table) {
+            $table->dropForeign(['breed_id']);
         });
         Schema::drop('animals');
 

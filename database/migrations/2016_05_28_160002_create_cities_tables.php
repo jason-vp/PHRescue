@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLocalitiesTables extends Migration
+class CreateCitiesTables extends Migration
 {
     /**
      * Run the migrations.
@@ -29,13 +29,13 @@ class CreateLocalitiesTables extends Migration
             $table->foreign('country_id')->references('id')->on('countries');
         });
 
-        Schema::create('localities', function (Blueprint $table) {
+        Schema::create('cities', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('region_id')->unsigned();
             $table->string('name');
             $table->timestamps();
         });
-        Schema::table('localities', function(Blueprint $table) {
+        Schema::table('cities', function(Blueprint $table) {
             $table->foreign('region_id')->references('id')->on('regions');
         });
     }
@@ -47,10 +47,10 @@ class CreateLocalitiesTables extends Migration
      */
     public function down()
     {
-        Schema::table('localities', function(Blueprint $table) {
+        Schema::table('cities', function(Blueprint $table) {
             $table->dropForeign(['region_id']);
         });
-        Schema::drop('localities');
+        Schema::drop('cities');
 
         Schema::table('regions', function(Blueprint $table) {
             $table->dropForeign(['country_id']);
