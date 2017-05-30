@@ -86,6 +86,7 @@
 	<?php echo $headerPaginador ?>
 
     <div id="dInnerResultados">
+		<animals-list></animals-list>
     <?php for($i=0; $i<12; $i++): ?>
 
         <div class="dAnimal enAdopcion">

@@ -9,8 +9,9 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Classes\Common;
+use JavaScript;
 
-class AnimalController extends Controller
+class AnimalsViewController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -63,7 +64,12 @@ class AnimalController extends Controller
 
         Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
 
-        return view('consulta', compact('title', 'current_tab', 'headerPaginador', 'paginador', 'perros', 'gatos', 'exoticos'));
+
+        JavaScript::put([
+            'animals' => "test"
+        ]);
+
+        return view('search-animals', compact('title', 'current_tab', 'headerPaginador', 'paginador', 'perros', 'gatos', 'exoticos'));
     }
 
     public function edit($type, $id) {

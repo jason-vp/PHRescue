@@ -20,15 +20,15 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/adoptantes/{type?}/{id?}', 'AdopterController@index');
 
-    Route::get('/alta/{type?}', 'AnimalController@create');
+    Route::get('/alta/{type?}', 'AnimalsViewController@create');
 
     Route::get('/clinicas/{id?}', 'ClinicController@index');
 
-    Route::get('/consulta/{type?}', 'AnimalController@search');
+    Route::get('/consulta/{type?}', 'AnimalsViewController@search');
 
     Route::get('/correos', 'VolunteerController@MailIndex');
 
-    Route::get('/ficha/{type}/{id}', 'AnimalController@edit');
+    Route::get('/ficha/{type}/{id}', 'AnimalsViewController@edit');
 
     Route::get('/medicacion/{id?}', 'MedicationController@index');
 

@@ -22,6 +22,8 @@ Route::model('users', 'User');
 Route::resource('users', 'UserController', ['only' => ['update']]);
 Route::put('users/{user}/change-password', 'UserController@changePassword');
 
+Route::resource('animals', 'AnimalsController');
+
 Route::get('/ping',function(){
     return "pong";
 });

@@ -55,8 +55,13 @@ Vue.component(
     require('./components/FormErrors.vue')
 );
 
+Vue.component(
+    'animals-list',
+    require('./components/AnimalsList.vue')
+);
+
 const app = new Vue({
-    el: '#panel',
+    el: '#body-content',
     created: function () {
         // `this` points to the vm instance
         console.log(this.user)
