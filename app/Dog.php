@@ -6,6 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dog extends Model
 {
+    const SIZES = [
+        "SMALL" => "Small",
+        "MEDIUM" => "Medium",
+        "BIG" => "Big",
+        "VERY_BIG" => "Very big",
+    ];
     /**
      * The attributes that are mass assignable.
      *

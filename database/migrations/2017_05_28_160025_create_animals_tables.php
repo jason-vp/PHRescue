@@ -59,6 +59,7 @@ class CreateAnimalsTables extends Migration
             $table->increments('id');
             $table->float('length')->nullable();
             $table->float('height')->nullable();
+            $table->string('size')->nullable();
             $table->timestamps();
         });
 
