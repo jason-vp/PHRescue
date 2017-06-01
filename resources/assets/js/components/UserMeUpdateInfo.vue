@@ -71,6 +71,7 @@
         methods: {
             updateUserInfo: function () {
                 this.requestStatus = "loading";
+                this.errors = {};
                 this.$http.put('/api/users/' + this.user.id,
                     this.user)
                     .then(response => {

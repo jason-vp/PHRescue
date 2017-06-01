@@ -21,9 +21,11 @@ class AnimalsTableSeeder extends Seeder
         factory(App\Dog::class, 22)->create()->each(function ($dog) use ($faker, $dogBreeds) {
             $animal = factory(App\Animal::class)->make(['breed_id' => $faker->randomElement($dogBreeds)]);
             $dog->animal()->save($animal);
-            $photo = new \App\AnimalPhoto(array('path' => 'http://lorempixel.com/800/600/dogs/'));
+            $photo = new \App\AnimalPhoto(array('path' => 'http://lorempixel.com/800/600/nature/'));
             $photo->animal()->associate($animal);
             $photo->save();
+            $animal->favorite_photo = $photo->id;
+            $animal->save();
         });
 
         factory(App\Cat::class, 20)->create()->each(function ($cat) use ($faker, $catBreeds) {
@@ -32,6 +34,8 @@ class AnimalsTableSeeder extends Seeder
             $photo = new \App\AnimalPhoto(array('path' => 'http://lorempixel.com/800/600/cats/'));
             $photo->animal()->associate($animal);
             $photo->save();
+            $animal->favorite_photo = $photo->id;
+            $animal->save();
         });
 
         factory(App\Exotic::class, 11)->create()->each(function ($exotic) use ($faker, $exoticBreeds) {
@@ -40,6 +44,8 @@ class AnimalsTableSeeder extends Seeder
             $photo = new \App\AnimalPhoto(array('path' => 'http://lorempixel.com/800/600/animals/'));
             $photo->animal()->associate($animal);
             $photo->save();
+            $animal->favorite_photo = $photo->id;
+            $animal->save();
         });
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Traits\AnimalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,6 +14,7 @@ use JavaScript;
 
 class AnimalsViewController extends Controller
 {
+    use AnimalController;
     /**
      * Create a new controller instance.
      *
@@ -34,6 +36,9 @@ class AnimalsViewController extends Controller
             $current_tab = $type;
             $title.=$current_tab;
         }
+        else {
+            abort(404);
+        }
 
         $perros = false;
         $gatos = false;
@@ -50,9 +55,21 @@ class AnimalsViewController extends Controller
 
         $current_tab = "";
 
-        if($type) {
+        if (isset($type)) {
             $current_tab = $type;
-            $title.=$current_tab;
+            $title .= $current_tab;
+            if ($type === "perros") {
+                $type = "dogs";
+            }
+            else if ($type === "gatos") {
+                $type = "cats";
+            }
+            else if ($type === "exoticos") {
+                $type = "exotics";
+            }
+        }
+        else {
+            abort(404);
         }
 
         $paginador = Common::paginador();
@@ -66,7 +83,8 @@ class AnimalsViewController extends Controller
 
 
         JavaScript::put([
-            'animals' => "test"
+            'type' => $type,
+            'animals' => $this->getAllAnimals($type),
         ]);
 
         return view('search-animals', compact('title', 'current_tab', 'headerPaginador', 'paginador', 'perros', 'gatos', 'exoticos'));

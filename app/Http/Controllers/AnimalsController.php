@@ -6,10 +6,12 @@ use App\Animal;
 use App\Cat;
 use App\Dog;
 use App\Exotic;
+use App\Traits\AnimalController;
 use Illuminate\Http\Request;
 
 class AnimalsController extends Controller
 {
+    use AnimalController;
     /**
      * Display a listing of the resource.
      *
@@ -21,13 +23,13 @@ class AnimalsController extends Controller
 
         switch ($type) {
             case "dogs":
-                return Animal::with('animalable')->where('animalable_type', 'App\Dog')->paginate(12);
+                return response($this->getAllAnimals($type), 200);
                 break;
             case "cats":
-                return Animal::with('animalable')->where('animalable_type', 'App\Cat')->paginate(12);
+                return response($this->getAllAnimals($type), 200);
                 break;
             case "exotics":
-                return Animal::with('animalable')->where('animalable_type', 'App\Exotic')->paginate(12);
+                return response($this->getAllAnimals($type), 200);
                 break;
             default:
                 abort(422);

@@ -20,6 +20,6 @@ class Breed extends Model
     }
 
     public function animals() {
-        return $this->hasMany('App\Animals');
+        return $this->hasMany('App\Animal');
     }
 }

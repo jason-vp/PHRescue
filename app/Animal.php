@@ -16,7 +16,7 @@ class Animal extends Model
         "ADOPTED" => "Adopted",
         "DECEASED" => "Deceased",
         "RESERVERD" => "Reserved",
-        "FOR_ADOPTION" => "For adoption",
+        "FOR_ADOPTION" => "Adoptable",
     ];
 
     /**
@@ -38,11 +38,16 @@ class Animal extends Model
         return $this->hasMany('App\AnimalPhoto');
     }
 
+
+    public function favoritePhoto() {
+        return $this->hasOne('App\AnimalPhoto');
+    }
+
     public function animalable() {
         return $this->morphTo();
     }
 
     public function breed() {
-        return $this->hasOne('App\Breed');
+        return $this->belongsTo('App\Breed');
     }
 }

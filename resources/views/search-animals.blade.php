@@ -87,32 +87,6 @@
 
     <div id="dInnerResultados">
 		<animals-list></animals-list>
-    <?php for($i=0; $i<12; $i++): ?>
-
-        <div class="dAnimal enAdopcion">
-            <div class="dAniImg">
-                <a href="/ficha/<?php echo $current_tab ?>/1">
-                    <img src="/images/emiliano.jpg">
-                </a>
-            </div>
-            <div class="dAniDatos">
-                    <h4><a href="/ficha/<?php echo $current_tab ?>/1">Emiliano</a></h4>
-                <p>
-                    M - 5a 4m - 4kg</br>
-                    <?php if($exoticos): ?>
-                        Ratón -
-                    <?php endif; ?>
-                    Mestizo
-                    <?php if($perros): ?>
-                        - Mediano
-                    <?php endif; ?></br>
-
-                    FE: 25-06-2009
-                </p>
-            </div>
-            <p>En adopción - Albergue</p>
-        </div>
-    <?php endfor; ?>
     </div>
 
     <?php echo $paginador ?>

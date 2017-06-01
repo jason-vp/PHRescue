@@ -36,6 +36,7 @@ class CreateAnimalsTables extends Migration
             $table->string('animalable_type');
             $table->integer('breed_id')->unsigned();
             $table->string('status');
+            $table->integer('favorite_photo')->unsigned()->nullable();
             $table->timestamps();
         });
         Schema::table('animals', function (Blueprint $table) {
@@ -53,6 +54,10 @@ class CreateAnimalsTables extends Migration
         });
         Schema::table('animal_photos', function(Blueprint $table) {
             $table->foreign('animal_id')->references('id')->on('animals');
+        });
+
+        Schema::table('animals', function (Blueprint $table) {
+            $table->foreign('favorite_photo')->references('id')->on('animals');
         });
 
         Schema::create('dogs', function (Blueprint $table) {
@@ -84,6 +89,9 @@ class CreateAnimalsTables extends Migration
     {
         Schema::table('animal_photos', function(Blueprint $table) {
             $table->dropForeign(['animal_id']);
+        });
+        Schema::table('animals', function(Blueprint $table) {
+            $table->dropForeign(['favorite_photo']);
         });
         Schema::drop('animal_photos');
 
