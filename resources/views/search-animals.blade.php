@@ -82,14 +82,7 @@
 		</fieldset>
 	</form>
 </div>
-<div id="dResultados" class='borderUp'>
-	<?php echo $headerPaginador ?>
-
-    <div id="dInnerResultados">
-		<animals-list></animals-list>
-    </div>
-
-    <?php echo $paginador ?>
-
-	</div>
+<div class='borderUp'>
+	<animals-list></animals-list>
+</div>
 @stop

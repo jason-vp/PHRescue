@@ -1,31 +1,38 @@
 <template>
-    <div>
-        <!-- TODO Proper layout -->
-        <div  v-for="animal in animals.data" :class="['dAnimal', animal.status]">
-            <div class="dAniImg">
-                <a :href="'/ficha/' + type + '/' + animal.id">
-                    <img :src="animal.favorite_photo.path">
-                </a>
-            </div>
-            <div class="dAniDatos">
-                <h4><a :href="'/ficha/' + type + '/' + animal.id">{{ animal.name }}</a></h4>
-                <p>
-                    {{ animal.sex[0] }}  - {{ getAge(animal.birth_date) }} - {{ animal.weight }}
-                    <span v-if="animal.weight">kg</span></br>
-                    <span v-if="type === 'exotics'">
-                - {{ animal.animalable.size }}
-                </span>
-                    {{ animal.breed.name }}
-                    <span v-if="type === 'dogs'">
+    <div id="dResultados" >
+        <div id="dInnerResultados">
+            <header>
+                <h3>Resultados</h3>
+            </header>
+            <!-- TODO Proper layout -->
+            <div  v-for="animal in animals.data" :class="['dAnimal', animal.status.toLowerCase()]">
+                <div class="dAniImg">
+                    <a :href="'/ficha/' + type + '/' + animal.id">
+                        <img :src="animal.favorite_photo.path">
+                    </a>
+                </div>
+                <div class="dAniDatos">
+                    <h4><a :href="'/ficha/' + type + '/' + animal.id">{{ animal.name }}</a></h4>
+                    <p>
+                        {{ animal.sex[0] }}  - {{ getAge(animal.birth_date) }} - {{ animal.weight }}
+                        <span v-if="animal.weight">kg</span></br>
+                        <span v-if="type === 'exotics'">
                     - {{ animal.animalable.size }}
-                </span>
-                    </br>
+                    </span>
+                        {{ animal.breed.name }}
+                        <span v-if="type === 'dogs'">
+                        - {{ animal.animalable.size }}
+                    </span>
+                        </br>
 
-                    FE: {{ animal.entry_date }}
-                </p>
+                        FE: {{ animal.entry_date }}
+                    </p>
+                </div>
+                <p>{{ animal.status }}</p>
             </div>
-            <p>{{ animal.status }}</p>
         </div>
+
+        <paginator :result.sync="animals" :api-endpoint="apiEndpoint" :extra-params="'&type=' + type"></paginator>
     </div>
 </template>
 <script>
@@ -39,6 +46,7 @@
             return {
                 animals: variables.animals,
                 type: variables.type,
+                apiEndpoint: '/api/animals',
                 requestStatus: "",
                 errors: []
             };

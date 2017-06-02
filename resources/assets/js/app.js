@@ -61,10 +61,21 @@ Vue.component(
     require('./components/AnimalsList.vue')
 );
 
+Vue.component(
+    'paginator',
+    require('./components/Paginator.vue')
+);
+
 const app = new Vue({
     el: '#body-content',
     created: function () {
         // `this` points to the vm instance
+        window.onpopstate = function(evt){
+            if (evt.state !== null) {
+                window.variables = evt.state;
+            }
+            console.log("Poping state", evt);
+        };
         console.log(this.user)
     }
 });

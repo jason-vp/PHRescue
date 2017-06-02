@@ -4,25 +4,27 @@
 namespace App\Traits;
 
 use App\Animal;
-use App\Breed;
 
 trait AnimalController {
 
-    public function getAllAnimals(String $type) {
-         $ANIMALS_PER_PAGE = 12;
+    public function getPaginatedAnimals(String $type, $page = 1) {
+         $ANIMALS_PER_PAGE = 3;
 
         switch ($type) {
             case "dogs":
                 return Animal::with('animalable', 'favoritePhoto', 'breed.species')
-                    ->where('animalable_type', 'App\Dog')->paginate($ANIMALS_PER_PAGE);
+                    ->where('animalable_type', 'App\Dog')
+                    ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             case "cats":
                 return Animal::with('animalable', 'favoritePhoto', 'breed.species')
-                    ->where('animalable_type', 'App\Cat')->paginate($ANIMALS_PER_PAGE);
+                    ->where('animalable_type', 'App\Cat')
+                    ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             case "exotics":
                 return Animal::with('animalable', 'favoritePhoto', 'breed.species')
-                    ->where('animalable_type', 'App\Exotic')->paginate($ANIMALS_PER_PAGE);
+                    ->where('animalable_type', 'App\Exotic')
+                    ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             default:
                 abort(422);

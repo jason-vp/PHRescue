@@ -49,7 +49,7 @@ class AnimalsViewController extends Controller
         return view('altaRapida', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
     }
 
-    public function search($type = null) {
+    public function search(Request $request, $type = null) {
 
         $title = "PHRescue - Consulta ";
 
@@ -72,8 +72,7 @@ class AnimalsViewController extends Controller
             abort(404);
         }
 
-        $paginador = Common::paginador();
-        $headerPaginador = Common::headerPaginador();
+        $page_number = $request->page >= 1 ? $request->page : null;
 
         $perros = false;
         $gatos = false;
@@ -81,13 +80,13 @@ class AnimalsViewController extends Controller
 
         Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
 
-
         JavaScript::put([
             'type' => $type,
-            'animals' => $this->getAllAnimals($type),
+            'animals' => $this->getPaginatedAnimals($type, $page_number),
+            'api_url' => '/api/animals',
         ]);
 
-        return view('search-animals', compact('title', 'current_tab', 'headerPaginador', 'paginador', 'perros', 'gatos', 'exoticos'));
+        return view('search-animals', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
     }
 
     public function edit($type, $id) {
