@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Traits\AnimalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -9,9 +10,11 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Classes\Common;
+use JavaScript;
 
-class AnimalController extends Controller
+class AnimalsViewController extends Controller
 {
+    use AnimalController;
     /**
      * Create a new controller instance.
      *
@@ -33,6 +36,9 @@ class AnimalController extends Controller
             $current_tab = $type;
             $title.=$current_tab;
         }
+        else {
+            abort(404);
+        }
 
         $perros = false;
         $gatos = false;
@@ -43,19 +49,30 @@ class AnimalController extends Controller
         return view('altaRapida', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
     }
 
-    public function search($type = null) {
+    public function search(Request $request, $type = null) {
 
         $title = "PHRescue - Consulta ";
 
         $current_tab = "";
 
-        if($type) {
+        if (isset($type)) {
             $current_tab = $type;
-            $title.=$current_tab;
+            $title .= $current_tab;
+            if ($type === "perros") {
+                $type = "dogs";
+            }
+            else if ($type === "gatos") {
+                $type = "cats";
+            }
+            else if ($type === "exoticos") {
+                $type = "exotics";
+            }
+        }
+        else {
+            abort(404);
         }
 
-        $paginador = Common::paginador();
-        $headerPaginador = Common::headerPaginador();
+        $page_number = $request->page >= 1 ? $request->page : null;
 
         $perros = false;
         $gatos = false;
@@ -63,7 +80,13 @@ class AnimalController extends Controller
 
         Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
 
-        return view('consulta', compact('title', 'current_tab', 'headerPaginador', 'paginador', 'perros', 'gatos', 'exoticos'));
+        JavaScript::put([
+            'type' => $type,
+            'animals' => $this->getPaginatedAnimals($type, $page_number),
+            'api_url' => '/api/animals',
+        ]);
+
+        return view('search-animals', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
     }
 
     public function edit($type, $id) {

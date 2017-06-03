@@ -106,6 +106,8 @@ class UserController extends Controller
 
     public function changePassword(UpdateUserMePassword $request, User $user) {
 
+        $user->password = Hash::make($request->new_password);
+        $user->save();
 
         return response($user, 200);
     }

@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('dateformat');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -55,11 +56,37 @@ Vue.component(
     require('./components/FormErrors.vue')
 );
 
+Vue.component(
+    'animals-list',
+    require('./components/AnimalsList.vue')
+);
+
+Vue.component(
+    'paginator',
+    require('./components/Paginator.vue')
+);
+
+let test = {
+    prueba: "hola"
+};
+
 const app = new Vue({
-    el: '#panel',
+    el: '#body-content',
     created: function () {
-        // `this` points to the vm instance
-        console.log(this.user)
+        // Recharge state for history navigation without reload.
+        // In case of navigating with the back or next button to an ajax generated history entry,
+        // this event will be fired and reload the state of that page, so all components update as expected
+        window.onpopstate = function(evt){
+            if (evt.state !== null) {
+                for (index in evt.state) {
+                    this.variables[index] = evt.state[index];
+                }
+            }
+        };
+    },
+    // Charge data preloaded by the server into the vue root scope
+    data:  {
+        variables: window.variables
     }
 });
 

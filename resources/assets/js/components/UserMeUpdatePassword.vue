@@ -37,6 +37,7 @@
         methods: {
             updateUserPassword: function () {
                 this.requestStatus = "loading";
+                this.errors = {};
                 this.$http.put('/api/users/' + this.user.id + '/change-password',
                     this.user)
                     .then(response => {
@@ -45,7 +46,7 @@
                     }, error => {
                         this.requestStatus = "error";
                         this.errors = error.body;
-                        console.log(error);
+                        console.log("hi", error, this.errors);
                     });
             }
         }

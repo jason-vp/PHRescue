@@ -65,4 +65,4 @@
 		</nav>
 	</header>
 
-	<div id='cuerpo'>
+	<div id='body-content'>

@@ -27,7 +27,6 @@ class HomeController extends Controller
     public function index()
     {
         $title = "PHRescue - Panel de usuario";
-        $scripts = [];
 
         $current_tab = 'none';
 

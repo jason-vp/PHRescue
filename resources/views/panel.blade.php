@@ -19,8 +19,4 @@
             <li><a href="/seguimientos">Más...</a></li>
         </ul>
     </div>
-
-    <script>
-
-    </script>
 @stop
