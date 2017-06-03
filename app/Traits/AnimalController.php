@@ -8,7 +8,7 @@ use App\Animal;
 trait AnimalController {
 
     public function getPaginatedAnimals(String $type, $page = 1) {
-         $ANIMALS_PER_PAGE = 3;
+         $ANIMALS_PER_PAGE = 12;
 
         switch ($type) {
             case "dogs":

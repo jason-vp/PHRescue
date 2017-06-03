@@ -1,9 +1,9 @@
 <template>
     <div id="dResultados" >
+        <header>
+            <h3>Resultados</h3>
+        </header>
         <div id="dInnerResultados">
-            <header>
-                <h3>Resultados</h3>
-            </header>
             <!-- TODO Proper layout -->
             <div  v-for="animal in animals.data" :class="['dAnimal', animal.status.toLowerCase()]">
                 <div class="dAniImg">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <p v-if="result.total != 0"> Mostrando del {{ result.from }} al {{ result.to }} de {{ result.total }} resultados.</p>
+            <p v-if="result.total != 0 && result.from != null"> Mostrando del {{ result.from }} al {{ result.to }} de {{ result.total }} resultados.</p>
             <p v-else>No se han encontrado resultados</p>
         </div>
 
@@ -54,6 +54,7 @@
         props: ['result', 'apiEndpoint', 'extraParams'],
         mounted() {
             console.log('Component ready: paginator.');
+            console.log(this.result);
         },
         methods: {
             numberOfShownPages: function () {
