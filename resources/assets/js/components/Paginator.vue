@@ -9,39 +9,39 @@
             <p>Pag. {{ result.current_page }} de {{ result.last_page }} </p>
             <ul>
                 <li>
-                    <a v-bind:class="{ 'disabled': result.currentPage === 1 }"
+                    <a v-bind:class="{ 'disabled': result.current_page === 1 }"
                        v-on:click="changePage($event, 1)"
-                       href=''>
+                       :href='getPageUrl(1)'>
                         <<
                     </a>
                 </li>
                 <li>
                     <a v-bind:class="{ 'disabled': result.current_page === 1 }"
                        v-on:click="changePage($event, result.current_page - 1)"
-                       href=''>
+                       :href='getPageUrl(result.current_page - 1)'>
                         <
                     </a>
                 </li>
 
                 <li v-for="pageNumber in numberOfShownPages()">
-                    <a v-bind:class="{ 'selected': result.currentPage === pageNumber }"
+                    <a v-bind:class="{ 'selected': result.current_page === pageNumber }"
                        v-on:click="changePage($event, pageNumber)"
-                       href=''>
+                       :href='getPageUrl(pageNumber)'>
                         {{ pageNumber }}
                     </a>
                 </li>
 
                 <li>
-                    <a v-bind:class="{ 'disabled': result.currentPage === result.last_page }"
+                    <a v-bind:class="{ 'disabled': result.current_page === result.last_page }"
                        v-on:click="changePage($event, result.current_page + 1)"
-                       href=''>
+                       :href='getPageUrl(result.current_page + 1)'>
                         >
                     </a>
                 </li>
                 <li>
-                    <a v-bind:class="{ 'disabled': result.currentPage === result.last_page }"
+                    <a v-bind:class="{ 'disabled': result.current_page === result.last_page }"
                        v-on:click="changePage($event, result.last_page)"
-                       ref=''>
+                       :href='getPageUrl(result.last_page)'>
                         >>
                     </a>
                 </li>
@@ -54,7 +54,6 @@
         props: ['result', 'apiEndpoint', 'extraParams'],
         mounted() {
             console.log('Component ready: paginator.');
-            console.log('endpoint = ', this.apiEndpoint);
         },
         methods: {
             numberOfShownPages: function () {
@@ -75,6 +74,9 @@
                         // TODO error management
                         console.log(error);
                     });
+            },
+            getPageUrl: function ($page) {
+                return window.location.pathname + '?page=' + $page + this.extraParams;
             }
         }
     }

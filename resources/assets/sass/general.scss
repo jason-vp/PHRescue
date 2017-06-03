@@ -682,8 +682,19 @@ form#Seguimiento {
   font-size: 2rem;
 }
 
+#paginador a.disabled {
+  pointer-events: none;
+  background-color: darkgrey;
+  cursor: default;
+}
+
+#paginador a.selected {
+  background-color: rgb(0, 146, 250);
+  cursor: default;
+}
+
 #paginador a:hover {
-  background-color:rgb(0,146,250)
+  background-color: rgb(0, 146, 250);
 }
 
 .blackList img, img.blackList {
