@@ -64,15 +64,15 @@
             changePage: function (event, $page_number = 1) {
                 event.preventDefault();
                 let page_path = document.location.pathname;
-                console.log("Changing page", window.variables);
 
                 this.$http.get(this.apiEndpoint + "?page=" + $page_number + this.extraParams,
                     this.user)
                     .then(response => {
                         this.$emit('update:result', response.body);
-                        history.pushState(window.variables, window.title, page_path + '?page=' + $page_number);
-                        console.log("Pushing to history", window.variables, response.body);
+                        history.pushState(this.$root.variables, window.title, page_path + '?page=' + $page_number);
+                        console.log("Pushing to history", this.$root.variables);
                     }, error => {
+                        // TODO error management
                         console.log(error);
                     });
             }

@@ -83,6 +83,6 @@
 	</form>
 </div>
 <div class='borderUp'>
-	<animals-list></animals-list>
+	<animals-list :animals.sync="variables.animals" :type.sync="variables.type"></animals-list>
 </div>
 @stop

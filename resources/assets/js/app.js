@@ -66,17 +66,27 @@ Vue.component(
     require('./components/Paginator.vue')
 );
 
+let test = {
+    prueba: "hola"
+};
+
 const app = new Vue({
     el: '#body-content',
     created: function () {
-        // `this` points to the vm instance
+        // Recharge state for history navigation without reload.
+        // In case of navigating with the back or next button to an ajax generated history entry,
+        // this event will be fired and reload the state of that page, so all components update as expected
         window.onpopstate = function(evt){
             if (evt.state !== null) {
-                window.variables = evt.state;
+                for (index in evt.state) {
+                    this.variables[index] = evt.state[index];
+                }
             }
-            console.log("Poping state", evt);
         };
-        console.log(this.user)
+    },
+    // Charge data preloaded by the server into the vue root scope
+    data:  {
+        variables: window.variables
     }
 });
 

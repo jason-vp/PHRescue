@@ -32,20 +32,20 @@
             </div>
         </div>
 
-        <paginator :result.sync="animals" :api-endpoint="apiEndpoint" :extra-params="'&type=' + type"></paginator>
+        <paginator :result="animals" @update:result="val => this.$emit('update:animals', val)"
+                   :api-endpoint="apiEndpoint"
+                   :extra-params="'&type=' + type"></paginator>
     </div>
 </template>
 <script>
-    var moment = require('moment');
+    let moment = require('moment');
     export default {
         mounted() {
             console.log('Component ready: Animals list.');
-            console.log(this.animals);
         },
+        props: ['animals', 'type'],
         data: function () {
             return {
-                animals: variables.animals,
-                type: variables.type,
                 apiEndpoint: '/api/animals',
                 requestStatus: "",
                 errors: []
