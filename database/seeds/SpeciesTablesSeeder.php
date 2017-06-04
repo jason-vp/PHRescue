@@ -53,7 +53,7 @@ class SpeciesTablesSeeder extends Seeder
                 new App\Breed(['name' => 'Mixed']),
             ]);
 
-            $hamsters = App\Species::where('name', 'Bunnie')->first();
+            $hamsters = App\Species::where('name', 'Hamster')->first();
             $hamsters->breeds()->saveMany([
                 new App\Breed(['name' => 'Undefined']),
                 new App\Breed(['name' => 'Mixed']),

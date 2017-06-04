@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Animal;
+use App\Cat;
+use App\Dog;
 use App\Traits\AnimalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -58,6 +61,8 @@ class AnimalsViewController extends Controller
         if (isset($type)) {
             $current_tab = $type;
             $title .= $current_tab;
+            Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
+
             if ($type === "perros") {
                 $type = "dogs";
             }
@@ -78,8 +83,6 @@ class AnimalsViewController extends Controller
         $gatos = false;
         $exoticos = false;
 
-        Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
-
         JavaScript::put([
             'type' => $type,
             'animals' => $this->getPaginatedAnimals($type, $page_number),
@@ -89,24 +92,47 @@ class AnimalsViewController extends Controller
         return view('search-animals', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
     }
 
-    public function edit($type, $id) {
+    public function edit($type, Animal $animal) {
 
-        $animal = "Emiliano";
         $fotoAnimal = "/images/emiliano.jpg";
-        $title= "PHRescue - Ficha " . $animal;
+        $title= "PHRescue - Ficha " . $animal->name;
 
         $current_tab = "";
 
-        if($type) {
+        if (isset($type)) {
             $current_tab = $type;
-            $title.=$current_tab;
+            Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
+
+            if ($type === "perros") {
+                $type = "dogs";
+            }
+            else if ($type === "gatos") {
+                $type = "cats";
+            }
+            else if ($type === "exoticos") {
+                $type = "exotics";
+            }
         }
+        else {
+            abort(404);
+        }
+
+        $this->checkAnimalType($type, $animal);
 
         $perros = false;
         $gatos = false;
         $exoticos = false;
+        $species = $this->getSpeciesForType($type);
 
-        Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
+        JavaScript::put([
+            'type' => $type,
+            'animal' => $animal->load('breed.species', 'animalable'),
+            'api_url' => '/api/animals',
+            'species' => $species,
+            'sizes' => Dog::SIZES,
+            'coats' => Cat::COATS,
+            'characters' => Animal::CHARACTER_TYPES
+        ]);
 
         return view('ficha', compact('title', 'current_tab', 'animal', 'fotoAnimal', 'perros', 'gatos', 'exoticos'));
     }

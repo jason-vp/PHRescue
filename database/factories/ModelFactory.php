@@ -65,8 +65,8 @@ $factory->define(App\Animal::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Dog::class, function (Faker\Generator $faker) {
     return [
-        'height' => $faker->optional(0.5)->randomFloat(2,0, 120),
-        'length' => $faker->optional(0.5)->randomFloat(2,0, 200),
+        'height' => $faker->optional(0.5)->randomFloat(1,0, 120),
+        'length' => $faker->optional(0.5)->randomFloat(1,0, 200),
         'size' => $faker->optional(0.8)->randomElement(App\Dog::SIZES)
     ];
 });

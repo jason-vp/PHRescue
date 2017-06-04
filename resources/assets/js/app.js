@@ -66,9 +66,20 @@ Vue.component(
     require('./components/Paginator.vue')
 );
 
-let test = {
-    prueba: "hola"
-};
+Vue.component(
+    'animal-basic-data',
+    require('./components/AnimalBasicData.vue')
+);
+
+Vue.component(
+    'animal-photos',
+    require('./components/AnimalPhotos.vue')
+);
+
+Vue.component(
+    'species-selector',
+    require('./components/SpeciesSelector.vue')
+);
 
 const app = new Vue({
     el: '#body-content',

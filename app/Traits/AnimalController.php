@@ -4,9 +4,11 @@
 namespace App\Traits;
 
 use App\Animal;
+use App\Species;
 
 trait AnimalController {
 
+    // Returns a page of all animals from the given type
     public function getPaginatedAnimals(String $type, $page = 1) {
          $ANIMALS_PER_PAGE = 12;
 
@@ -28,6 +30,45 @@ trait AnimalController {
                 break;
             default:
                 abort(422);
+        }
+    }
+
+    // Returns species and breeds for the given animal type
+    public function getSpeciesForType(String $type) {
+        switch ($type) {
+            case "dogs":
+                return Species::with('breeds')->where('name', 'Dog')->get();
+                break;
+            case "cats":
+                return Species::with('breeds')->where('name', 'Cat')->get();
+                break;
+            case "exotics":
+                return Species::with('breeds')->whereNotIn('name', ['Dog', 'Cat'])->get();
+                break;
+            default:
+                abort(422);
+        }
+    }
+
+    // TODO Find a more elegant solution
+    public function checkAnimalType(String $type, Animal $animal) {
+        $transformedType = "";
+        switch ($type) {
+            case "dogs":
+                $transformedType = "App\Dog";
+                break;
+            case "cats":
+                $transformedType = "App\Cat";
+                break;
+            case "exotics":
+                $transformedType = "App\Exotic";
+                break;
+            default:
+                abort(422);
+        }
+
+        if ($animal->animalable_type != $transformedType) {
+            abort(404);
         }
     }
 }
