@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Animal;
 use App\Cat;
+use App\City;
+use App\Country;
 use App\Dog;
+use App\Region;
 use App\Traits\AnimalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -126,12 +129,13 @@ class AnimalsViewController extends Controller
 
         JavaScript::put([
             'type' => $type,
-            'animal' => $animal->load('breed.species', 'animalable'),
+            'animal' => $animal->load('breed.species', 'animalable', 'foundAtCity.region.country'),
             'api_url' => '/api/animals',
             'species' => $species,
             'sizes' => Dog::SIZES,
             'coats' => Cat::COATS,
-            'characters' => Animal::CHARACTER_TYPES
+            'characters' => Animal::CHARACTER_TYPES,
+            'countries' => Country::with('regions.cities')->get(),
         ]);
 
         return view('ficha', compact('title', 'current_tab', 'animal', 'fotoAnimal', 'perros', 'gatos', 'exoticos'));

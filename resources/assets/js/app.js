@@ -81,6 +81,11 @@ Vue.component(
     require('./components/SpeciesSelector.vue')
 );
 
+Vue.component(
+    'city-selector',
+    require('./components/CitySelector.vue')
+);
+
 const app = new Vue({
     el: '#body-content',
     created: function () {

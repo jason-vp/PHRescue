@@ -7,7 +7,8 @@
                    :species="variables.species"
                    :sizes="variables.sizes"
                    :coats="variables.coats"
-                   :characters="variables.characters">
+                   :characters="variables.characters"
+                   :countries="variables.countries">
 </animal-basic-data>
 @include('_ficha-details')
 @stop

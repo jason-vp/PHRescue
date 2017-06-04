@@ -16,7 +16,7 @@
         <label for='raza'>Raza:
             <select id='raza' name='breed'
                     v-model="internalSelectedBreed"
-                    :disabled="selectedSpecies == null">
+                    :disabled="internalSelectedSpecies == null">
                 <option value="">--</option>
                 <option v-for="breed in mappedBreeds[internalSelectedSpecies]"
                         :value='breed.id'>
@@ -30,7 +30,6 @@
     export default {
         mounted() {
             console.log('Component ready: Animal species selector.');
-            console.log(this.species, this.mappedBreeds);
         },
         props: ['type', 'species', 'selectedSpecies', 'selectedBreed'],
         data: function () {

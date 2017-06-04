@@ -155,16 +155,13 @@
                                        v-model="animal.public_advertisement">
                             </label>
 
-                            <!-- TODO create component for this -->
                             <p>Encontrado en:</p>
-                            <label for='localidad'>Localidad:
-                                <select id='localidad' name='localidad'>
-                                    <option value='2'>Altea</option>
-                                    <option value='3' selected>San Vicente</option>
-                                    <option value='4'>Alicante</option>
-                                    <option value='5'>Orihuela</option>
-                                </select>
-                            </label>
+                            <city-selector
+                                    :countries="countries"
+                                    :selectedCountry="animal.found_at_city.region.country.id"
+                                    :selectedRegion="animal.found_at_city.region.id"
+                                    :selectedCity.sync="animal.found_at_city.id">
+                            </city-selector>
 
                             <label for='condiciones'>
                                 Condiciones:
@@ -211,7 +208,7 @@
         mounted() {
             console.log('Component ready: Animal basic data.');
         },
-        props: ['animal', 'type', 'species', 'sizes', 'coats', 'characters'],
+        props: ['animal', 'type', 'species', 'sizes', 'coats', 'characters', 'countries'],
         data: function () {
             return {
             };
