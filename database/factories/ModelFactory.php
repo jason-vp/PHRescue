@@ -54,7 +54,7 @@ $factory->define(App\Animal::class, function (Faker\Generator $faker) {
         'microchip_date' => $faker->date('Y-m-d', 'now'),
         'passport_number' => $faker->optional(0.2)->bothify('#################??'),
         'public_advertisement' => $faker->boolean(95),
-        'found_at_city' => $faker->randomFloat(0, 1, 90),
+        'found_at_city' => $faker->optional(0.9)->randomFloat(0, 1, 90),
         'found_observations' => $faker->realText(),
         'character_type' => $faker->optional(0.9)->randomElement(App\Animal::CHARACTER_TYPES),
         'character_observations' => $faker->optional(0.5)->realText(),

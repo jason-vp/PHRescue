@@ -27,7 +27,7 @@ class CreateAnimalsTables extends Migration
             $table->date('microchip_date')->nullable();
             $table->string('passport_number')->nullable();;
             $table->boolean('public_advertisement');
-            $table->integer('found_at_city')->unsigned();
+            $table->integer('found_at_city')->unsigned()->nullable();
             $table->text('found_observations')->nullable();
             $table->string('character_type')->nullable();
             $table->text('character_observations')->nullable();

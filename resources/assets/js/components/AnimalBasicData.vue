@@ -158,8 +158,8 @@
                             <p>Encontrado en:</p>
                             <city-selector
                                     :countries="countries"
-                                    :selectedCountry="animal.found_at_city.region.country.id"
-                                    :selectedRegion="animal.found_at_city.region.id"
+                                    :selectedCountry="animal.found_at_city.region ? animal.found_at_city.region.country.id : null"
+                                    :selectedRegion="animal.found_at_city.region ? animal.found_at_city.region.id : null"
                                     :selectedCity.sync="animal.found_at_city.id">
                             </city-selector>
 
@@ -188,7 +188,7 @@
 
                             </textarea>
 
-                            <label for='historia'>Historia y otras observaciones:</br> </label>
+                            <label for='historia'>Historia y otras observaciones:<br> </label>
                             <textarea id='historia' name='historia' maxlength='700' rows='9'
                                       v-model="animal.general_observations">
                             </textarea>
@@ -205,12 +205,20 @@
 <script>
     let moment = require('moment');
     export default {
+        created() {
+            if (!this.animal.found_at_city) {
+                this.animal.found_at_city = {
+                    id: null,
+                }
+            }
+        },
         mounted() {
             console.log('Component ready: Animal basic data.');
         },
         props: ['animal', 'type', 'species', 'sizes', 'coats', 'characters', 'countries'],
         data: function () {
             return {
+                test: null
             };
         },
         methods: {
