@@ -13,6 +13,7 @@
 #diNavFoto {
   margin-top: 7px;
   line-height: 180%;
+  position: relative;
 }
 
 #fotos input {
@@ -20,8 +21,19 @@ margin: 5px 0;
 }
 
 #flechas {
-float: right;
-margin-right: 8px;
+  position: absolute;
+  margin-right: 4px;
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 25px;
+
+  span {
+    cursor: pointer;
+    padding: 0 8px;
+    height: 100%;
+    width: 25px;
+  }
 }
 
 #diCurrentFoto {

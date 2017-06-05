@@ -129,7 +129,7 @@ class AnimalsViewController extends Controller
 
         JavaScript::put([
             'type' => $type,
-            'animal' => $animal->load('breed.species', 'animalable', 'foundAtCity.region.country'),
+            'animal' => $animal->load('breed.species', 'animalable', 'foundAtCity.region.country', 'photos'),
             'api_url' => '/api/animals',
             'species' => $species,
             'sizes' => Dog::SIZES,

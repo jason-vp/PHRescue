@@ -6,7 +6,9 @@
         </header>
         <div id='datos-fotos' class='borderUp'>
 
-            <animal-photos></animal-photos>
+            <animal-photos :favorite="animal.favorite_photo"
+                           :photos.sync="animal.photos">
+            </animal-photos>
 
             <div id='datos'>
                 <form>
