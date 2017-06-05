@@ -19,6 +19,9 @@ Route::resource('users', 'UserController', ['only' => ['update']]);
 Route::put('users/{user}/change-password', 'UserController@changePassword');
 
 Route::resource('animals', 'AnimalsController');
+Route::model('photo', 'App\AnimalPhoto');
+Route::resource('animals.photos', 'AnimalPhotosController', ['only' => ['create', 'destroy']]);
+Route::put('animals/{animal}/favorite-photo/{animalPhoto}', 'AnimalsController@updateFavoritePhoto');
 
 Route::get('/ping',function(){
     return "pong";

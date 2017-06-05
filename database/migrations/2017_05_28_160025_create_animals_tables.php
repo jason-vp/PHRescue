@@ -57,7 +57,7 @@ class CreateAnimalsTables extends Migration
         });
 
         Schema::table('animals', function (Blueprint $table) {
-            $table->foreign('favorite_photo')->references('id')->on('animals');
+            $table->foreign('favorite_photo')->references('id')->on('animal_photos');
         });
 
         Schema::create('dogs', function (Blueprint $table) {

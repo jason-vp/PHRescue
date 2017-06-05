@@ -2,8 +2,13 @@
     <div id='fotos'>
         <h3> Fotos </h3>
         <div id='diNavFoto'>
-            Foto {{ indexSelected+1 }} de {{ photos.length }}
-            <div id='flechas'>
+            <span v-if="this.photos.length != 0">
+                Foto {{ indexSelected+1 }} de {{ photos.length }}
+            </span>
+            <span v-else>
+                No hay fotos para mostrar
+            </span>
+            <div id='flechas' v-if="this.photos.length != 0">
                 <span v-on:click="nextPhoto">
                     <img src='/images/flecha_anterior.jpg'>
                 </span>
@@ -12,11 +17,14 @@
                 </span>
             </div>
         </div>
-        <div id='diCurrentFoto'>
+        <div id='diCurrentFoto'  v-if="this.photos.length != 0">
             <img id='current-foto' :src='photos[indexSelected].path'>
             <div id='nav-acc-foto'>
-                <button type='button' v-on:click="markAsFavorite" class='buFav'></button>
-                <button type='button' class='buDelete'></button>
+                <button type='button'class='buFav'
+                        v-on:click="markAsFavorite"
+                        :disabled="indexSelected == indexFavorite"></button>
+                <button type='button' class='buDelete'
+                        v-on:click="deletePhoto"></button>
             </div>
         </div>
         <form id='f-sf'>
@@ -47,12 +55,14 @@
     export default {
         mounted() {
             console.log('Component ready: Animal photos.');
-            this.indexSlected = this.indexFavorite;
+            this.indexSelected = this.indexFavorite;
         },
-        props: ['favorite', 'photos'],
+        props: ['favorite', 'photos', 'animalId'],
         data: function () {
             return {
-                indexSelected: 0
+                indexSelected: 0,
+                requestStatus:"",
+                errors: []
             };
         },
         methods: {
@@ -76,12 +86,44 @@
             },
             markAsFavorite: function () {
                 console.log("Marking as favorite", this.photos[this.indexSelected]);
+
+                this.requestStatus = "loading";
+                this.$http.put('/api/animals/' + this.animalId + '/favorite-photo/' + this.photos[this.indexSelected].id)
+                    .then(response => {
+                        this.requestStatus = "ok";
+                        this.favorite = response.body.favorite_photo;
+                        console.log(response);
+                    }, error => {
+                        this.requestStatus = "error";
+                        this.errors = error.body;
+                        console.log(error);
+                    });
+
+            },
+            deletePhoto: function () {
+                console.log("Deleting photo", this.photos[this.indexSelected]);
+
+                this.requestStatus = "loading";
+                this.$http.delete('/api/animals/' + this.animalId + '/photos/' + this.photos[this.indexSelected].id)
+                    .then(response => {
+                        this.requestStatus = "ok";
+                        let indexToDelete = this.indexSelected;
+                        if (this.indexSelected > 0) {
+                            this.indexSelected--;
+                        }
+                        this.photos.splice(indexToDelete, 1);
+                        console.log(response);
+                    }, error => {
+                        this.requestStatus = "error";
+                        this.errors = error.body;
+                        console.log(error);
+                    });
             }
         },
         computed: {
             indexFavorite: function () {
                 return this.photos.findIndex((photo) => photo.id === this.favorite );
-            }
+            },
         },
     }
 </script>

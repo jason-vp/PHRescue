@@ -4,38 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Animal;
 use App\AnimalPhoto;
-use App\Cat;
-use App\Dog;
-use App\Exotic;
-use App\Traits\AnimalController;
 use Illuminate\Http\Request;
 
-class AnimalsController extends Controller
+class AnimalPhotosController extends Controller
 {
-    use AnimalController;
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        $type = $request->type;
-        $page_number = $request->page >= 1 ? $request->page : null;
-
-        switch ($type) {
-            case "dogs":
-                return response($this->getPaginatedAnimals($type, $page_number), 200);
-                break;
-            case "cats":
-                return response($this->getPaginatedAnimals($type, $page_number), 200);
-                break;
-            case "exotics":
-                return response($this->getPaginatedAnimals($type, $page_number), 200);
-                break;
-            default:
-                abort(422);
-        }
+        //
     }
 
     /**
@@ -99,17 +79,21 @@ class AnimalsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Animal $animal, AnimalPhoto $animalPhoto)
     {
-        //
-    }
-
-    public function updateFavoritePhoto(Animal $animal, AnimalPhoto $animalPhoto) {
-        if ($animalPhoto->animal_id == $animal->id) {
-            $animal->favorite_photo = $animalPhoto->id;
+        $animal->load('photos');
+        $remainingPhoto = $animal->photos()->where('id', '!=', $animalPhoto->id)->first();
+        if ($animal->favorite_photo == $animalPhoto->id) {
+            if ($remainingPhoto) {
+                $animal->favorite_photo = $remainingPhoto->id;
+            }
+            else {
+                $animal->favorite_photo = null;
+            }
             $animal->save();
-            return response($animal, 200);
         }
-        abort(404);
+        $animalPhoto->delete();
+
+        return response($animal, 200);
     }
 }

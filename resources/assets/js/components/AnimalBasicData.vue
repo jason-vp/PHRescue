@@ -7,7 +7,8 @@
         <div id='datos-fotos' class='borderUp'>
 
             <animal-photos :favorite="animal.favorite_photo"
-                           :photos.sync="animal.photos">
+                           :photos.sync="animal.photos"
+                           :animal-id="animal.id">
             </animal-photos>
 
             <div id='datos'>
