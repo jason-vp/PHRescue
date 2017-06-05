@@ -59,32 +59,9 @@ class AnimalsViewController extends Controller
 
         $title = "PHRescue - Consulta ";
 
-        $current_tab = "";
-
-        if (isset($type)) {
-            $current_tab = $type;
-            $title .= $current_tab;
-            Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
-
-            if ($type === "perros") {
-                $type = "dogs";
-            }
-            else if ($type === "gatos") {
-                $type = "cats";
-            }
-            else if ($type === "exoticos") {
-                $type = "exotics";
-            }
-        }
-        else {
-            abort(404);
-        }
+        $current_tab = $type;
 
         $page_number = $request->page >= 1 ? $request->page : null;
-
-        $perros = false;
-        $gatos = false;
-        $exoticos = false;
 
         JavaScript::put([
             'type' => $type,
@@ -92,35 +69,15 @@ class AnimalsViewController extends Controller
             'api_url' => '/api/animals',
         ]);
 
-        return view('search-animals', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
+        return view('search-animals', compact('title', 'current_tab'));
     }
 
     public function edit($type, Animal $animal) {
-
-        $fotoAnimal = "/images/emiliano.jpg";
         $title= "PHRescue - Ficha " . $animal->name;
 
-        $current_tab = "";
-
-        if (isset($type)) {
-            $current_tab = $type;
-            Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
-
-            if ($type === "perros") {
-                $type = "dogs";
-            }
-            else if ($type === "gatos") {
-                $type = "cats";
-            }
-            else if ($type === "exoticos") {
-                $type = "exotics";
-            }
-        }
-        else {
-            abort(404);
-        }
-
         $this->checkAnimalType($type, $animal);
+
+        $current_tab = $type;
 
         $perros = false;
         $gatos = false;
@@ -138,6 +95,6 @@ class AnimalsViewController extends Controller
             'countries' => Country::with('regions.cities')->get(),
         ]);
 
-        return view('ficha', compact('title', 'current_tab', 'animal', 'fotoAnimal', 'perros', 'gatos', 'exoticos'));
+        return view('ficha', compact('title', 'current_tab'));
     }
 }

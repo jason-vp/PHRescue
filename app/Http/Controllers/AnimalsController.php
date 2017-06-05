@@ -23,19 +23,7 @@ class AnimalsController extends Controller
         $type = $request->type;
         $page_number = $request->page >= 1 ? $request->page : null;
 
-        switch ($type) {
-            case "dogs":
-                return response($this->getPaginatedAnimals($type, $page_number), 200);
-                break;
-            case "cats":
-                return response($this->getPaginatedAnimals($type, $page_number), 200);
-                break;
-            case "exotics":
-                return response($this->getPaginatedAnimals($type, $page_number), 200);
-                break;
-            default:
-                abort(422);
-        }
+        return response($this->getPaginatedAnimals($type, $page_number), 200);
     }
 
     /**

@@ -29,7 +29,7 @@ trait AnimalController {
                     ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             default:
-                abort(422);
+                abort(404);
         }
     }
 
@@ -46,7 +46,7 @@ trait AnimalController {
                 return Species::with('breeds')->whereNotIn('name', ['Dog', 'Cat'])->get();
                 break;
             default:
-                abort(422);
+                abort(404);
         }
     }
 
@@ -64,7 +64,7 @@ trait AnimalController {
                 $transformedType = "App\Exotic";
                 break;
             default:
-                abort(422);
+                abort(404);
         }
 
         if ($animal->animalable_type != $transformedType) {
