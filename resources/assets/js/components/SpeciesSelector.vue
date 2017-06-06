@@ -4,7 +4,6 @@
             <label for='especie'><strong > Especie:</strong >
                 <select id='especie' name='specie'
                         v-model="internalSelectedSpecies">
-                    <option value="">--</option>
                     <option v-for="sp in species"
                             :value='sp.id'>
                         {{ sp.name }}
@@ -17,7 +16,6 @@
             <select id='raza' name='breed'
                     v-model="internalSelectedBreed"
                     :disabled="internalSelectedSpecies == null">
-                <option value="">--</option>
                 <option v-for="breed in mappedBreeds[internalSelectedSpecies]"
                         :value='breed.id'>
                     {{ breed.name }}
@@ -40,7 +38,7 @@
         },
         watch: {
             'internalSelectedBreed': function () {
-                this.$emit('update:breed', this.internalSelectedBreed);
+                this.$emit('update:selectedBreed', this.internalSelectedBreed);
             }
         },
         methods: {

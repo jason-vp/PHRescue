@@ -33,26 +33,20 @@ class AnimalsViewController extends Controller
 
     public function create($type = null) {
 
-        $title = "PHRescue - Alta ";
-
-        $current_tab = "";
-
-        // TODO: No type, throw 404
-        if($type) {
-            $current_tab = $type;
-            $title.=$current_tab;
-        }
-        else {
+        if (!in_array($type, ['dogs', 'cats', 'exotics'])) {
             abort(404);
         }
 
-        $perros = false;
-        $gatos = false;
-        $exoticos = false;
+        $title = "PHRescue - Alta ";
 
-        Common::checkTipo($current_tab, $perros, $gatos, $exoticos);
+        $current_tab = $type;
+        $title .= $current_tab;
 
-        return view('altaRapida', compact('title', 'current_tab', 'perros', 'gatos', 'exoticos'));
+        JavaScript::put([
+            'type' => $type,
+        ]);
+
+        return view('altaRapida', compact('title', 'current_tab'));
     }
 
     public function search(Request $request, $type = null) {
@@ -79,9 +73,6 @@ class AnimalsViewController extends Controller
 
         $current_tab = $type;
 
-        $perros = false;
-        $gatos = false;
-        $exoticos = false;
         $species = $this->getSpeciesForType($type);
 
         JavaScript::put([

@@ -3,22 +3,6 @@ namespace App\Classes;
 
 class Common
 {
-    public static function checkTipo($current_tab, &$perros, &$gatos, &$exoticos) {
-        switch ($current_tab) {
-            case 'perros':
-                $perros = true;
-                break;
-            case 'gatos':
-                $gatos = true;
-                break;
-            case 'exoticos':
-                $exoticos = true;
-                break;
-            default:
-                abort(404);
-                exit;
-        }
-    }
 
     public static function paginador() {
         $resultado = "";

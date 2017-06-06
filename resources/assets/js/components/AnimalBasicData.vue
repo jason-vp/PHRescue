@@ -161,8 +161,8 @@
                             <p>Encontrado en:</p>
                             <city-selector
                                     :countries="countries"
-                                    :selectedCountry="animal.found_at_city.region ? animal.found_at_city.region.country.id : null"
-                                    :selectedRegion="animal.found_at_city.region ? animal.found_at_city.region.id : null"
+                                    :selectedCountry="foundAtCountryId"
+                                    :selectedRegion="foundAtRegionId"
                                     :selectedCity.sync="animal.found_at_city.id">
                             </city-selector>
 
@@ -196,7 +196,8 @@
                                       v-model="animal.general_observations">
                             </textarea>
 
-                            <button type='submit' id='buDatos' name='buDatos' class='boton'>Modificar</button>
+                            <form-errors :errors="errors"></form-errors>
+                            <form-button :submit="updateAnimal" :requestStatus="requestStatus"></form-button>
 
                         </fieldset>
                     </fieldset>
@@ -209,11 +210,7 @@
     let moment = require('moment');
     export default {
         created() {
-            if (!this.animal.found_at_city) {
-                this.animal.found_at_city = {
-                    id: null,
-                }
-            }
+            this.addEmptyCityObjectIfNeed(this.animal);
         },
         mounted() {
             console.log('Component ready: Animal basic data.');
@@ -221,8 +218,28 @@
         props: ['animal', 'type', 'species', 'sizes', 'coats', 'characters', 'countries'],
         data: function () {
             return {
-                test: null
+                test: null,
+                requestStatus: "",
+                errors: []
             };
+        },
+        computed: {
+            foundAtRegionId: function () {
+                if (this.animal.found_at_city && this.animal.found_at_city.region) {
+                    return this.animal.found_at_city.region.id;
+                }
+                else {
+                    return null;
+                }
+            },
+            foundAtCountryId: function () {
+                if (this.animal.found_at_city && this.animal.found_at_city.region) {
+                    return this.animal.found_at_city.region.country.id;
+                }
+                else {
+                    return null;
+                }
+            },
         },
         methods: {
             getAge: function(date) {
@@ -232,6 +249,31 @@
                 let months = diff.month();
                 return years + " A y " + months + " M";
             },
+            updateAnimal: function () {
+                console.log(this.animal);
+                this.errors = [];
+                this.requestStatus = "loading";
+
+                this.$http.put('/api/animals/' + this.animal.id, this.animal)
+                    .then(response => {
+                        this.requestStatus = "ok";
+                        let updatedAnimal = response.body;
+                        this.addEmptyCityObjectIfNeed(updatedAnimal);
+                        this.$emit('update:animal', updatedAnimal);
+                        console.log(updatedAnimal);
+                    }, error => {
+                        this.requestStatus = "error";
+                        this.errors = error.body;
+                        console.log(error);
+                    });
+            },
+            addEmptyCityObjectIfNeed: function (animal) {
+                if (!animal.found_at_city) {
+                    animal.found_at_city = {
+                        id: null,
+                    }
+                }
+            }
         }
     }
 </script>

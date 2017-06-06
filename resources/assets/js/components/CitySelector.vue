@@ -58,7 +58,11 @@
         },
         watch: {
             'internalSelectedCity': function () {
-                this.$emit('update:city', this.internalSelectedCity);
+                // TODO update of city not working
+                console.log("Changed", this.internalSelectedCity);
+
+                this.$emit('update:selectedCity', this.internalSelectedCity);
+
             }
         },
         methods: {
