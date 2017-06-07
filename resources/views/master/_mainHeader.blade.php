@@ -15,24 +15,24 @@
 						<a href="#">Menú</a>
 				</li>
 				<li>
-					<a <?php if($current_tab=="perros") echo "id='current-tab'"; ?> href='#!'>Perros</a>
+					<a <?php if($current_tab=="dogs") echo "id='current-tab'"; ?> href='#!'>Perros</a>
 					<ul>
-						<li><a href='/consulta/perros'>Consulta</a></li>
-						<li><a href='/alta/perros'>Alta rápida</a></li>
+						<li><a href='/consulta/dogs'>Consulta</a></li>
+						<li><a href='/alta/dogs'>Alta rápida</a></li>
 					</ul>
 				</li>
 				<li>
-					<a <?php if($current_tab=="gatos") echo "id='current-tab'"; ?> href='#!'>Gatos</a>
+					<a <?php if($current_tab=="cats") echo "id='current-tab'"; ?> href='#!'>Gatos</a>
 					<ul>
-						<li><a href='/consulta/gatos'>Consulta</a></li>
-						<li><a href='/alta/gatos'>Alta rápida</a></li>
+						<li><a href='/consulta/cats'>Consulta</a></li>
+						<li><a href='/alta/cats'>Alta rápida</a></li>
 					</ul>
 				</li>
 				<li>
-					<a <?php if($current_tab=="exoticos") echo "id='current-tab'"; ?> href='#!'>Exóticos</a>
+					<a <?php if($current_tab=="exotics") echo "id='current-tab'"; ?> href='#!'>Exóticos</a>
 					<ul>
-						<li><a href='/consulta/exoticos'>Consulta</a></li>
-						<li><a href='/alta/exoticos'>Alta rápida</a></li>
+						<li><a href='/consulta/exotics'>Consulta</a></li>
+						<li><a href='/alta/exotics'>Alta rápida</a></li>
 					</ul>
 				</li>
 				<li>

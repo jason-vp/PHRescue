@@ -28,7 +28,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/correos', 'VolunteerController@MailIndex');
 
-    Route::get('/ficha/{type}/{id}', 'AnimalsViewController@edit');
+    Route::get('/ficha/{type}/{animal}', 'AnimalsViewController@edit');
 
     Route::get('/medicacion/{id?}', 'MedicationController@index');
 

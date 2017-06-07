@@ -19,7 +19,7 @@ class Region extends Model
         return $this->belongsTo('App\Country');
     }
 
-    public function localities() {
+    public function cities() {
         return $this->hasMany('App\City');
     }
 }

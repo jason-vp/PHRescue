@@ -66,9 +66,30 @@ Vue.component(
     require('./components/Paginator.vue')
 );
 
-let test = {
-    prueba: "hola"
-};
+Vue.component(
+    'animal-basic-data',
+    require('./components/AnimalBasicData.vue')
+);
+
+Vue.component(
+    'animal-photos',
+    require('./components/AnimalPhotos.vue')
+);
+
+Vue.component(
+    'species-selector',
+    require('./components/SpeciesSelector.vue')
+);
+
+Vue.component(
+    'city-selector',
+    require('./components/CitySelector.vue')
+);
+
+Vue.component(
+    'create-animal',
+    require('./components/CreateAnimal.vue')
+);
 
 const app = new Vue({
     el: '#body-content',
@@ -87,6 +108,11 @@ const app = new Vue({
     // Charge data preloaded by the server into the vue root scope
     data:  {
         variables: window.variables
+    },
+    http: {
+        emulateJSON: true,
+        emulateHTTP: true,
+        root: '/en/ajax'
     }
 });
 

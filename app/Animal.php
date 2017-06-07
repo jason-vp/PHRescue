@@ -30,8 +30,8 @@ class Animal extends Model
         'character_type', 'character_observations', 'general_observations',
     ];
 
-    public function localityFound() {
-        return $this->hasMany('App\City');
+    public function foundAtCity() {
+        return $this->belongsTo('App\City', 'found_at_city', 'id');
     }
 
     public function photos() {

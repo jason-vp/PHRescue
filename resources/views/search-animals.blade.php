@@ -14,30 +14,31 @@
 					<label for='sexo1'><input id='sexo1'  type='checkbox' name='sexo' value='1' checked />M</label>
 					<label for='sexo2'><input id='sexo2'  type='checkbox' name='sexo' value='2' checked />H</label>
 				</span>
-                <?php if(!$gatos): ?>
-				<span><strong>Tamaño:</strong>
+
+				<span v-if="variables.type == 'dogs'">
+                    <strong>Tamaño:</strong>
 					<label for='tam1'><input id='tam1' type='checkbox' name='tam' value='1' checked />Pequeño</label>
 					<label for='tam2'><input id='tam2' type='checkbox' name='tam' value='2' checked />Mediano</label>
 					<label for='tam3'><input id='tam3' type='checkbox' name='tam' value='3' checked />Grande</label>
 					<label for='tam4'><input id='tam4' type='checkbox' name='tam' value='4' checked />Muy Grande</label>
 				</span>
-                <?php endif; ?>
 
 				<label for="inEdadMin"><strong>Edad:</strong>
 				Entre <input id='inEdadMin'  type='number' min='0' max='17' step='1' value='0' name='edadMin' /> y <input id='edadmax'  type='number' min='1' max='18' step='1' value='18' name='edad2' /> años
                 </label>
 				<label for="inPesoMin"><strong>Peso:</strong>
 				Entre <input id='inPesoMin'  type='number' min='0' max='80' step='0.01' value='0' name='pesoMin'/> y <input id='pesomax'  type='number' min='0' max='80' step='1' value='80' name='peso2'/> kg
-				</label
-                <?php if($exoticos): ?>
-                    <label for="slEspecie">Especie:
-                        <select id="slEspecie" name="especie">
-                            <option value="-1">Todas</option>
-                            <option value="0">Ratón</option>
-                            <option value="1">Conejo</option>
-                        </select>
-                    </label>
-                <?php endif; ?>
+				</label>
+
+                <label v-if="variables.type == 'exotics'"
+                       for="slEspecie">Especie:
+                    <select id="slEspecie" name="especie">
+                        <option value="-1">Todas</option>
+                        <option value="0">Ratón</option>
+                        <option value="1">Conejo</option>
+                    </select>
+                </label>
+
 				 <label for='raza'><strong>Raza:</strong>
                      <select id='raza' name='raza'>
 						<option value='1'>Todas</option>

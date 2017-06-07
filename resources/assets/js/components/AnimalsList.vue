@@ -8,7 +8,9 @@
             <div  v-for="animal in animals.data" :class="['dAnimal', animal.status.toLowerCase()]">
                 <div class="dAniImg">
                     <a :href="'/ficha/' + type + '/' + animal.id">
-                        <img :src="animal.favorite_photo.path">
+                        <span v-if="animal.favorite_photo">
+                            <img :src="animal.favorite_photo.path">
+                        </span>
                     </a>
                 </div>
                 <div class="dAniDatos">
