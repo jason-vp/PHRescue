@@ -42,8 +42,16 @@ class AnimalsViewController extends Controller
         $current_tab = $type;
         $title .= $current_tab;
 
+        $species = $this->getSpeciesForType($type);
+
         JavaScript::put([
             'type' => $type,
+            'api_url' => '/api/animals',
+            'species' => $species,
+            'sizes' => Dog::SIZES,
+            'coats' => Cat::COATS,
+            'characters' => Animal::CHARACTER_TYPES,
+            'countries' => Country::with('regions.cities')->get(),
         ]);
 
         return view('altaRapida', compact('title', 'current_tab'));

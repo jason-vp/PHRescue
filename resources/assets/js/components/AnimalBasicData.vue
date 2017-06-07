@@ -218,7 +218,6 @@
         props: ['animal', 'type', 'species', 'sizes', 'coats', 'characters', 'countries'],
         data: function () {
             return {
-                test: null,
                 requestStatus: "",
                 errors: []
             };

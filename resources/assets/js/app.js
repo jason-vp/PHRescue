@@ -86,6 +86,11 @@ Vue.component(
     require('./components/CitySelector.vue')
 );
 
+Vue.component(
+    'create-animal',
+    require('./components/CreateAnimal.vue')
+);
+
 const app = new Vue({
     el: '#body-content',
     created: function () {
@@ -103,6 +108,11 @@ const app = new Vue({
     // Charge data preloaded by the server into the vue root scope
     data:  {
         variables: window.variables
+    },
+    http: {
+        emulateJSON: true,
+        emulateHTTP: true,
+        root: '/en/ajax'
     }
 });
 
