@@ -1,0 +1,45 @@
+<RestClientRequest>
+  <option name="biscuits">
+    <list>
+      <Biscuit>
+        <option name="date" value="-1" />
+        <option name="domain" value="" />
+        <option name="name" value="" />
+        <option name="path" value="" />
+        <option name="value" value="" />
+      </Biscuit>
+    </list>
+  </option>
+  <option name="httpMethod" value="GET" />
+  <option name="urlBase" value="http://localhost:8080" />
+  <option name="urlPath" value="/api/user" />
+  <option name="headers">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="Accept:application/json" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Cache-Control" />
+        <option name="value" value="no-cache" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Cookie" />
+        <option name="value" value="laravel_token=eyJpdiI6IkFmZXNrVmFaWFRhR0FDMGdQZnZ1WXc9PSIsInZhbHVlIjoia3NaSzd3RWhEMXkyaldsNFZEZzg4c1wvbERZSTlSR1Z6UGViVFwvc25nUE95T2lEbTQ0dXhVeXZ3cDVKVUc2SHFFUnRBYnd2NkNXMkNSUmJzNkhzRUJsMWRxUUhwa0phS2pWenZWaUI5eUtYcVRpaERHdUJtXC95cEYwVHpobXAyXC80RVR0c3NmN1RhT3JVZWQ4bjRwTUh5S21vWDMxM0lIbDJmUUJhbkhIbGxEeXR3dG1RV1JMU0FqSk9FTE0ybWcrZGNaRDNBaVpcL3g2aEV5QjhzM1BLTkV0TlRSZ3BlXC9QanRGY3ZEb2NNeTlqdGFvbGx1K2RTWjJhYjdXblJmQUNqQW1RVlJXV2NHd3RcL1Bpcmg0WjMzcXdRPT0iLCJtYWMiOiJlZGQ4OTEzZmYzMmRkNjk0ZDA5YWUwOTMwOWY3ZGUzZWVmY2Q4ZTRlMmMyOTM4YzVhMTdlYWQ5M2U5MmM1Y2YxIn0%3D; XSRF-TOKEN=eyJpdiI6IlY3dVU4MldsY1lNcVhUQllLcml2eFE9PSIsInZhbHVlIjoiREdPOGxWaEl2UEhYQk9RYVFscWJwdnozTHpDYVoxKzBEMytsbHVYQVwvdlNJTDJ6NklxWG03aXM1VTN0U3VTOWdtdWVId0UxZXdKM1NTbzFpMVBNZEdBPT0iLCJtYWMiOiI5YmRlMmIzM2QyZjQ1NzI1ZjYyZDU0ZDczOTY0ODU4MTBjYjNjYjUzMTgwMjY0ZGRlMDc5NTRlZDlhNDExNWFiIn0%3D; laravel_session=eyJpdiI6IklQNk51ZmVHdmtZd3cxRnh1aUp6RGc9PSIsInZhbHVlIjoickJXaFpqM1EwMHY0NXN4ODRqVGJHRlAyVGZHbjZhb29uaEh3ZHVPSGNCUTNQOGo1RXYxRWVBM3BleVwvcXVZVXFlOGRDVHlweTRSSFJHV1wvMXVSam1DQT09IiwibWFjIjoiM2M1MzIzMWE0MzM4Y2Q0YmQ0YTkzOTdkNWVkYzRjZmZjOGNhNzcwODJjY2I0Yjc4OGU5MzJiOTcyNjgyODNiMCJ9" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="X-CSRF-TOKEN" />
+        <option name="value" value="GNvS3m4W4jBdApTTuWZHXpj1HrkBd2FFPZRurWM0" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parameters">
+    <list />
+  </option>
+  <option name="parametersEnabled" value="true" />
+  <option name="haveTextToSend" value="false" />
+  <option name="haveFileToSend" value="false" />
+  <option name="isFileUpload" value="false" />
+  <option name="textToSend" value="" />
+  <option name="filesToSend" value="" />
+</RestClientRequest>

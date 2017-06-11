@@ -1,6 +1,6 @@
-#login-screen {
+#landing-screen {
 
-    background-color: /*#bbbbff;*/ rgb(0, 114, 198);
+  background-color: /*#bbbbff;*/ rgb(0, 114, 198);
   background-image: none;
     /*background-color: #D5E0F5;*/
   display: block;
@@ -20,7 +20,7 @@
     max-height: 102px;
   }
 
-  #cont {
+  .content-wrapper {
     display: block;
     width: 92%;
     max-width: 400px;
@@ -48,12 +48,6 @@
     width: 150px;
     display: block;
     margin: auto;
-  }
-
-  input {
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
   }
 
   #recordar {
@@ -92,5 +86,33 @@
 
   #sol-user {
     float: right;
+  }
+
+  .register-and-recovery {
+
+  }
+}
+
+.login-screen {
+  input {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.register-screen {
+  .panel-heading {
+    padding: 15px;
+    font-weight: bold;
+  }
+  .panel-body {
+    padding: 10px;
+  }
+  input {
+    margin-left: 15px;
+  }
+  .form-group {
+    margin-bottom: 10px;
   }
 }

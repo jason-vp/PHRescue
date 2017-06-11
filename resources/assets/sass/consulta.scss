@@ -1,3 +1,7 @@
+dInnerResultados {
+  width: 100%;
+}
+
 #dInnerResultados {
   width: 100%;
   display: flex;
@@ -49,22 +53,22 @@
 
 }
 
-.dAnimal.enAdopcion img{
+.dAnimal.adoptable img{
   border: 4px solid $cEnAdopcion;
   border-radius: 3px;
 }
 
-.dAnimal.adoptado img{
+.dAnimal.adopted img{
   border: 4px solid $cAdoptado;
   border-radius: 3px;
 }
 
-.dAnimal.reservado img{
+.dAnimal.reserved img{
   border: 4px solid $cReservado;
   border-radius: 3px;
 }
 
-.dAnimal.difunto img{
+.dAnimal.deceased img{
   border: 4px solid $cDifunto;
   border-radius: 3px;
 }

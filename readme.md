@@ -1,27 +1,54 @@
-## Laravel PHP Framework
+# PHRESCUE
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+PHRescue is a web application for the manage of animal shelters. It's based on Laravel 5.3 and Vue 2.
+Currently in development
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Development setup
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Installation and running of the application locally for development.
 
-## Official Documentation
+### Prerequisites
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+- PHP 7+
+- MariaDB/MySQL
+- Composer
+- Node
 
-## Contributing
+### Backend setup
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Run `composer install` followed by `composer update`.
 
-## Security Vulnerabilities
+Add a copy of `.env.example` as `.env` (if it wasn't already done by composer). Modify the following variables to your
+local database setup ones (or create this ones in your database):
+```
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Run `php artisan migrate` to generate the application tables.
 
-### License
+In case you want to populate the database with sample data, run `php artisan db:seed`.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Run `php artisan generate` to create the application key (it will be added to your `.env` file automatically).
+
+### Frontend setup
+
+To be able to compile/generate the javascript and css files:
+
+Run `npm install`.
+
+Run `gulp` to generate css and javascript files. In case that you want this files to be recompiled automatically, 
+you can also run `gulp watch`.
+
+### Execution
+
+In order to run the application is recommended a full web server like Apache. The document root should point to 
+the `/public` folder of the project.
+
+For quick running of the application you can execute `php artisan serve`, this will run a basic web server in 
+`localhost:8000`.
+
+## License
+
+PHRescue is licensed under the [GNU APGLv3 license](https://www.gnu.org/licenses/agpl-3.0.html).
