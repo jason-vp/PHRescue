@@ -51,4 +51,4 @@ For quick running of the application you can execute `php artisan serve`, this w
 
 ## License
 
-PHRescue is open-sourced software (license pending)
+PHRescue is licensed under the [GNU APGLv3 license](https://www.gnu.org/licenses/agpl-3.0.html).
