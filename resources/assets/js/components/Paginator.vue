@@ -65,8 +65,7 @@
                 event.preventDefault();
                 let page_path = document.location.pathname;
 
-                this.$http.get(this.apiEndpoint + "?page=" + $page_number + this.extraParams,
-                    this.user)
+                this.$http.get(this.apiEndpoint + "?page=" + $page_number + this.extraParams)
                     .then(response => {
                         this.$emit('update:result', response.body);
                         history.pushState(this.$root.variables, window.title, page_path + '?page=' + $page_number);

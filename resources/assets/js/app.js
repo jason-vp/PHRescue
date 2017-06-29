@@ -43,7 +43,7 @@ Vue.component(
 
 Vue.component(
     'user-me-update-password',
-    require('./components/userMeUpdatePassword.vue')
+    require('./components/UserMeUpdatePassword.vue')
 );
 
 Vue.component(
@@ -108,11 +108,6 @@ const app = new Vue({
     // Charge data preloaded by the server into the vue root scope
     data:  {
         variables: window.variables
-    },
-    http: {
-        emulateJSON: true,
-        emulateHTTP: true,
-        root: '/en/ajax'
     }
 });
 
