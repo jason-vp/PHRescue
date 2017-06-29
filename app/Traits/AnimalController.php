@@ -15,17 +15,17 @@ trait AnimalController {
         switch ($type) {
             case "dogs":
                 return Animal::with('animalable', 'favoritePhoto', 'breed.species')
-                    ->where('animalable_type', 'App\Dog')
+                    ->where('animalable_type', 'App\Dog')->orderBy('entry_date', 'desc')
                     ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             case "cats":
                 return Animal::with('animalable', 'favoritePhoto', 'breed.species')
-                    ->where('animalable_type', 'App\Cat')
+                    ->where('animalable_type', 'App\Cat')->orderBy('entry_date', 'des')
                     ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             case "exotics":
                 return Animal::with('animalable', 'favoritePhoto', 'breed.species')
-                    ->where('animalable_type', 'App\Exotic')
+                    ->where('animalable_type', 'App\Exotic')->orderBy('entry_date', 'desc')
                     ->paginate($ANIMALS_PER_PAGE, null, null , $page);
                 break;
             default:
