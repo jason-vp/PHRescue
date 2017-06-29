@@ -6,15 +6,18 @@
         <div id="dInnerResultados">
             <!-- TODO Proper layout -->
             <div  v-for="animal in animals.data" :class="['dAnimal', animal.status.toLowerCase()]">
-                <div class="dAniImg">
-                    <a :href="'/ficha/' + type + '/' + animal.id">
-                        <span v-if="animal.favorite_photo">
-                            <img :src="animal.favorite_photo.path">
-                        </span>
-                    </a>
-                </div>
+                <a :href="'/ficha/' + type + '/' + animal.id">
+                    <div class="dAniImg" v-if="animal.favorite_photo">
+                        <img :src="animal.favorite_photo.path">
+                    </div>
+                    <div class="dAniImg" v-else>
+                        <img src="/images/placeholder.png">
+                    </div>
+                </a>
                 <div class="dAniDatos">
-                    <h4><a :href="'/ficha/' + type + '/' + animal.id">{{ animal.name }}</a></h4>
+                    <h4>
+                        <a :href="'/ficha/' + type + '/' + animal.id">{{ animal.name }}</a>
+                    </h4>
                     <p>
                         {{ animal.sex[0] }}  - {{ getAge(animal.birth_date) }} - {{ animal.weight }}
                         <span v-if="animal.weight">kg</span></br>
@@ -29,8 +32,8 @@
 
                         FE: {{ animal.entry_date }}
                     </p>
+                    <p>{{ animal.status }}</p>
                 </div>
-                <p>{{ animal.status }}</p>
             </div>
         </div>
 
